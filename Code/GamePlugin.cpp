@@ -93,6 +93,8 @@ bool CGamePlugin::OnClientConnectionReceived(int channelId, bool bIsReset)
 	spawnParams.nFlags |= ENTITY_FLAG_NEVER_NETWORK_STATIC;
 	spawnParams.vPosition = CSpawnPointComponent::GetFirstSpawnPointPos();
 
+	//gEnv->pEntitySystem->FindEntityByName("SpawnPoint")->GetWorldPos();
+
 	// Set local player details
 	if (m_players.size() == 0 && !gEnv->IsDedicated())
 	{

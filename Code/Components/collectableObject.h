@@ -18,6 +18,7 @@ public:
 	virtual void Initialize();
 	virtual void ProcessEvent(const SEntityEvent& event);
 	virtual Cry::Entity::EntityEventMask GetEventMask() const;
+	void CreateExplosionEffect();
 
 	
 	private:

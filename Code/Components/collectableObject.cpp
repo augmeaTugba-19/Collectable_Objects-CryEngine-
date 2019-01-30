@@ -2,8 +2,10 @@
 #include "collectableObject.h"
 #include <CryRenderer/IRenderAuxGeom.h>
 #include <CryParticleSystem/IParticles.h>
+#include <CryParticleSystem/ParticleParams.h>
 
 #include <string.h>
+
 
 void collectableObject::Register(Schematyc::IEnvRegistrar & registrar)
 {
@@ -46,7 +48,6 @@ void collectableObject::ProcessEvent(const SEntityEvent& event)
 		/*CryLog("pDest_0 : %s", pDest_0->GetName());
 		CryLog("pDest_1 : %s", pDest_1->GetName());
 */
-
 		if (pDest_0 != nullptr && strstr(pDest_0->GetName(), "Player") ||
 			pDest_1 != nullptr && strstr(pDest_1->GetName(), "Player"))
 		{
@@ -54,21 +55,22 @@ void collectableObject::ProcessEvent(const SEntityEvent& event)
 			m_isCollided = true;
 			m_pEntity->Hide(true);
 			CryLog("collision happend...");
+			CreateExplosionEffect();
 		}
 	}
 	break;
 	case ENTITY_EVENT_UPDATE:
 	{
-		static const float t_value = 3.0f;
+		static const float t_value = 2.0f;
 		//CryLog("collision....");
 	
 		if (m_isCollided && m_timer < t_value)
 		{
 			m_timer = m_timer + gEnv->pTimer->GetFrameTime();
-			IRenderAuxGeom::GetAux()->DrawSphere(m_collisionPoint, 0.5f, Col_Red);
+			// çarpışma olan noktada küre çizdiriyor
+			//IRenderAuxGeom::GetAux()->DrawSphere(m_collisionPoint, 0.5f, Col_Red);
+			// patlama efektinin etkisiyle diğer nesnelerin hareketini simulate ediyor
 			gEnv->pPhysicalWorld->SimulateExplosion(m_collisionPoint, m_collisionPoint, 2.f, 5.f, 2.f, 10.f);
-			//IParticleEffect;
-			//CryLog("%s", m_pEntity->GetName());
 		}
 
 		if (m_isCollided && m_timer >= t_value)
@@ -77,8 +79,7 @@ void collectableObject::ProcessEvent(const SEntityEvent& event)
 			m_isCollided = false;
 			m_timer = 0.0f;
 			CryLog("sıfırlama....");
-		}
-			
+		}	
 	}
 	break;
 	}
@@ -89,3 +90,17 @@ Cry::Entity::EntityEventMask collectableObject::GetEventMask() const
 {
 	return ENTITY_EVENT_BIT(ENTITY_EVENT_UPDATE) | ENTITY_EVENT_BIT(ENTITY_EVENT_INIT) | ENTITY_EVENT_BIT(ENTITY_EVENT_COLLISION);
 }
+
+void collectableObject::CreateExplosionEffect()
+{
+	IParticleEffect*  m_pEffect = gEnv->pParticleManager->FindEffect("particles/pfx2/explosion_glass.pfx");
+
+	if (m_pEffect) {
+		m_pEffect->Spawn(true, m_collisionPoint);
+	}
+	else {
+		CryLog("bulunamadı...%d", m_pEffect);
+	}
+
+}
+
