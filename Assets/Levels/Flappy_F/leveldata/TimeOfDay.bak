@@ -1,0 +1,5 @@
+<TimeOfDay Time="16.158167" TimeStart="16.15" TimeEnd="12" TimeAnimSpeed="0">
+ <Presets>
+  <Preset Name="libs/environmentpresets/levels/flappyboid/flappyboid.xml" Default="1"/>
+ </Presets>
+</TimeOfDay>

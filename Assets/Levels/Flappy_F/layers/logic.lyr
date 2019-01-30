@@ -1,0 +1,949 @@
+<ObjectLayer>
+ <Layer Name="Logic" FullName="Logic" GUID="94cd4191-96d3-58e4-4987-3cc8ed3ecc04" Hidden="0" Frozen="0" Expanded="0" Type="0" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="0" Color="65450" Timestamp="1545302662">
+  <LayerObjects>
+   <Object Type="TagPoint" Layer="Logic" LayerGUID="94cd4191-96d3-58e4-4987-3cc8ed3ecc04" Id="b3d3b0f0-0807-a03e-6932-2041f09cbde0" Name="FG_Main" Pos="448.0708,491.51578,18.030504" Rotate="1,0,0,0" Scale="1,1,1" ColorRGB="16711680" UseCustomLevelLayerColor="0" MinSpec="0" EntityClass="TagPoint" HasEntity="1">
+    <Properties />
+    <FlowGraph Description="" Group="Flappy" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="1" Name="Initial_Setup" Class="_commentbox" pos="-1836,-795.13239,0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1134" Height="1908"/>
+       <NodeSize Width="1134" Height="2120.1726"/>
+      </Node>
+      <Node Id="2" Class="Game:Start" pos="-1800,-54,0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="8" Class="Debug:ConsoleVariable" pos="-1386,-270,0">
+       <Inputs CVar="e_terrain" Value="0"/>
+      </Node>
+      <Node Id="9" Class="Debug:ConsoleVariable" pos="-1386,-396,0">
+       <Inputs CVar="hud_hide" Value="1"/>
+      </Node>
+      <Node Id="11" Class="Camera:View" pos="-1386,324,0" EntityGUID="0dae6038-5ad8-74e0-8ea4-19c49c0324e6">
+       <Inputs entityId="0" Enable="0" Disable="0" FOV="25" Blend="0" BlendFOVSpeed="5" BlendFOVOffset="0" BlendPosSpeed="5" BlendPosOffset="0,0,0" BlendRotSpeed="10" BlendRotOffset="0,0,0"/>
+      </Node>
+      <Node Id="14" Class="entity:SpawnPoint" pos="-1386,-108,0" EntityGUID="267ba81e-e30f-b917-18ec-d31750816bc3">
+       <Inputs entityId="0" Disable="0" Enable="0" Spawn="0"/>
+      </Node>
+      <Node Id="18" Class="Input:ActionMaps:ActionFilter" pos="-1008,-126,0">
+       <Inputs actionFilter_Filter="no_move"/>
+      </Node>
+      <Node Id="22" Class="Physics:ActionImpulse" pos="-252,162,0" EntityGUID="76244717-d39a-23cb-5cfa-de32bc808d9b">
+       <Inputs entityId="0" impulse="0,0,80" angImpulse="0,0,0" Point="0,0,0" partIndex="0" CoordSys="1"/>
+      </Node>
+      <Node Id="24" Class="Actor:LocalPlayer" pos="-1170,-54,0">
+       <Inputs />
+      </Node>
+      <Node Id="26" Class="Input:ActionMaps:ActionListener" pos="-540,54,0" EntityGUID="0dae6038-5ad8-74e0-8ea4-19c49c0324e6">
+       <Inputs entityId="0" actionMapActions_Action="player:jump"/>
+      </Node>
+      <Node Id="29" Name="Scoring" Class="_commentbox" pos="2124,-1408.5214,0">
+       <Inputs TextSize="1" Color="0.955974,0.955974,0.597202" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1962" Height="846"/>
+       <NodeSize Width="1962" Height="1058.1726"/>
+      </Node>
+      <Node Id="31" Class="entity:ProximityTrigger" pos="2160,-1152,0" EntityGUID="d3929df6-154a-673b-afa1-0da6500a43c1">
+       <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
+      </Node>
+      <Node Id="33" Class="entity:ProximityTrigger" pos="2160,-954,0" EntityGUID="6f823db7-174d-08bc-19a9-6f3dadd716e8">
+       <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
+      </Node>
+      <Node Id="35" Class="entity:ProximityTrigger" pos="2160,-738,0" EntityGUID="2c71101f-9c3e-9f83-c845-5473979f510a">
+       <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
+      </Node>
+      <Node Id="37" Class="entity:ProximityTrigger" pos="2160,-540,0" EntityGUID="ebf9b626-a40f-324b-2ccc-54cfa97c431d">
+       <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
+      </Node>
+      <Node Id="39" Class="Logic:Any" pos="2952,-882,0">
+       <Inputs />
+      </Node>
+      <Node Id="40" Class="Entity:Velocity" pos="558,-486,0" EntityGUID="76244717-d39a-23cb-5cfa-de32bc808d9b">
+       <Inputs entityId="0" Enabled="1"/>
+      </Node>
+      <Node Id="43" Class="Mission:GameTokenModify" pos="3114,-954,0">
+       <Inputs gametoken_Token="Level.intScore" Op="1" Type="1" Value="1"/>
+      </Node>
+      <Node Id="44" Class="Mission:GameTokenModify" pos="3114,-810,0">
+       <Inputs gametoken_Token="Level.fltPipeSpeed" Op="1" Type="2" Value="0.3"/>
+      </Node>
+      <Node Id="45" Class="Math:Mul" pos="900,-450,0">
+       <Inputs A="0" B="3"/>
+      </Node>
+      <Node Id="48" Class="String:Concat" pos="3564,-1080,0">
+       <Inputs String1="Score: " String2=""/>
+      </Node>
+      <Node Id="49" Class="Logic:Any" pos="3420,-1080,0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="50" Class="Game:Start" pos="2916,-1080,0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="51" Name="Game_Over_-_text_falls_into_water,_camera_sinks_-_with_audio" Class="_commentbox" pos="180,-1567.498,0">
+       <Inputs TextSize="1" Color="0.838799,0.658375,0.40724" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1818" Height="576"/>
+       <NodeSize Width="4226.5894" Height="788.17255"/>
+      </Node>
+      <Node Id="52" Name="Pipe_Collisions,_with_Audio" Class="_commentbox" pos="2358,-389.54462,0">
+       <Inputs TextSize="1" Color="0.571125,0.701102,0.854993" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1998" Height="450"/>
+       <NodeSize Width="1998" Height="662.17255"/>
+      </Node>
+      <Node Id="58" Class="Physics:CollisionListener" pos="2790,36,0">
+       <Inputs AddListener="0" CollisionsPerFrame="0" IgnoreSameNode="0" OnlySameNode="0" RemoveListener="0"/>
+      </Node>
+      <Node Id="60" Class="Mission:GameTokenSet" pos="4014,36,0">
+       <Inputs gametoken_Token="Level.booIsDead" Value="true"/>
+      </Node>
+      <Node Id="72" Class="Entity:EntityInfo" pos="2574,18,0" EntityGUID="76244717-d39a-23cb-5cfa-de32bc808d9b">
+       <Inputs entityId="0"/>
+      </Node>
+      <Node Id="73" Class="Game:Start" pos="2376,36,0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="92" Name="Vertical_Velocity_controls_bird_rotation_angle" Class="_commentbox" pos="522,-804.19,0">
+       <Inputs TextSize="1" Color="0.386429,0.904661,0.737911" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1062" Height="252"/>
+       <NodeSize Width="3095.158" Height="464.17255"/>
+      </Node>
+      <Node Id="99" Class="Entity:EntityPos" pos="-936,-1242,0" EntityGUID="76244717-d39a-23cb-5cfa-de32bc808d9b">
+       <Inputs entityId="0" pos="0,0,0" rotate="0,0,0" scale="0,0,0" CoordSys="1"/>
+      </Node>
+      <Node Id="101" Class="Movement:MoveEntityTo" pos="-288,-1242,0" EntityGUID="0dae6038-5ad8-74e0-8ea4-19c49c0324e6">
+       <Inputs entityId="0" Destination="0,0,0" DynamicUpdate="1" ValueType="1" Speed="0.2" EaseDistance="0" EaseOutDistance="0" CoordSys="0"/>
+      </Node>
+      <Node Id="107" Class="Vec3:SubVec3" pos="-648,-1224,0">
+       <Inputs A="0,0,0" B="17,-52,0"/>
+      </Node>
+      <Node Id="108" Name="CAMERA_FOLLOWS_PLAYER" Class="_commentbox" pos="-972,-1497.948,0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="972" Height="504"/>
+       <NodeSize Width="1981.5452" Height="716.17255"/>
+      </Node>
+      <Node Id="109" Name="x3_to_give_more_angle" Class="_comment" pos="900,-468,0"/>
+      <Node Id="110" Class="Mission:GameToken" pos="-900,-1062,0">
+       <Inputs gametoken_Token="Level.booIsDead" compare_Value="true" FireOnStart="0" FireOnlyOnResultChange="0"/>
+      </Node>
+      <Node Id="111" Name="Rotate_FlappyBoid_angle" Class="_comment" pos="1314,-540,0"/>
+      <Node Id="114" Class="Movement:MoveEntityTo" pos="1224,-1310.995,0" EntityGUID="94e0363a-0a33-a06d-db54-40d4c2407473">
+       <Inputs entityId="0" Destination="0,0,0" DynamicUpdate="1" ValueType="1" Speed="8" EaseDistance="4" EaseOutDistance="0" CoordSys="0"/>
+      </Node>
+      <Node Id="118" Class="Vec3:SubVec3" pos="828,-1148.995,0">
+       <Inputs A="0,0,0" B="0,0,15"/>
+      </Node>
+      <Node Id="123" Class="Camera:View" pos="810,-860.995,0" InHideMask="2047" EntityGUID="94e0363a-0a33-a06d-db54-40d4c2407473">
+       <Inputs entityId="0" Enable="0" Disable="0" FOV="60" Blend="0" BlendFOVSpeed="5" BlendFOVOffset="0" BlendPosSpeed="5" BlendPosOffset="0,0,0" BlendRotSpeed="10" BlendRotOffset="0,0,0"/>
+      </Node>
+      <Node Id="125" Class="Entity:GetPos" pos="558,-1166.995,0" EntityGUID="94e0363a-0a33-a06d-db54-40d4c2407473">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="126" Name="sink_camera_15m_under_ocean" Class="_comment" pos="1224,-1328.995,0"/>
+      <Node Id="131" Class="Entity:PropertySet" pos="810,-1004.995,0" EntityGUID="82526c3c-a018-1f4b-622f-2f964ae9c8cb">
+       <Inputs entityId="0" entityProperties_Property="Properties:Physics:bResting" Value="false" perArchetype="1"/>
+      </Node>
+      <Node Id="132" Name="enable_gravity_to_make_game_over_box_fall" Class="_comment" pos="810,-1022.995,0"/>
+      <Node Id="134" Class="Time:Delay" pos="990,-1112.995,0">
+       <Inputs delay="4" resetOnInput="0"/>
+      </Node>
+      <Node Id="135" Name="wait_before_sinking" Class="_comment" pos="1008,-1130.995,0"/>
+      <Node Id="137" Class="Movement:RotateEntityToEx" pos="1224,-1004.995,0" EntityGUID="94e0363a-0a33-a06d-db54-40d4c2407473">
+       <Inputs entityId="0" Destination="45,0,0" DynamicUpdate="1" ValueType="1" Value="6" CoordSys="2"/>
+      </Node>
+      <Node Id="259" Class="Mission:GameTokenSet" pos="612,1782,0">
+       <Inputs gametoken_Token="Level.fltPipeSpeed" Value="4"/>
+      </Node>
+      <Node Id="286" Class="entity:ProximityTrigger" pos="2376,540,0" EntityGUID="6d06869f-f018-1eac-adad-5e0c599d7e8e">
+       <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
+      </Node>
+      <Node Id="288" Class="entity:ProximityTrigger" pos="2376,720,0" EntityGUID="ba2934aa-b25f-8ac9-366d-1d66cbb2e462">
+       <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
+      </Node>
+      <Node Id="290" Class="Logic:Any" pos="2700,666,0">
+       <Inputs />
+      </Node>
+      <Node Id="292" Class="Mission:GameTokenSet" pos="2844,666,0">
+       <Inputs gametoken_Token="Level.booIsDead" Value="true"/>
+      </Node>
+      <Node Id="293" Name="Die_if_player_falls_out_of_bounds" Class="_commentbox" pos="2340,294.45544,0">
+       <Inputs TextSize="1" Color="0.838799,0.658375,0.40724" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="792" Height="414"/>
+       <NodeSize Width="2238.1235" Height="626.17255"/>
+      </Node>
+      <Node Id="355" Name="keep_looking_up_at_game_over_while_sinking" Class="_comment" pos="1206,-1022.995,0"/>
+      <Node Id="373" Name="hide_terrain" Class="_comment" pos="-1386,-288,0"/>
+      <Node Id="375" Name="pipe_speed_=_slow" Class="_comment" pos="612,1764,0"/>
+      <Node Id="376" Name="enable_our_camera" Class="_comment" pos="-1386,306,0"/>
+      <Node Id="379" Name="prevent_FPS_player_from_moving" Class="_comment" pos="-1008,-144,0"/>
+      <Node Id="380" Name="spawn_FPS_player_out_of_view" Class="_comment" pos="-1386,-126,0"/>
+      <Node Id="381" Name="listen_for_JUMP_key" Class="_comment" pos="-540,36,0"/>
+      <Node Id="382" Name="JUMP_bird_upwards" Class="_comment" pos="-252,144,0"/>
+      <Node Id="383" Name="get_position_of_bird" Class="_comment" pos="-936,-1260,0"/>
+      <Node Id="384" Name="offset_FlappyCam_from_bird" Class="_comment" pos="-684,-1602,0"/>
+      <Node Id="386" Name="on_death,_camera_stops_following_player" Class="_comment" pos="-900,-1080,0"/>
+      <Node Id="387" Name="listen_for_collisions_with_bird" Class="_comment" pos="2790,18,0"/>
+      <Node Id="388" Name="set_death_to_true_to_trigger_game_over_events" Class="_comment" pos="4014,18,0"/>
+      <Node Id="392" Name="hide_FPS_HUD" Class="_comment" pos="-1386,-414,0"/>
+      <Node Id="393" Name="On_collision,_disable_jump_key_and_squawk_sounds" Class="_comment" pos="-1458,54,0"/>
+      <Node Id="394" Name="jump_to_game_over_cam_to_be_sunk" Class="_comment" pos="810,-878.995,0"/>
+      <Node Id="396" Class="Logic:Gate" pos="-450,-1134,0">
+       <Inputs Closed="0"/>
+      </Node>
+      <Node Id="397" Name="keep_moving_camera_unless_player_dies" Class="_comment" pos="-630,-1152,0"/>
+      <Node Id="408" Class="Movement:MoveEntityTo" pos="-288,-1008,0" EntityGUID="0dae6038-5ad8-74e0-8ea4-19c49c0324e6">
+       <Inputs entityId="0" Destination="0,0,0" DynamicUpdate="1" ValueType="1" Speed="1" EaseDistance="0" EaseOutDistance="0" CoordSys="0"/>
+      </Node>
+      <Node Id="424" Name="optional_ending:_move_camera_back" Class="_comment" pos="-288,-1026,0"/>
+      <Node Id="425" Class="Movement:RotateEntity" pos="810,1026,0" EntityGUID="ef350c35-2afe-9498-8963-55bc03f1a85b">
+       <Inputs entityId="0" Speed="0,50,0" Paused="0" Ref="1"/>
+      </Node>
+      <Node Id="426" Class="Mission:GameToken" pos="-1440,72,0">
+       <Inputs gametoken_Token="intCollisions" compare_Value="1" FireOnStart="0" FireOnlyOnResultChange="1"/>
+      </Node>
+      <Node Id="428" Name="get_pos_for_sinking" Class="_comment" pos="558,-1184.995,0"/>
+      <Node Id="429" Class="Mission:GameToken" pos="198,-1170,0">
+       <Inputs gametoken_Token="Level.booIsDead" compare_Value="true" FireOnStart="0" FireOnlyOnResultChange="1"/>
+      </Node>
+      <Node Id="438" Class="Vec3:ToVec3" pos="1098,-450,0">
+       <Inputs x="0" y="0" z="90"/>
+      </Node>
+      <Node Id="439" Class="Movement:RotateEntityToEx" pos="1314,-522,0" EntityGUID="76244717-d39a-23cb-5cfa-de32bc808d9b">
+       <Inputs entityId="0" Destination="0,0,0" DynamicUpdate="1" ValueType="1" Value="0.1" CoordSys="1"/>
+      </Node>
+      <Node Id="440" Name="Read_up/down_movement_velocity" Class="_comment" pos="558,-504,0"/>
+      <Node Id="441" Name="Only_change_Z_axis" Class="_comment" pos="1098,-468,0"/>
+      <Node Id="461" Class="Audio:Trigger" pos="3744,108,0" EntityGUID="0dae6038-5ad8-74e0-8ea4-19c49c0324e6">
+       <Inputs entityId="0" audioTrigger_PlayTrigger="pipe_collision" audioTrigger_StopTrigger=""/>
+      </Node>
+      <Node Id="462" Class="Audio:Trigger" pos="1404,198,0" EntityGUID="0dae6038-5ad8-74e0-8ea4-19c49c0324e6">
+       <Inputs entityId="0" audioTrigger_PlayTrigger="squawk_low" audioTrigger_StopTrigger=""/>
+      </Node>
+      <Node Id="463" Name="play_low_squawk_sound" Class="_comment" pos="1404,180,0"/>
+      <Node Id="466" Class="Audio:Trigger" pos="4014,-126,0" EntityGUID="0dae6038-5ad8-74e0-8ea4-19c49c0324e6">
+       <Inputs entityId="0" audioTrigger_PlayTrigger="GameOverFallAndSplash" audioTrigger_StopTrigger=""/>
+      </Node>
+      <Node Id="468" Name="play_falling_and_splashing_sound" Class="_comment" pos="4014,-144,0"/>
+      <Node Id="469" Name="play_collision_sound" Class="_comment" pos="3744,72,0"/>
+      <Node Id="472" Class="Mission:GameTokenSet" pos="-1386,576,0">
+       <Inputs gametoken_Token="intCollisions" Value="0"/>
+      </Node>
+      <Node Id="473" Name="initialize_bird_collision_tracker" Class="_comment" pos="-1386,558,0"/>
+      <Node Id="484" Class="Logic:Gate" pos="3564,36,0">
+       <Inputs Closed="0"/>
+      </Node>
+      <Node Id="490" Class="Mission:GameTokenModify" pos="3096,90,0">
+       <Inputs gametoken_Token="intCollisions" Op="1" Type="1" Value="1"/>
+      </Node>
+      <Node Id="493" Class="Math:InRange" pos="3366,72,0">
+       <Inputs In="0" Min="1" Max="1"/>
+      </Node>
+      <Node Id="494" Name="increment_collision_tracker_so_we" Class="_comment" pos="3096,36,0"/>
+      <Node Id="495" Name="on_FIRST_collision_only" Class="_comment" pos="3744,90,0"/>
+      <Node Id="501" Class="Audio:Trigger" pos="1476,-1166.995,0" EntityGUID="94e0363a-0a33-a06d-db54-40d4c2407473">
+       <Inputs entityId="0" audioTrigger_PlayTrigger="sinking" audioTrigger_StopTrigger=""/>
+      </Node>
+      <Node Id="624" Class="Time:Delay" pos="3780,-72,0">
+       <Inputs delay="0.2" resetOnInput="0"/>
+      </Node>
+      <Node Id="628" Name="play_sinking/underwater_sounds" Class="_comment" pos="1476,-1184.995,0"/>
+      <Node Id="630" Class="Mission:GameToken" pos="2394,144,0">
+       <Inputs gametoken_Token="Level.booIsDead" compare_Value="true" FireOnStart="0" FireOnlyOnResultChange="0"/>
+      </Node>
+      <Node Id="634" Name="wait_for_collision_sound" Class="_comment" pos="3780,-90,0"/>
+      <Node Id="644" Name="increase_pipe_speed_on_each_point" Class="_comment" pos="3114,-828,0"/>
+      <Node Id="645" Name="increment_score" Class="_comment" pos="3114,-972,0"/>
+      <Node Id="648" Class="Time:Delay" pos="558,-986.995,0">
+       <Inputs delay="1.3" resetOnInput="0"/>
+      </Node>
+      <Node Id="653" Class="Time:MeasureTime" pos="1548,90,0">
+       <Inputs />
+      </Node>
+      <Node Id="658" Class="Math:InRange" pos="918,234,0">
+       <Inputs In="0" Min="0.4" Max="1.9999"/>
+      </Node>
+      <Node Id="660" Class="Audio:Trigger" pos="1404,324,0" EntityGUID="0dae6038-5ad8-74e0-8ea4-19c49c0324e6">
+       <Inputs entityId="0" audioTrigger_PlayTrigger="squawk_medium" audioTrigger_StopTrigger=""/>
+      </Node>
+      <Node Id="661" Name="play_medium_squawk_sound" Class="_comment" pos="1404,306,0"/>
+      <Node Id="662" Class="Audio:Trigger" pos="1404,450,0" EntityGUID="0dae6038-5ad8-74e0-8ea4-19c49c0324e6">
+       <Inputs entityId="0" audioTrigger_PlayTrigger="squawk_medium_high" audioTrigger_StopTrigger=""/>
+      </Node>
+      <Node Id="663" Name="play_medium_high_squawk_sound" Class="_comment" pos="1404,432,0"/>
+      <Node Id="664" Class="Audio:Trigger" pos="1404,576,0" EntityGUID="0dae6038-5ad8-74e0-8ea4-19c49c0324e6">
+       <Inputs entityId="0" audioTrigger_PlayTrigger="squawk_high" audioTrigger_StopTrigger=""/>
+      </Node>
+      <Node Id="665" Name="play_high_squawk_sound" Class="_comment" pos="1404,558,0"/>
+      <Node Id="666" Class="Math:InRange" pos="918,414,0">
+       <Inputs In="0" Min="0.3" Max="0.39999"/>
+      </Node>
+      <Node Id="670" Class="Math:SetInteger" pos="1242,252,0">
+       <Inputs in="1"/>
+      </Node>
+      <Node Id="671" Class="Math:SetInteger" pos="1116,432,0">
+       <Inputs in="2"/>
+      </Node>
+      <Node Id="672" Class="Math:InRange" pos="918,504,0">
+       <Inputs In="0" Min="0.2" Max="0.2999"/>
+      </Node>
+      <Node Id="673" Class="Math:SetInteger" pos="1116,522,0">
+       <Inputs in="3"/>
+      </Node>
+      <Node Id="674" Class="Math:InRange" pos="918,594,0">
+       <Inputs In="0" Min="0" Max="0.1999"/>
+      </Node>
+      <Node Id="675" Class="Math:SetInteger" pos="1116,612,0">
+       <Inputs in="4"/>
+      </Node>
+      <Node Id="676" Name="velocity-driven_squawk_pitch" Class="_commentbox" pos="522,-381.93854,0">
+       <Inputs TextSize="1" Color="0.938686,0.752942,0.47932" DisplayFilled="0" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1710" Height="900"/>
+       <NodeSize Width="2031.0341" Height="1112.1726"/>
+      </Node>
+      <Node Id="677" Class="Math:InRange" pos="918,306,0">
+       <Inputs In="0" Min="2" Max="19"/>
+      </Node>
+      <Node Id="680" Name="high_squawk" Class="_comment" pos="918,576,0"/>
+      <Node Id="681" Name="medium_high_squawk" Class="_comment" pos="918,486,0"/>
+      <Node Id="682" Name="medium_squawk" Class="_comment" pos="918,396,0"/>
+      <Node Id="683" Name="low_squawk" Class="_comment" pos="918,216,0"/>
+      <Node Id="692" Class="Mission:GameTokenSet" pos="-1386,684,0">
+       <Inputs gametoken_Token="fltTimeBetweenJumps" Value="20"/>
+      </Node>
+      <Node Id="693" Name="initialize_so_no_sound_plays_on_start" Class="_comment" pos="-1386,666,0"/>
+      <Node Id="699" Class="Logic:Any" pos="1404,0,0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="701" Class="Mission:GameTokenSet" pos="1908,-126,0">
+       <Inputs gametoken_Token="fltTimeBetweenJumps" Value=""/>
+      </Node>
+      <Node Id="702" Name="on_game_start_or_squawk..." Class="_comment" pos="1368,-18,0"/>
+      <Node Id="703" Name="start_timer" Class="_comment" pos="1548,72,0"/>
+      <Node Id="704" Name="stop_timer_on_each_JUMP" Class="_comment" pos="1062,144,0"/>
+      <Node Id="705" Name="save_time_between_jumps" Class="_comment" pos="1908,-144,0"/>
+      <Node Id="706" Name="squawk_pitch_based_on_time_between_jumps" Class="_comment" pos="558,378,0"/>
+      <Node Id="710" Class="Mission:GameToken" pos="558,396,0">
+       <Inputs gametoken_Token="fltTimeBetweenJumps" compare_Value="" FireOnStart="0" FireOnlyOnResultChange="0"/>
+      </Node>
+      <Node Id="711" Class="Logic:Any" pos="1116,252,0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="714" Class="Mission:GameToken" pos="1350,-126,0">
+       <Inputs gametoken_Token="Level.intScore" compare_Value="0" FireOnStart="0" FireOnlyOnResultChange="1"/>
+      </Node>
+      <Node Id="716" Class="Logic:Gate" pos="1728,-126,0">
+       <Inputs Closed="0"/>
+      </Node>
+      <Node Id="717" Name="don&apos;t_update_if_game_just_started_-_insures_low_squawk" Class="_comment" pos="1476,-144,0"/>
+      <Node Id="719" Class="Game:Start" pos="1170,0,0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="845" Class="Logic:DeMultiplexer" pos="360,1872,0">
+       <Inputs Index="0" Mode="0"/>
+      </Node>
+      <Node Id="847" Class="Mission:GameTokenSet" pos="612,1872,0">
+       <Inputs gametoken_Token="Level.fltPipeSpeed" Value="5"/>
+      </Node>
+      <Node Id="848" Name="pipe_speed_=_medium" Class="_comment" pos="612,1854,0"/>
+      <Node Id="849" Class="Mission:GameTokenSet" pos="612,1962,0">
+       <Inputs gametoken_Token="Level.fltPipeSpeed" Value="7"/>
+      </Node>
+      <Node Id="850" Name="pipe_speed_=_fast" Class="_comment" pos="612,1944,0"/>
+      <Node Id="851" Class="Mission:GameTokenSet" pos="612,2052,0">
+       <Inputs gametoken_Token="Level.fltPipeSpeed" Value="9"/>
+      </Node>
+      <Node Id="852" Name="pipe_speed_=_ridiculous" Class="_comment" pos="612,2034,0"/>
+      <Node Id="853" Class="Mission:GameTokenSet" pos="936,1782,0">
+       <Inputs gametoken_Token="Level.intVertPipeMovement" Value="4"/>
+      </Node>
+      <Node Id="854" Name="vertical_pipe_movement_=_small" Class="_comment" pos="936,1764,0"/>
+      <Node Id="855" Class="Mission:GameTokenSet" pos="936,1872,0">
+       <Inputs gametoken_Token="Level.intVertPipeMovement" Value="6"/>
+      </Node>
+      <Node Id="856" Name="vertical_pipe_movement_=_medium" Class="_comment" pos="936,1854,0"/>
+      <Node Id="857" Class="Mission:GameTokenSet" pos="936,1962,0">
+       <Inputs gametoken_Token="Level.intVertPipeMovement" Value="8"/>
+      </Node>
+      <Node Id="858" Name="vertical_pipe_movement_=_large" Class="_comment" pos="936,1944,0"/>
+      <Node Id="859" Class="Mission:GameTokenSet" pos="936,2052,0">
+       <Inputs gametoken_Token="Level.intVertPipeMovement" Value="10"/>
+      </Node>
+      <Node Id="860" Name="vertical_pipe_movement_=_ridiculous" Class="_comment" pos="936,2034,0"/>
+      <Node Id="863" Class="Mission:LoadNextLevel" pos="1728,-1148.995,0">
+       <Inputs NextLevel="Flappy_E"/>
+      </Node>
+      <Node Id="866" Name="reload_level" Class="_comment" pos="1728,-1166.995,0"/>
+      <Node Id="867" Name="make_sure_level_name_is_right!!!" Class="_comment" pos="1728,-1094.995,0"/>
+      <Node Id="868" Class="Debug:ConsoleVariable" pos="-1386,198,0">
+       <Inputs CVar="r_DisplayInfo" Value="0"/>
+      </Node>
+      <Node Id="922" Class="Movement:MoveEntityTo" pos="-288,-1602,0" EntityGUID="8178efe1-453d-fd89-8082-87665586ea67">
+       <Inputs entityId="0" Destination="0,0,0" DynamicUpdate="1" ValueType="1" Speed="0.1" EaseDistance="0" EaseOutDistance="0" CoordSys="0"/>
+      </Node>
+      <Node Id="925" Class="Vec3:AddVec3" pos="-648,-1584,0">
+       <Inputs A="0,0,0" B="11,15,0"/>
+      </Node>
+      <Node Id="926" Class="Logic:Gate" pos="-486,-1494,0">
+       <Inputs Closed="0"/>
+      </Node>
+      <Node Id="927" Name="optional_camera_angle_-_follow_Flappy_from_behind" Class="_comment" pos="-684,-1620,0"/>
+      <Node Id="928" Name="OPTIONAL_CAMERA_ANGLE" Class="_commentbox" pos="-702,-1857.9558,0">
+       <Inputs TextSize="1" Color="0.672443,0.62396,0.723055" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="774" Height="252"/>
+       <NodeSize Width="1963.3518" Height="464.17255"/>
+      </Node>
+      <Node Id="936" Class="Entity:GetPos" pos="-558,-990,0" EntityGUID="a292e593-9678-7118-62cf-ac079a0e3dd6">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="938" Name="don&apos;t_show_display_info_overlay" Class="_comment" pos="-1386,180,0"/>
+      <Node Id="941" Class="UI:Display:Display" pos="-522,-2016,0">
+       <Inputs uiElements_Element="uiFlappyScore" instanceID="-1"/>
+      </Node>
+      <Node Id="943" Class="UI:Functions:uiFlappyScore:UpdateScore" pos="3780,-1098,0">
+       <Inputs instanceID="-1"/>
+      </Node>
+      <Node Id="944" Name="DISPLAY_CURRENT_SCORE" Class="_commentbox" pos="-972,-2271.239,0">
+       <Inputs TextSize="1" Color="0.955974,0.955974,0.597202" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="828" Height="270"/>
+       <NodeSize Width="1924.8687" Height="482.17255"/>
+      </Node>
+      <Node Id="945" Name="then_show_score_in_top_left_corner" Class="_comment" pos="-522,-2034,0"/>
+      <Node Id="948" Class="Mission:GameToken" pos="-936,-1998,0">
+       <Inputs gametoken_Token="Level.intDifficulty" compare_Value="0" FireOnStart="0" FireOnlyOnResultChange="0"/>
+      </Node>
+      <Node Id="949" Name="wait_until_difficulty_has_been_chosen" Class="_comment" pos="-936,-2016,0"/>
+      <Node Id="972" Name="Disarm_FPS_player" Class="_comment" pos="-1008,0,0"/>
+      <Node Id="996" Name="make_time_scale_normal_to_initiate_game" Class="_comment" pos="360,1656,0"/>
+      <Node Id="1017" Class="entity:BasicEntity" pos="-1008,144,0" EntityGUID="90f17e78-6683-1d52-b5c2-042fe5bb7fc2">
+       <Inputs entityId="0" Hide="0" MakeInvulnerable="0" MakeVulnerable="0" Ragdollize="0" Remove="0" ResetHealth="0" UnHide="0"/>
+      </Node>
+      <Node Id="1019" Class="Debug:ConsoleVariable" pos="360,1674,0">
+       <Inputs CVar="t_Scale" Value="1"/>
+      </Node>
+      <Node Id="1020" Class="Debug:ConsoleVariable" pos="-738,1692,0">
+       <Inputs CVar="t_Scale" Value="0"/>
+      </Node>
+      <Node Id="1021" Name="freeze_game_until_UI_menu_is_done" Class="_comment" pos="-738,1674,0"/>
+      <Node Id="1022" Class="UI:Display:Display" pos="-54,1656,0">
+       <Inputs uiElements_Element="uiFlappyStartMenu" instanceID="-1"/>
+      </Node>
+      <Node Id="1023" Name="AFTER_user_chooses_from_UI_menu" Class="_comment" pos="216,1638,0"/>
+      <Node Id="1025" Class="UI:Events:uiFlappyStartMenu:SetDifficulty" pos="-396,1872,0">
+       <Inputs instanceID="-1" Port="-1" Idx=""/>
+      </Node>
+      <Node Id="1027" Class="Mission:GameTokenSet" pos="36,1872,0">
+       <Inputs gametoken_Token="Level.intDifficulty" Value=""/>
+      </Node>
+      <Node Id="1063" Class="UI:Display:Config" pos="-468,1566,0">
+       <Inputs uiElements_Element="uiFlappyStartMenu" instanceID="-1" cursor="1" mouseEvents="1" keyEvents="0" consoleMouse="0" consoleCursor="0" controllerInput="0" eventsExclusive="0" fixedProjDepth="0" forceNoUnload="0" alpha="1" layer="0"/>
+      </Node>
+      <Node Id="1090" Class="Game:Start" pos="-936,1620,0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="1091" Name="DISPLAY_START/SELECT_DIFFICULTY_MENU" Class="_commentbox" pos="-972,1318.8208,0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="2268" Height="666"/>
+       <NodeSize Width="3137.9084" Height="878.17255"/>
+      </Node>
+      <Node Id="1092" Name="1=beginner;_2=intermediate;_3=advanced;_4=ninja" Class="_commentbox" pos="594,1534.7169,0">
+       <Inputs TextSize="1" Color="0.752942,0.708376,0.62396" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="684" Height="414"/>
+       <NodeSize Width="3666.7886" Height="626.17255"/>
+      </Node>
+      <Node Id="1104" Class="Xml:OpenDocument" pos="810,2556,0">
+       <Inputs File="flappy_data.xml" Location="0"/>
+      </Node>
+      <Node Id="1106" Class="Xml:GetChild" pos="1980,2592,0">
+       <Inputs Name="" Create="0"/>
+      </Node>
+      <Node Id="1107" Class="Xml:GetValue" pos="2178,2592,0">
+       <Inputs />
+      </Node>
+      <Node Id="1109" Class="String:Concat" pos="2664,2556,0">
+       <Inputs String1="" String2=""/>
+      </Node>
+      <Node Id="1114" Name="retrieve_difficulty-specific_high_score_and_display_status_onscreen_-_UI_element_version" Class="_commentbox" pos="774,2182.7607,0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="3276" Height="468"/>
+       <NodeSize Width="6016.6509" Height="680.17255"/>
+      </Node>
+      <Node Id="1132" Class="Mission:GameToken" pos="2250,2718,0">
+       <Inputs gametoken_Token="Level.intScore" compare_Value="" FireOnStart="0" FireOnlyOnResultChange="0"/>
+      </Node>
+      <Node Id="1134" Class="Math:Less" pos="2592,2682,0">
+       <Inputs A="0" B="0"/>
+      </Node>
+      <Node Id="1137" Name="is_the_high_score_less_than_the_current_score?" Class="_comment" pos="2484,2664,0"/>
+      <Node Id="1140" Class="UI:Functions:uiFlappyScoreMessage:DisplayScoreMsg" pos="2844,2592,0">
+       <Inputs instanceID="-1"/>
+      </Node>
+      <Node Id="1141" Class="UI:Functions:uiFlappyScoreMessage:DisplayScoreMsg" pos="3078,2682,0">
+       <Inputs instanceID="-1"/>
+      </Node>
+      <Node Id="1142" Class="String:SetString" pos="2754,2700,0">
+       <Inputs In="You have the new high score!"/>
+      </Node>
+      <Node Id="1143" Class="UI:Display:Display" pos="3618,2556,0">
+       <Inputs uiElements_Element="uiFlappyScoreMessage" instanceID="-1"/>
+      </Node>
+      <Node Id="1144" Class="Logic:Any" pos="3474,2592,0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="1148" Class="Mission:GameTokenGet" pos="1080,2556,0">
+       <Inputs gametoken_Token="Level.intDifficulty"/>
+      </Node>
+      <Node Id="1161" Class="String:Concat" pos="1764,2592,0">
+       <Inputs String1="" String2="Score"/>
+      </Node>
+      <Node Id="1182" Class="UI:Functions:uiFlappyScoreMessage:DisplayScoreMsg" pos="2520,2448,0">
+       <Inputs instanceID="-1"/>
+      </Node>
+      <Node Id="1183" Name="show_generic_message_on_right_if_no_saved_high_score_yet" Class="_comment" pos="2520,2430,0"/>
+      <Node Id="1186" Class="String:SetString" pos="2178,2484,0">
+       <Inputs In="Fly birdy fly!"/>
+      </Node>
+      <Node Id="1190" Class="String:Concat" pos="2376,2538,0">
+       <Inputs String1="" String2=" high score to beat: "/>
+      </Node>
+      <Node Id="1191" Class="Xml:OpenDocument" pos="810,3420,0">
+       <Inputs File="flappy_data.xml" Location="0"/>
+      </Node>
+      <Node Id="1192" Class="Xml:GetChild" pos="1980,3456,0">
+       <Inputs Name="" Create="0"/>
+      </Node>
+      <Node Id="1193" Class="Xml:GetValue" pos="2214,3456,0">
+       <Inputs />
+      </Node>
+      <Node Id="1194" Class="String:Concat" pos="2700,3420,0">
+       <Inputs String1="" String2=""/>
+      </Node>
+      <Node Id="1195" Class="Debug:DisplayMessage" pos="2934,3330,0">
+       <Inputs entityId="0" message="" DisplayTime="0" posX="1200" posY="50" fontSize="3" clr_Color="0.89627,0.846873,0.0528607" centered="0"/>
+      </Node>
+      <Node Id="1196" Name="retrieve_difficulty-specific_high_score_and_display_status_onscreen_-_DEBUG_MESSAGE_VERSION_in_workbook" Class="_commentbox" pos="774,2848.7988,0">
+       <Inputs TextSize="1" Color="0.982251,0.83077,0.610496" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="2430" Height="720"/>
+       <NodeSize Width="7512.4741" Height="932.17255"/>
+      </Node>
+      <Node Id="1197" Class="Mission:GameToken" pos="2214,3564,0">
+       <Inputs gametoken_Token="Level.intScore" compare_Value="" FireOnStart="0" FireOnlyOnResultChange="1"/>
+      </Node>
+      <Node Id="1198" Class="Math:Less" pos="2682,3546,0">
+       <Inputs A="0" B="0"/>
+      </Node>
+      <Node Id="1199" Name="is_the_high_score_less" Class="_comment" pos="2646,3510,0"/>
+      <Node Id="1200" Class="Debug:DisplayMessage" pos="2844,3546,0">
+       <Inputs entityId="0" message="You have the new high score!" DisplayTime="0" posX="1200" posY="50" fontSize="3" clr_Color="0.89627,0.846873,0.0528607" centered="0"/>
+      </Node>
+      <Node Id="1206" Class="Mission:GameTokenGet" pos="1080,3420,0">
+       <Inputs gametoken_Token="Level.intDifficulty"/>
+      </Node>
+      <Node Id="1215" Name="display_a_generic_message_if" Class="_comment" pos="2934,3078,0"/>
+      <Node Id="1217" Class="String:Concat" pos="2394,3402,0">
+       <Inputs String1="" String2=" high score to beat: "/>
+      </Node>
+      <Node Id="1312" Name="SAVE_score_to_XML_IF_it&apos;s_higher_than_last_saved_high_score" Class="_commentbox" pos="504,-2145.9626,0">
+       <Inputs TextSize="1" Color="0.376262,0.83077,0.846873" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="2808" Height="468"/>
+       <NodeSize Width="4165.4209" Height="680.17255"/>
+      </Node>
+      <Node Id="1313" Class="Xml:NewDocument" pos="1764,-1710,0">
+       <Inputs Root="HighScores"/>
+      </Node>
+      <Node Id="1314" Class="Xml:NewChild" pos="2016,-1566,0">
+       <Inputs Name="" Active="1"/>
+      </Node>
+      <Node Id="1315" Name="make_new_high_score" Class="_comment" pos="2016,-1584,0"/>
+      <Node Id="1316" Class="Xml:SetValue" pos="2538,-1674,0">
+       <Inputs />
+      </Node>
+      <Node Id="1317" Class="Mission:GameTokenGet" pos="2250,-1656,0">
+       <Inputs gametoken_Token="Level.intScore"/>
+      </Node>
+      <Node Id="1318" Name="get_current_score" Class="_comment" pos="2250,-1674,0"/>
+      <Node Id="1319" Name="save_score_to_XML" Class="_comment" pos="2538,-1692,0"/>
+      <Node Id="1321" Class="Xml:OpenDocument" pos="1476,-1854,0">
+       <Inputs File="flappy_data.xml" Location="0"/>
+      </Node>
+      <Node Id="1322" Class="Xml:GetChild" pos="1764,-1818,0">
+       <Inputs Name="" Create="1"/>
+      </Node>
+      <Node Id="1323" Class="Xml:GetValue" pos="2052,-1818,0">
+       <Inputs />
+      </Node>
+      <Node Id="1324" Class="Math:Less" pos="2574,-1782,0">
+       <Inputs A="0" B="0"/>
+      </Node>
+      <Node Id="1325" Class="Mission:GameTokenGet" pos="2286,-1872,0">
+       <Inputs gametoken_Token="Level.intScore"/>
+      </Node>
+      <Node Id="1326" Name="is_current_score_less_than_saved_high_score?" Class="_comment" pos="2466,-1800,0"/>
+      <Node Id="1327" Name="try_to_open_existing_XML_file" Class="_comment" pos="1476,-1872,0"/>
+      <Node Id="1328" Name="If_we_fail,_this_is_our_FIRST_saved_score,_so_create_a_NEW_xml_document." Class="_comment" pos="1548,-1728,0"/>
+      <Node Id="1329" Name="get_current_score" Class="_comment" pos="2286,-1890,0"/>
+      <Node Id="1330" Class="Xml:SetValue" pos="2736,-1890,0">
+       <Inputs />
+      </Node>
+      <Node Id="1331" Name="save_new_high_score_to_XML" Class="_comment" pos="2736,-1908,0"/>
+      <Node Id="1332" Class="Xml:SaveDocument" pos="3060,-1782,0">
+       <Inputs File="flappy_data.xml" Location="0" Overwrite="1"/>
+      </Node>
+      <Node Id="1333" Name="note_that_XML_file_is_saved_in_level_folder" Class="_comment" pos="2988,-1800,0"/>
+      <Node Id="1334" Class="Mission:GameTokenGet" pos="558,-1728,0">
+       <Inputs gametoken_Token="Level.intDifficulty"/>
+      </Node>
+      <Node Id="1342" Class="Logic:Any" pos="2916,-1782,0" InHideMask="1023" OutHideMask="1">
+       <Inputs />
+      </Node>
+      <Node Id="1344" Name="get_difficulty-specific_saved_score_name" Class="_comment" pos="864,-1818,0"/>
+      <Node Id="1347" Name="open_or_create_difficult-specific_name" Class="_comment" pos="1710,-1854,0"/>
+      <Node Id="1348" Name="retrieve_difficulty-specific_high_score" Class="_comment" pos="1962,-1836,0"/>
+      <Node Id="1370" Class="String:Concat" pos="1278,-1746,0">
+       <Inputs String1="" String2="Score"/>
+      </Node>
+      <Node Id="1372" Name="difficulty_level_+_score" Class="_comment" pos="1260,-1782,0"/>
+      <Node Id="1373" Name="AFTER_user_closes_UI_menu" Class="_comment" pos="810,2538,0"/>
+      <Node Id="1374" Name="open_high_scores_XML_file" Class="_comment" pos="810,2520,0"/>
+      <Node Id="1379" Class="Module:Call_get_difficulty_name" pos="864,-1800,0">
+       <Inputs entityId="0" GlobalController="0" InstanceID="-1" ContinuousInput="0" ContinuousOutput="0" intCurrentDifficulty="0"/>
+      </Node>
+      <Node Id="1380" Name="get_difficulty-specific_saved_score_name" Class="_comment" pos="1404,2466,0"/>
+      <Node Id="1381" Class="Module:Call_get_difficulty_name" pos="1404,2484,0">
+       <Inputs entityId="0" GlobalController="0" InstanceID="-1" ContinuousInput="0" ContinuousOutput="0" intCurrentDifficulty="0"/>
+      </Node>
+      <Node Id="1382" Class="Debug:DisplayMessage" pos="2934,3114,0">
+       <Inputs entityId="0" message="Fly birdy fly!" DisplayTime="0" posX="1200" posY="50" fontSize="3" clr_Color="0.89627,0.846873,0.0528607" centered="0"/>
+      </Node>
+      <Node Id="1383" Name="***_to_use,_enable_camRearFollow_on_game_start_***" Class="_comment" pos="-324,-1620,0"/>
+      <Node Id="1386" Class="Movement:RotateEntity" pos="1080,1026,0" EntityGUID="ab588214-6581-73ef-eda0-032ff788449c">
+       <Inputs entityId="0" Speed="0,50,0" Paused="0" Ref="1"/>
+      </Node>
+      <Node Id="1387" Class="Movement:RotateEntity" pos="1332,1026,0" EntityGUID="869afa42-abdb-56b7-6e64-0c1e48d907d7">
+       <Inputs entityId="0" Speed="0,50,0" Paused="0" Ref="1"/>
+      </Node>
+      <Node Id="1388" Class="Movement:RotateEntity" pos="1584,1026,0" EntityGUID="b6b5c76d-3e2f-f9ec-ca58-ef4282517399">
+       <Inputs entityId="0" Speed="0,50,0" Paused="0" Ref="1"/>
+      </Node>
+      <Node Id="1391" Name="Keep_score_stars_spinning" Class="_commentbox" pos="774,780.45502,0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1062" Height="162"/>
+       <NodeSize Width="1837.3459" Height="374.17255"/>
+      </Node>
+      <Node Id="1392" Class="Module:Call_score_star" pos="2610,-1170,0">
+       <Inputs entityId="0" GlobalController="0" InstanceID="-1" ContinuousInput="0" ContinuousOutput="0" entParticleEffect="0" entStar="0"/>
+      </Node>
+      <Node Id="1394" Class="Entity:EntityId" pos="2430,-1116,0" EntityGUID="ef350c35-2afe-9498-8963-55bc03f1a85b">
+       <Inputs entityId="0"/>
+      </Node>
+      <Node Id="1395" Class="Entity:EntityId" pos="2430,-1044,0" EntityGUID="416c3c21-747a-8beb-aa4f-4658eea5daf3">
+       <Inputs entityId="0"/>
+      </Node>
+      <Node Id="1396" Class="Module:Call_score_star" pos="2610,-972,0">
+       <Inputs entityId="0" GlobalController="0" InstanceID="-1" ContinuousInput="0" ContinuousOutput="0" entParticleEffect="0" entStar="0"/>
+      </Node>
+      <Node Id="1397" Class="Entity:EntityId" pos="2430,-918,0" EntityGUID="ab588214-6581-73ef-eda0-032ff788449c">
+       <Inputs entityId="0"/>
+      </Node>
+      <Node Id="1398" Class="Entity:EntityId" pos="2430,-846,0" EntityGUID="e9132818-5214-f1d0-d7b8-e1557d19febb">
+       <Inputs entityId="0"/>
+      </Node>
+      <Node Id="1399" Class="Module:Call_score_star" pos="2610,-774,0">
+       <Inputs entityId="0" GlobalController="0" InstanceID="-1" ContinuousInput="0" ContinuousOutput="0" entParticleEffect="0" entStar="0"/>
+      </Node>
+      <Node Id="1400" Class="Entity:EntityId" pos="2430,-720,0" EntityGUID="869afa42-abdb-56b7-6e64-0c1e48d907d7">
+       <Inputs entityId="0"/>
+      </Node>
+      <Node Id="1401" Class="Entity:EntityId" pos="2430,-648,0" EntityGUID="10179cdd-d2df-549b-c668-2785cd000b73">
+       <Inputs entityId="0"/>
+      </Node>
+      <Node Id="1402" Class="Module:Call_score_star" pos="2610,-558,0">
+       <Inputs entityId="0" GlobalController="0" InstanceID="-1" ContinuousInput="0" ContinuousOutput="0" entParticleEffect="0" entStar="0"/>
+      </Node>
+      <Node Id="1403" Class="Entity:EntityId" pos="2430,-504,0" EntityGUID="b6b5c76d-3e2f-f9ec-ca58-ef4282517399">
+       <Inputs entityId="0"/>
+      </Node>
+      <Node Id="1404" Class="Entity:EntityId" pos="2430,-432,0" EntityGUID="79d915f1-975d-f43a-c262-bb698b6d6580">
+       <Inputs entityId="0"/>
+      </Node>
+      <Node Id="1445" Class="Mission:GameTokenSet" pos="3114,-1080,0">
+       <Inputs gametoken_Token="Level.intScore" Value="0"/>
+      </Node>
+      <Node Id="1446" Name="initialize_score_to_0" Class="_comment" pos="3114,-1098,0"/>
+      <Node Id="1447" Class="Debug:ConsoleVariable" pos="-1386,-522,0">
+       <Inputs CVar="r_VolumetricClouds" Value="1"/>
+      </Node>
+      <Node Id="1448" Name="enable_volumetric_clouds" Class="_comment" pos="-1386,-540,0"/>
+      <Node Id="1450" Name="disable_particle_effects_until_triggered" Class="_comment" pos="-1386,774,0"/>
+      <Node Id="1452" Class="entity:ParticleEffect" pos="-1386,792,0" EntityGUID="416c3c21-747a-8beb-aa4f-4658eea5daf3">
+       <Inputs entityId="0" Disable="0" Enable="0" Kill="0" Restart="0" Spawn="0"/>
+      </Node>
+      <Node Id="1453" Class="entity:ParticleEffect" pos="-1386,918,0" EntityGUID="e9132818-5214-f1d0-d7b8-e1557d19febb">
+       <Inputs entityId="0" Disable="0" Enable="0" Kill="0" Restart="0" Spawn="0"/>
+      </Node>
+      <Node Id="1454" Class="entity:ParticleEffect" pos="-1386,1044,0" EntityGUID="10179cdd-d2df-549b-c668-2785cd000b73">
+       <Inputs entityId="0" Disable="0" Enable="0" Kill="0" Restart="0" Spawn="0"/>
+      </Node>
+      <Node Id="1455" Class="entity:ParticleEffect" pos="-1386,1170,0" EntityGUID="79d915f1-975d-f43a-c262-bb698b6d6580">
+       <Inputs entityId="0" Disable="0" Enable="0" Kill="0" Restart="0" Spawn="0"/>
+      </Node>
+      <Node Id="1485" Class="Debug:DisplayMessage" pos="3780,-1008,0">
+       <Inputs entityId="0" message="" DisplayTime="0" posX="50" posY="50" fontSize="5" clr_Color="1,1,1" centered="0"/>
+      </Node>
+      <Node Id="1486" Name="get_difficulty-specific_saved_score_name" Class="_comment" pos="1386,3330,0"/>
+      <Node Id="1487" Class="String:Concat" pos="1764,3474,0">
+       <Inputs String1="" String2="Score"/>
+      </Node>
+      <Node Id="1489" Class="Module:Call_get_difficulty_name" pos="1386,3348,0">
+       <Inputs entityId="0" GlobalController="0" InstanceID="-1" ContinuousInput="0" ContinuousOutput="0" intCurrentDifficulty="0"/>
+      </Node>
+      <Node Id="1491" Name="try_to_open_existing_XML_file" Class="_comment" pos="1980,3420,0"/>
+      <Node Id="1492" Name="don&apos;t_trigger_on_every_bump" Class="_comment" pos="3096,72,0"/>
+      <Node Id="1493" Name="display_message_about_score_on_right" Class="_comment" pos="3618,2538,0"/>
+      <Node Id="1494" Name="=_XML_child_name" Class="_comment" pos="1278,-1764,0"/>
+      <Node Id="1496" Name="than_the_current_score?" Class="_comment" pos="2628,3528,0"/>
+      <Node Id="1497" Name="level_name_+_msg_+_score" Class="_comment" pos="2556,3384,0"/>
+      <Node Id="1498" Name="no_saved_high_score_yet" Class="_comment" pos="2934,3096,0"/>
+      <Node Id="1500" Class="Animations:PlayAnimation" pos="-252,-144,0" EntityGUID="3963fa1a-b1f8-2d05-cef3-a00b8ab0a205">
+       <Inputs entityId="0" anim_Animation="flappy_fly_loop" BlendInTime="0.2" Layer="0" Loop="0" StayOnLastFrame="0" ForceUpdate="1" PauseAnimGraph="0" ControlMovement="0" AlmostDonePercentage="0.85" PlaybackSpeedMultiplier="1"/>
+      </Node>
+      <Node Id="1504" Class="Animations:PlayAnimation" pos="108,-144,0" EntityGUID="3963fa1a-b1f8-2d05-cef3-a00b8ab0a205">
+       <Inputs entityId="0" anim_Animation="flappy_idle" BlendInTime="0.2" Layer="0" Loop="0" StayOnLastFrame="0" ForceUpdate="1" PauseAnimGraph="0" ControlMovement="0" AlmostDonePercentage="0.85" PlaybackSpeedMultiplier="1"/>
+      </Node>
+      <Node Id="1505" Name="flap_on_jump_key" Class="_comment" pos="-252,-162,0"/>
+      <Node Id="1506" Name="idle_when_falling_(not_jumping)" Class="_comment" pos="108,-162,0"/>
+      <Node Id="1507" Name="on_game_start," Class="_comment" pos="2988,-1098,0"/>
+      <Node Id="1509" Class="Inventory:EquipPackAdd" pos="-1008,18,0">
+       <Inputs entityId="0" equip_Pack="Empty" Add="0" SelectPrimary="0"/>
+      </Node>
+      <Node Id="1510" Name="bird_behavior" Class="_commentbox" pos="-576,-391.25684,0">
+       <Inputs TextSize="1" Color="0.552011,0.730461,0.846873" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1026" Height="522"/>
+       <NodeSize Width="1026" Height="734.17255"/>
+      </Node>
+      <Node Id="1511" Name="Flappy_Boid_version_F" Class="_commentbox" pos="-1854,-2681.6038,0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="11880" Height="18"/>
+       <NodeSize Width="11880" Height="230.17256"/>
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="8" nodeOut="2" portIn="Set" portOut="output" enabled="1"/>
+      <Edge nodeIn="9" nodeOut="2" portIn="Set" portOut="output" enabled="1"/>
+      <Edge nodeIn="11" nodeOut="2" portIn="Enable" portOut="output" enabled="1"/>
+      <Edge nodeIn="14" nodeOut="2" portIn="Spawn" portOut="output" enabled="1"/>
+      <Edge nodeIn="26" nodeOut="2" portIn="Enable" portOut="output" enabled="1"/>
+      <Edge nodeIn="472" nodeOut="2" portIn="Trigger" portOut="output" enabled="1"/>
+      <Edge nodeIn="692" nodeOut="2" portIn="Trigger" portOut="output" enabled="1"/>
+      <Edge nodeIn="868" nodeOut="2" portIn="Set" portOut="output" enabled="1"/>
+      <Edge nodeIn="1447" nodeOut="2" portIn="Set" portOut="output" enabled="1"/>
+      <Edge nodeIn="1452" nodeOut="2" portIn="Disable" portOut="output" enabled="1"/>
+      <Edge nodeIn="1453" nodeOut="2" portIn="Disable" portOut="output" enabled="1"/>
+      <Edge nodeIn="1454" nodeOut="2" portIn="Disable" portOut="output" enabled="1"/>
+      <Edge nodeIn="1455" nodeOut="2" portIn="Disable" portOut="output" enabled="1"/>
+      <Edge nodeIn="18" nodeOut="14" portIn="Enable" portOut="Spawn" enabled="1"/>
+      <Edge nodeIn="1509" nodeOut="14" portIn="Trigger" portOut="Spawn" enabled="1"/>
+      <Edge nodeIn="26" nodeOut="24" portIn="entityId" portOut="entityId" enabled="1"/>
+      <Edge nodeIn="1509" nodeOut="24" portIn="entityId" portOut="entityId" enabled="1"/>
+      <Edge nodeIn="22" nodeOut="26" portIn="activate" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="653" nodeOut="26" portIn="Stop" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="1500" nodeOut="26" portIn="Start" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="39" nodeOut="31" portIn="in1" portOut="Enter" enabled="1"/>
+      <Edge nodeIn="1392" nodeOut="31" portIn="Call" portOut="Enter" enabled="1"/>
+      <Edge nodeIn="39" nodeOut="33" portIn="in2" portOut="Enter" enabled="1"/>
+      <Edge nodeIn="1396" nodeOut="33" portIn="Call" portOut="Enter" enabled="1"/>
+      <Edge nodeIn="39" nodeOut="35" portIn="in3" portOut="Enter" enabled="1"/>
+      <Edge nodeIn="1399" nodeOut="35" portIn="Call" portOut="Enter" enabled="1"/>
+      <Edge nodeIn="39" nodeOut="37" portIn="in4" portOut="Enter" enabled="1"/>
+      <Edge nodeIn="1402" nodeOut="37" portIn="Call" portOut="Enter" enabled="1"/>
+      <Edge nodeIn="43" nodeOut="39" portIn="Trigger" portOut="out" enabled="1"/>
+      <Edge nodeIn="44" nodeOut="39" portIn="Trigger" portOut="out" enabled="1"/>
+      <Edge nodeIn="45" nodeOut="40" portIn="A" portOut="Velocity_Vertical" enabled="1"/>
+      <Edge nodeIn="49" nodeOut="43" portIn="in2" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="438" nodeOut="45" portIn="x" portOut="out" enabled="1"/>
+      <Edge nodeIn="943" nodeOut="48" portIn="Call" portOut="Out" enabled="1"/>
+      <Edge nodeIn="943" nodeOut="48" portIn="text" portOut="Out" enabled="1"/>
+      <Edge nodeIn="1485" nodeOut="48" portIn="Show" portOut="Out" enabled="0"/>
+      <Edge nodeIn="1485" nodeOut="48" portIn="message" portOut="Out" enabled="1"/>
+      <Edge nodeIn="48" nodeOut="49" portIn="Set" portOut="out" enabled="1"/>
+      <Edge nodeIn="48" nodeOut="49" portIn="String2" portOut="out" enabled="1"/>
+      <Edge nodeIn="1445" nodeOut="50" portIn="Trigger" portOut="output" enabled="1"/>
+      <Edge nodeIn="484" nodeOut="58" portIn="In" portOut="IdA" enabled="1"/>
+      <Edge nodeIn="490" nodeOut="58" portIn="Trigger" portOut="IdA" enabled="1"/>
+      <Edge nodeIn="58" nodeOut="72" portIn="AddListener" portOut="Id" enabled="1"/>
+      <Edge nodeIn="72" nodeOut="73" portIn="Get" portOut="output" enabled="1"/>
+      <Edge nodeIn="107" nodeOut="99" portIn="A" portOut="pos" enabled="1"/>
+      <Edge nodeIn="925" nodeOut="99" portIn="A" portOut="pos" enabled="1"/>
+      <Edge nodeIn="101" nodeOut="107" portIn="Destination" portOut="out" enabled="1"/>
+      <Edge nodeIn="396" nodeOut="107" portIn="In" portOut="out" enabled="1"/>
+      <Edge nodeIn="101" nodeOut="110" portIn="Stop" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="396" nodeOut="110" portIn="Open" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="396" nodeOut="110" portIn="Close" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="922" nodeOut="110" portIn="Stop" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="926" nodeOut="110" portIn="Open" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="926" nodeOut="110" portIn="Close" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="936" nodeOut="110" portIn="Get" portOut="Equal True" enabled="0"/>
+      <Edge nodeIn="114" nodeOut="118" portIn="Destination" portOut="out" enabled="1"/>
+      <Edge nodeIn="134" nodeOut="118" portIn="in" portOut="out" enabled="1"/>
+      <Edge nodeIn="118" nodeOut="125" portIn="A" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="114" nodeOut="134" portIn="Start" portOut="out" enabled="1"/>
+      <Edge nodeIn="137" nodeOut="134" portIn="Start" portOut="out" enabled="1"/>
+      <Edge nodeIn="501" nodeOut="134" portIn="Play" portOut="out" enabled="1"/>
+      <Edge nodeIn="853" nodeOut="259" portIn="Trigger" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="290" nodeOut="286" portIn="in1" portOut="Enter" enabled="1"/>
+      <Edge nodeIn="290" nodeOut="288" portIn="in2" portOut="Enter" enabled="1"/>
+      <Edge nodeIn="292" nodeOut="290" portIn="Trigger" portOut="out" enabled="1"/>
+      <Edge nodeIn="101" nodeOut="396" portIn="Start" portOut="Out" enabled="1"/>
+      <Edge nodeIn="26" nodeOut="426" portIn="Disable" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="1017" nodeOut="426" portIn="Hide" portOut="Out" enabled="1"/>
+      <Edge nodeIn="125" nodeOut="429" portIn="Get" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="648" nodeOut="429" portIn="in" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="1334" nodeOut="429" portIn="Trigger" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="439" nodeOut="438" portIn="Destination" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="439" nodeOut="438" portIn="Start" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="60" nodeOut="484" portIn="Trigger" portOut="Out" enabled="1"/>
+      <Edge nodeIn="461" nodeOut="484" portIn="Play" portOut="Out" enabled="1"/>
+      <Edge nodeIn="624" nodeOut="484" portIn="in" portOut="Out" enabled="1"/>
+      <Edge nodeIn="493" nodeOut="490" portIn="In" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="484" nodeOut="493" portIn="Close" portOut="false" enabled="1"/>
+      <Edge nodeIn="484" nodeOut="493" portIn="Open" portOut="true" enabled="1"/>
+      <Edge nodeIn="863" nodeOut="501" portIn="Trigger" portOut="Done" enabled="1"/>
+      <Edge nodeIn="466" nodeOut="624" portIn="Play" portOut="out" enabled="1"/>
+      <Edge nodeIn="58" nodeOut="630" portIn="RemoveListener" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="123" nodeOut="648" portIn="Enable" portOut="out" enabled="1"/>
+      <Edge nodeIn="131" nodeOut="648" portIn="Set" portOut="out" enabled="1"/>
+      <Edge nodeIn="701" nodeOut="653" portIn="Value" portOut="Elapsed" enabled="1"/>
+      <Edge nodeIn="716" nodeOut="653" portIn="In" portOut="Stopped" enabled="1"/>
+      <Edge nodeIn="711" nodeOut="658" portIn="in1" portOut="true" enabled="1"/>
+      <Edge nodeIn="671" nodeOut="666" portIn="set" portOut="true" enabled="1"/>
+      <Edge nodeIn="462" nodeOut="670" portIn="Play" portOut="out" enabled="1"/>
+      <Edge nodeIn="699" nodeOut="670" portIn="in5" portOut="out" enabled="1"/>
+      <Edge nodeIn="660" nodeOut="671" portIn="Play" portOut="out" enabled="1"/>
+      <Edge nodeIn="699" nodeOut="671" portIn="in2" portOut="out" enabled="1"/>
+      <Edge nodeIn="673" nodeOut="672" portIn="set" portOut="true" enabled="1"/>
+      <Edge nodeIn="662" nodeOut="673" portIn="Play" portOut="out" enabled="1"/>
+      <Edge nodeIn="699" nodeOut="673" portIn="in3" portOut="out" enabled="1"/>
+      <Edge nodeIn="675" nodeOut="674" portIn="set" portOut="true" enabled="1"/>
+      <Edge nodeIn="664" nodeOut="675" portIn="Play" portOut="out" enabled="1"/>
+      <Edge nodeIn="699" nodeOut="675" portIn="in4" portOut="out" enabled="1"/>
+      <Edge nodeIn="711" nodeOut="677" portIn="in2" portOut="true" enabled="1"/>
+      <Edge nodeIn="653" nodeOut="699" portIn="Start" portOut="out" enabled="1"/>
+      <Edge nodeIn="658" nodeOut="710" portIn="In" portOut="Out" enabled="0"/>
+      <Edge nodeIn="666" nodeOut="710" portIn="In" portOut="Out" enabled="0"/>
+      <Edge nodeIn="672" nodeOut="710" portIn="In" portOut="Out" enabled="0"/>
+      <Edge nodeIn="674" nodeOut="710" portIn="In" portOut="Out" enabled="0"/>
+      <Edge nodeIn="677" nodeOut="710" portIn="In" portOut="Out" enabled="0"/>
+      <Edge nodeIn="670" nodeOut="711" portIn="set" portOut="out" enabled="1"/>
+      <Edge nodeIn="716" nodeOut="714" portIn="Open" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="716" nodeOut="714" portIn="Close" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="701" nodeOut="716" portIn="Trigger" portOut="Out" enabled="1"/>
+      <Edge nodeIn="699" nodeOut="719" portIn="in1" portOut="output" enabled="1"/>
+      <Edge nodeIn="259" nodeOut="845" portIn="Trigger" portOut="Port1" enabled="1"/>
+      <Edge nodeIn="847" nodeOut="845" portIn="Trigger" portOut="Port2" enabled="1"/>
+      <Edge nodeIn="849" nodeOut="845" portIn="Trigger" portOut="Port3" enabled="1"/>
+      <Edge nodeIn="851" nodeOut="845" portIn="Trigger" portOut="Port4" enabled="1"/>
+      <Edge nodeIn="855" nodeOut="847" portIn="Trigger" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="857" nodeOut="849" portIn="Trigger" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="859" nodeOut="851" portIn="Trigger" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="922" nodeOut="925" portIn="Destination" portOut="out" enabled="1"/>
+      <Edge nodeIn="926" nodeOut="925" portIn="In" portOut="out" enabled="1"/>
+      <Edge nodeIn="922" nodeOut="926" portIn="Start" portOut="Out" enabled="0"/>
+      <Edge nodeIn="408" nodeOut="936" portIn="Destination" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="408" nodeOut="936" portIn="Start" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="941" nodeOut="948" portIn="show" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="941" nodeOut="948" portIn="hide" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="1019" nodeOut="1022" portIn="Set" portOut="onHide" enabled="1"/>
+      <Edge nodeIn="1104" nodeOut="1022" portIn="Execute" portOut="onHide" enabled="1"/>
+      <Edge nodeIn="1191" nodeOut="1022" portIn="Execute" portOut="onHide" enabled="0"/>
+      <Edge nodeIn="1022" nodeOut="1025" portIn="hide" portOut="onEvent" enabled="1"/>
+      <Edge nodeIn="1027" nodeOut="1025" portIn="Value" portOut="difficulty" enabled="1"/>
+      <Edge nodeIn="1027" nodeOut="1025" portIn="Trigger" portOut="onEvent" enabled="1"/>
+      <Edge nodeIn="845" nodeOut="1027" portIn="Index" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="1022" nodeOut="1063" portIn="show" portOut="OnSet" enabled="1"/>
+      <Edge nodeIn="1020" nodeOut="1090" portIn="Set" portOut="output" enabled="1"/>
+      <Edge nodeIn="1063" nodeOut="1090" portIn="set" portOut="output" enabled="1"/>
+      <Edge nodeIn="1148" nodeOut="1104" portIn="Trigger" portOut="Success" enabled="1"/>
+      <Edge nodeIn="1107" nodeOut="1106" portIn="Execute" portOut="Success" enabled="1"/>
+      <Edge nodeIn="1182" nodeOut="1106" portIn="Call" portOut="Fail" enabled="1"/>
+      <Edge nodeIn="1186" nodeOut="1106" portIn="Set" portOut="Fail" enabled="1"/>
+      <Edge nodeIn="1109" nodeOut="1107" portIn="String2" portOut="Value" enabled="1"/>
+      <Edge nodeIn="1134" nodeOut="1107" portIn="A" portOut="Value" enabled="1"/>
+      <Edge nodeIn="1190" nodeOut="1107" portIn="Set" portOut="Success" enabled="1"/>
+      <Edge nodeIn="1140" nodeOut="1109" portIn="Call" portOut="Out" enabled="1"/>
+      <Edge nodeIn="1140" nodeOut="1109" portIn="text" portOut="Out" enabled="1"/>
+      <Edge nodeIn="1134" nodeOut="1132" portIn="B" portOut="Out" enabled="1"/>
+      <Edge nodeIn="1142" nodeOut="1134" portIn="Set" portOut="true" enabled="1"/>
+      <Edge nodeIn="1144" nodeOut="1140" portIn="in1" portOut="OnCall" enabled="1"/>
+      <Edge nodeIn="1144" nodeOut="1141" portIn="in2" portOut="OnCall" enabled="1"/>
+      <Edge nodeIn="1141" nodeOut="1142" portIn="Call" portOut="Out" enabled="1"/>
+      <Edge nodeIn="1141" nodeOut="1142" portIn="text" portOut="Out" enabled="1"/>
+      <Edge nodeIn="1143" nodeOut="1144" portIn="show" portOut="out" enabled="1"/>
+      <Edge nodeIn="1381" nodeOut="1148" portIn="Call" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="1381" nodeOut="1148" portIn="intCurrentDifficulty" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="1106" nodeOut="1161" portIn="Execute" portOut="Out" enabled="1"/>
+      <Edge nodeIn="1106" nodeOut="1161" portIn="Name" portOut="Out" enabled="1"/>
+      <Edge nodeIn="1182" nodeOut="1186" portIn="text" portOut="Out" enabled="1"/>
+      <Edge nodeIn="1109" nodeOut="1190" portIn="Set" portOut="Out" enabled="1"/>
+      <Edge nodeIn="1109" nodeOut="1190" portIn="String1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="1206" nodeOut="1191" portIn="Trigger" portOut="Success" enabled="1"/>
+      <Edge nodeIn="1193" nodeOut="1192" portIn="Execute" portOut="Success" enabled="1"/>
+      <Edge nodeIn="1382" nodeOut="1192" portIn="Show" portOut="Fail" enabled="1"/>
+      <Edge nodeIn="1194" nodeOut="1193" portIn="String2" portOut="Value" enabled="1"/>
+      <Edge nodeIn="1198" nodeOut="1193" portIn="A" portOut="Value" enabled="1"/>
+      <Edge nodeIn="1217" nodeOut="1193" portIn="Set" portOut="Success" enabled="1"/>
+      <Edge nodeIn="1195" nodeOut="1194" portIn="Show" portOut="Out" enabled="1"/>
+      <Edge nodeIn="1195" nodeOut="1194" portIn="message" portOut="Out" enabled="1"/>
+      <Edge nodeIn="1198" nodeOut="1197" portIn="B" portOut="Out" enabled="0"/>
+      <Edge nodeIn="1195" nodeOut="1198" portIn="Hide" portOut="true" enabled="1"/>
+      <Edge nodeIn="1200" nodeOut="1198" portIn="Show" portOut="true" enabled="1"/>
+      <Edge nodeIn="1382" nodeOut="1198" portIn="Hide" portOut="true" enabled="1"/>
+      <Edge nodeIn="1489" nodeOut="1206" portIn="Call" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="1489" nodeOut="1206" portIn="intCurrentDifficulty" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="1194" nodeOut="1217" portIn="Set" portOut="Out" enabled="1"/>
+      <Edge nodeIn="1194" nodeOut="1217" portIn="String1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="1314" nodeOut="1313" portIn="Execute" portOut="Success" enabled="1"/>
+      <Edge nodeIn="1317" nodeOut="1314" portIn="Trigger" portOut="Success" enabled="1"/>
+      <Edge nodeIn="1342" nodeOut="1316" portIn="in2" portOut="Success" enabled="1"/>
+      <Edge nodeIn="1316" nodeOut="1317" portIn="Execute" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="1316" nodeOut="1317" portIn="Value" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="1313" nodeOut="1321" portIn="Execute" portOut="Fail" enabled="1"/>
+      <Edge nodeIn="1322" nodeOut="1321" portIn="Execute" portOut="Success" enabled="1"/>
+      <Edge nodeIn="1323" nodeOut="1322" portIn="Execute" portOut="Success" enabled="1"/>
+      <Edge nodeIn="1324" nodeOut="1323" portIn="B" portOut="Value" enabled="1"/>
+      <Edge nodeIn="1325" nodeOut="1323" portIn="Trigger" portOut="Success" enabled="1"/>
+      <Edge nodeIn="1330" nodeOut="1324" portIn="Execute" portOut="false" enabled="1"/>
+      <Edge nodeIn="1324" nodeOut="1325" portIn="A" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="1330" nodeOut="1325" portIn="Value" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="1342" nodeOut="1330" portIn="in1" portOut="Success" enabled="1"/>
+      <Edge nodeIn="1379" nodeOut="1334" portIn="Call" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="1379" nodeOut="1334" portIn="intCurrentDifficulty" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="1332" nodeOut="1342" portIn="Execute" portOut="out" enabled="1"/>
+      <Edge nodeIn="1314" nodeOut="1370" portIn="Name" portOut="Out" enabled="1"/>
+      <Edge nodeIn="1321" nodeOut="1370" portIn="Execute" portOut="Out" enabled="1"/>
+      <Edge nodeIn="1322" nodeOut="1370" portIn="Name" portOut="Out" enabled="1"/>
+      <Edge nodeIn="1370" nodeOut="1379" portIn="Set" portOut="Done" enabled="1"/>
+      <Edge nodeIn="1370" nodeOut="1379" portIn="String1" portOut="strCurrentDifficulty" enabled="1"/>
+      <Edge nodeIn="1161" nodeOut="1381" portIn="Set" portOut="Done" enabled="1"/>
+      <Edge nodeIn="1161" nodeOut="1381" portIn="String1" portOut="strCurrentDifficulty" enabled="1"/>
+      <Edge nodeIn="1190" nodeOut="1381" portIn="String1" portOut="strCurrentDifficulty" enabled="1"/>
+      <Edge nodeIn="1392" nodeOut="1394" portIn="entStar" portOut="Id" enabled="1"/>
+      <Edge nodeIn="1392" nodeOut="1395" portIn="entParticleEffect" portOut="Id" enabled="1"/>
+      <Edge nodeIn="1396" nodeOut="1397" portIn="entStar" portOut="Id" enabled="1"/>
+      <Edge nodeIn="1396" nodeOut="1398" portIn="entParticleEffect" portOut="Id" enabled="1"/>
+      <Edge nodeIn="1399" nodeOut="1400" portIn="entStar" portOut="Id" enabled="1"/>
+      <Edge nodeIn="1399" nodeOut="1401" portIn="entParticleEffect" portOut="Id" enabled="1"/>
+      <Edge nodeIn="1402" nodeOut="1403" portIn="entStar" portOut="Id" enabled="1"/>
+      <Edge nodeIn="1402" nodeOut="1404" portIn="entParticleEffect" portOut="Id" enabled="1"/>
+      <Edge nodeIn="49" nodeOut="1445" portIn="in1" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="1192" nodeOut="1487" portIn="Execute" portOut="Out" enabled="1"/>
+      <Edge nodeIn="1192" nodeOut="1487" portIn="Name" portOut="Out" enabled="1"/>
+      <Edge nodeIn="1217" nodeOut="1489" portIn="String1" portOut="strCurrentDifficulty" enabled="1"/>
+      <Edge nodeIn="1487" nodeOut="1489" portIn="Set" portOut="Done" enabled="1"/>
+      <Edge nodeIn="1487" nodeOut="1489" portIn="String1" portOut="strCurrentDifficulty" enabled="1"/>
+      <Edge nodeIn="1504" nodeOut="1500" portIn="Start" portOut="Done" enabled="1"/>
+     </Edges>
+     <GraphTokens>
+      <Token Name="fltTimeBetweenJumps" Type="2"/>
+      <Token Name="intCollisions" Type="1"/>
+     </GraphTokens>
+    </FlowGraph>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

@@ -1,0 +1,8 @@
+<AssetMetadata version="0" type="Xml" guid="db91e1ac-355e-c597-1ad9-20ae809df4a3">
+ <Files>
+  <File path="flappyaudio.xml"/>
+ </Files>
+ <Details>
+  <Detail name="rootTag">AudioSystemData</Detail>
+ </Details>
+</AssetMetadata>

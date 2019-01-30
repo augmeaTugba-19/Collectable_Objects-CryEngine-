@@ -1,0 +1,102 @@
+   Checking resource compiler.
+   Resource compiler check passed.
+   Exporter build created on Jan 11 2016
+   Using Microsoft (tm) C++ Standard Library implementation
+   Release build.
+   Bit count == 64.
+   Application path: C:\Program Files\Autodesk\Maya2016\bin\maya.exe
+   Exporter path: C:\Program Files (x86)\Steam\steamapps\common\CRYENGINE\Tools\maya\plugins\MayaCryExport22016_64.mll
+   ExportCompressedCOLLADA key: 1
+   Export begun at 16:39:44 on Tue, 19/06/2018
+   Exporting to file 'C:\Users\collin\Desktop\flappyPlayer\flappy_idle.dae.zip'
+   Calling RC to generate uncompressed CAF file: C:\Users\collin\Desktop\flappyPlayer\flappy_idle.dae.zip
+   ResourceCompiler  64-bit
+   Platform support: PC
+   Version 1.1.8.6  Jan 11 2016 01:42:26
+   
+   Copyright (c) 2001-2015 Crytek GmbH. All rights reserved.
+   
+   Exe directory:
+     "C:\Program Files (x86)\Steam\steamapps\common\CRYENGINE\Tools\rc\"
+   Temp directory:
+     "C:\Users\collin\AppData\Local\Temp\"
+   Current directory:
+     "C:\Program Files (x86)\Steam\steamapps\common\CRYENGINE\Tools\rc\"
+   
+   
+   Command line:
+     "C:\Program Files (x86)\Steam\steamapps\common\CRYENGINE/Tools/rc/rc.exe"
+     "C:\Users\collin\Desktop\flappyPlayer\flappy_idle.dae.zip"
+     "/userdialog=1"
+     "/refresh"
+   
+   Platforms specified in rc.ini:
+   
+   Started at: Tue Jun 19 16:39:44 2018
+   Memory: working set 4.8Mb (peak 4.8Mb), pagefile 1.3Mb (peak 1.3Mb)
+   
+   Loading "C:\Program Files (x86)\Steam\steamapps\common\CRYENGINE\Tools\rc\rc.ini"
+   Loaded "C:\Program Files (x86)\Steam\steamapps\common\CRYENGINE\Tools\rc\rc.ini"
+   
+   Platform (/p) not specified, defaulting to 'pc'.
+   
+   Initializing pak management
+   
+   Loading compiler plug-ins (ResourceCompiler*.dll)
+   Searching for C:\Program Files (x86)\Steam\steamapps\common\CRYENGINE\Tools\rc\ResourceCompiler*.dll
+   Loading "C:\Program Files (x86)\Steam\steamapps\common\CRYENGINE\Tools\rc\ResourceCompilerABC.dll"
+   Loaded "ResourceCompilerABC.dll"
+   Registered AlembicCompiler ("abc")
+   Loading "C:\Program Files (x86)\Steam\steamapps\common\CRYENGINE\Tools\rc\ResourceCompilerFBX.dll"
+   Loaded "ResourceCompilerFBX.dll"
+   Registered FbxConverter ("fbx")
+   Loading "C:\Program Files (x86)\Steam\steamapps\common\CRYENGINE\Tools\rc\ResourceCompilerImage.dll"
+   Loaded "ResourceCompilerImage.dll"
+   Registered ImageConvertor ("tif", "hdr")
+   Registered TextureSplitter ("dds")
+   Loading "C:\Program Files (x86)\Steam\steamapps\common\CRYENGINE\Tools\rc\ResourceCompilerPC.dll"
+   Loaded "ResourceCompilerPC.dll"
+   Registered StatCGFCompiler ("cga", "cgf", "i_cgf")
+   Registered ChunkCompiler ("chunk")
+   Registered LuaCompiler ("lua")
+   Registered CharacterCompiler ("chr", "cdf", "skin")
+   Registered AnimationConvertor ("caf", "i_caf", "cba")
+   Registered ColladaCompiler ("dae", "dae.zip")
+   Loading "C:\Program Files (x86)\Steam\steamapps\common\CRYENGINE\Tools\rc\ResourceCompilerXML.dll"
+   Loaded "ResourceCompilerXML.dll"
+   Registered XMLConverter ("xml")
+   
+   Loading zip & pak compiler module
+   Registered zip & pak compiler ("pak", "zip")
+   
+   Memory: working set 7.0Mb (peak 7.0Mb), pagefile 3.6Mb (peak 3.6Mb)
+   
+   CPU cores: 4 available (4 in system).
+   Logical processors: 8 available (8 in system).
+   /threads was not specified. Using up to 1 thread.
+   
+   Memory: working set 7.1Mb (peak 7.1Mb), pagefile 3.6Mb (peak 3.6Mb)
+   Spawning 1 thread
+   
+   ---------------------------------
+   File='flappy_idle.dae.zip'
+   Loading XML...
+   Finished loading XML.
+   
+   
+   
+   Processing 'CryExportNode_flappy_idle'
+   
+   Finished loading 'C:\Users\collin\Desktop\flappyPlayer\flappy_idle.dae.zip'
+   
+   
+   1 file processed in 0.0 sec.
+   
+   Memory: working set 8.0Mb (peak 9.1Mb), pagefile 3.8Mb (peak 6.0Mb)
+   
+   Finished at: Tue Jun 19 16:39:44 2018
+   RC finished: C:\Users\collin\Desktop\flappyPlayer\flappy_idle.dae.zip
+   CompressCAFs not set or set to 1 - compressing CAFs
+E: Unable to find CBA file for file "C:\Users\collin\Desktop\flappyPlayer\flappy_idle.caf" (looked for a root game directory that contains a relative path of "Animations/Animations.cba"
+   OptimizeAssets not set or set to 1 - optimizing geometry
+   Export finished at 16:39:44 on Tue, 19/06/2018

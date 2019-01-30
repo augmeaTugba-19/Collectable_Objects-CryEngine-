@@ -1,0 +1,8 @@
+<AssetMetadata version="0" type="Xml" guid="1bea73e2-5058-ad32-bab5-4b1113a9c53e">
+ <Files>
+  <File path="tst.xml"/>
+ </Files>
+ <Details>
+  <Detail name="rootTag">EnvironmentPreset</Detail>
+ </Details>
+</AssetMetadata>

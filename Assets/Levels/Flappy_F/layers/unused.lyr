@@ -1,0 +1,18 @@
+<ObjectLayer>
+ <Layer Name="UNUSED" FullName="UNUSED" GUID="db4577a5-3a1d-530e-8ed2-f598a4ffa94d" Hidden="0" Frozen="0" Expanded="0" Type="0" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1" Color="4671303" Timestamp="1545302662">
+  <LayerObjects>
+   <Object Type="Entity" Layer="UNUSED" LayerGUID="db4577a5-3a1d-530e-8ed2-f598a4ffa94d" Id="90f17e78-6683-1d52-b5c2-042fe5bb7fc2" Name="bgBox" Pos="565.5,440,32" Rotate="1,0,0,0" Scale="2.4999998,1,2.4999998" ColorRGB="65535" UseCustomLevelLayerColor="0" Flags="2" Material="objects/props/flappy_boid/flappycloudbg" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="BasicEntity" HasEntity="1">
+    <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/props/flappy_boid/background_box.cgf" bPickable="1" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <MultiplayerOptions bNetworked="0"/>
+     <Physics Density="-1" Mass="-1" bPhysicalize="1" bPushableByPlayers="0" bRigidBody="1">
+      <CollisionFiltering>
+       <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_large_kickable="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+       <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_large_kickable="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+      </CollisionFiltering>
+     </Physics>
+    </Properties>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

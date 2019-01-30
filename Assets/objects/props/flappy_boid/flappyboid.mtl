@@ -1,0 +1,7 @@
+<Material MtlFlags="524288" Shader="ReferenceImage" GenMask="0" StringGenMask="" SurfaceType="mat_concrete" MatTemplate="" Diffuse="1,1,1" Specular="0.021219011,0.021219011,0.021219011" Opacity="1" Shininess="255" CloakAmount="0" vertModifType="0" LayerAct="1">
+ <Textures>
+  <Texture Map="Diffuse" File="./cloudtiling_diff.tif">
+   <TexMod TexMod_RotateType="0" TexMod_TexGenType="0" TexMod_bTexGenProjected="0" TileU="1.5" TexMod_UOscillatorType="2" TexMod_UOscillatorRate="0.2" TexMod_UOscillatorAmplitude="0.30000001" TileV="1.8" OffsetV="0.1"/>
+  </Texture>
+ </Textures>
+</Material>

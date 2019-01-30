@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Mesh" guid="63d8fa70-66ef-bbf8-4935-0189fa557ee3">
+ <Files>
+  <File path="ScoreStarColorful.cgf"/>
+ </Files>
+ <Details>
+  <Detail name="materialCount">1</Detail>
+  <Detail name="triangleCount">26</Detail>
+  <Detail name="vertexCount">70</Detail>
+  <Detail name="16BitPrecision">false</Detail>
+ </Details>
+ <Dependencies>
+  <Path usageCount="1">materials/generic/glass/glass_tintcolormap.mtl</Path>
+ </Dependencies>
+</AssetMetadata>

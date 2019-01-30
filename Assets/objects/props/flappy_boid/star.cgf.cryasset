@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Mesh" guid="99b3e96a-7444-1c0a-825d-0f8fbed50b63">
+ <Files>
+  <File path="star.cgf"/>
+ </Files>
+ <Details>
+  <Detail name="materialCount">1</Detail>
+  <Detail name="triangleCount">26</Detail>
+  <Detail name="vertexCount">70</Detail>
+  <Detail name="16BitPrecision">false</Detail>
+ </Details>
+ <Dependencies>
+  <Path usageCount="1">materials/generic/glass/glass_frosted_red.mtl</Path>
+ </Dependencies>
+</AssetMetadata>

@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Mesh" guid="00541ad4-8b2a-4dda-45d1-4aa93fdbad92">
+ <Files>
+  <File path="pipe_edgy_large.cgf"/>
+ </Files>
+ <Details>
+  <Detail name="materialCount">10</Detail>
+  <Detail name="triangleCount">7344</Detail>
+  <Detail name="vertexCount">14688</Detail>
+  <Detail name="16BitPrecision">false</Detail>
+ </Details>
+ <Dependencies>
+  <Path usageCount="1">./pipe.mtl</Path>
+ </Dependencies>
+</AssetMetadata>

@@ -1,0 +1,12 @@
+<AssetMetadata version="0" type="Material" guid="f692cd15-fb04-b88a-afa4-90da63df4d2f">
+ <Files>
+  <File path="flappycloudbg.mtl"/>
+ </Files>
+ <Details>
+  <Detail name="subMaterialCount">0</Detail>
+  <Detail name="textureCount">1</Detail>
+ </Details>
+ <Dependencies>
+  <Path usageCount="1">./cloudtiling_diff.dds</Path>
+ </Dependencies>
+</AssetMetadata>

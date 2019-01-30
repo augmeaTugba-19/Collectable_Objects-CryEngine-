@@ -1,0 +1,8 @@
+<AssetMetadata version="0" type="Xml" guid="90dc6cb8-3ec3-c68f-d9d6-3669096d678e">
+ <Files>
+  <File path="uiFlappyScore.xml"/>
+ </Files>
+ <Details>
+  <Detail name="rootTag">UIElements</Detail>
+ </Details>
+</AssetMetadata>

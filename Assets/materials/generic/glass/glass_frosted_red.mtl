@@ -1,0 +1,4 @@
+<Material MtlFlags="526336" Shader="Glass" GenMask="20" StringGenMask="%BLUR_REFRACTION" SurfaceType="mat_grass" MatTemplate="" Diffuse="0,0,0" Specular="0.82278591,0.22322798,0.0036765076" Emittance="0.76815128,0.0080231931,0.03954624,0" Opacity="1" Shininess="200" CloakAmount="0" vertModifType="0" LayerAct="1">
+ <Textures />
+ <PublicParams BumpMapTile="1" TintColor="0.49693301,0.49693301,0.49693301" BlurAmount="1" TintCloudiness="0.0099999998" BackLightScale="0.25" BumpScale="0.1"/>
+</Material>

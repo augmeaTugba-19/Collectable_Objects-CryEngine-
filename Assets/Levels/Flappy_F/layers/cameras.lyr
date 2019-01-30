@@ -1,0 +1,170 @@
+<ObjectLayer>
+ <Layer Name="cameras" FullName="cameras" GUID="907e1bee-ce30-1bb2-fe14-7411b83f1123" Hidden="0" Frozen="0" Expanded="0" Type="0" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="0" Color="16776960" Timestamp="1545302662">
+  <LayerObjects>
+   <Object Type="EntityWithComponent" Layer="cameras" LayerGUID="907e1bee-ce30-1bb2-fe14-7411b83f1123" Id="a292e593-9678-7118-62cf-ac079a0e3dd6" Name="cam_pullback" Pos="470,590,100" Rotate="-4.3711388e-08,0,0,1" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
+    <Properties />
+    <Components>
+     <Component CryXmlVersion="2" TypeGUID="bae91d5c-8cfb-40b2-8397-f5a9eedb9ac4" TypeName="Cry::Audio::DefaultComponents::CListenerComponent" GUID="b3c66c1d-8aeb-212d-c90d-5a2be47c8e81" Name="Listener" UserAdded="true">
+      <Transform>
+       <translation>
+        <position>
+         <element element="0"/>
+         <element element="0"/>
+         <element element="0"/>
+        </position>
+       </translation>
+       <rotation x="0" y="-0" z="0"/>
+       <scale>
+        <element element="1"/>
+        <element element="1"/>
+        <element element="1"/>
+       </scale>
+      </Transform>
+      <properties />
+     </Component>
+     <Component CryXmlVersion="2" TypeGUID="a4cb0508-5f07-46b4-b6d4-ab76bfd550f4" TypeName="Cry::DefaultComponents::CCameraComponent" GUID="1bf1003d-15dd-07e7-9734-4420530484a8" Name="" UserAdded="true">
+      <Transform>
+       <translation>
+        <position>
+         <element element="0"/>
+         <element element="0"/>
+         <element element="0"/>
+        </position>
+       </translation>
+       <rotation x="0" y="-0" z="0"/>
+       <scale>
+        <element element="1"/>
+        <element element="1"/>
+        <element element="1"/>
+       </scale>
+      </Transform>
+      <properties Type="Default" Active="true" NearPlane="0.25" FarPlane="1024" FieldOfView="0.43633232"/>
+     </Component>
+    </Components>
+   </Object>
+   <Object Type="EntityWithComponent" Layer="cameras" LayerGUID="907e1bee-ce30-1bb2-fe14-7411b83f1123" Id="0dae6038-5ad8-74e0-8ea4-19c49c0324e6" Name="FlappyCam" Pos="483,552,100" Rotate="-4.3711388e-08,-6.9388939e-18,-3.0330869e-25,1" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
+    <Properties />
+    <Components>
+     <Component CryXmlVersion="2" TypeGUID="bae91d5c-8cfb-40b2-8397-f5a9eedb9ac4" TypeName="Cry::Audio::DefaultComponents::CListenerComponent" GUID="831d3689-0434-bc97-eaa2-3cbe4700314f" Name="Listener" UserAdded="true">
+      <Transform>
+       <translation>
+        <position>
+         <element element="0"/>
+         <element element="0"/>
+         <element element="0"/>
+        </position>
+       </translation>
+       <rotation x="0" y="-0" z="0"/>
+       <scale>
+        <element element="1"/>
+        <element element="1"/>
+        <element element="1"/>
+       </scale>
+      </Transform>
+      <properties />
+     </Component>
+     <Component CryXmlVersion="2" TypeGUID="a4cb0508-5f07-46b4-b6d4-ab76bfd550f4" TypeName="Cry::DefaultComponents::CCameraComponent" GUID="a99d795a-7e56-1add-16ca-104d9dacf2b5" Name="" UserAdded="true">
+      <Transform>
+       <translation>
+        <position>
+         <element element="0"/>
+         <element element="0"/>
+         <element element="0"/>
+        </position>
+       </translation>
+       <rotation x="0" y="-0" z="0"/>
+       <scale>
+        <element element="1"/>
+        <element element="1"/>
+        <element element="1"/>
+       </scale>
+      </Transform>
+      <properties Type="Default" Active="true" NearPlane="52" FarPlane="54" FieldOfView="0.43633232"/>
+     </Component>
+    </Components>
+   </Object>
+   <Object Type="EntityWithComponent" Layer="cameras" LayerGUID="907e1bee-ce30-1bb2-fe14-7411b83f1123" Id="94e0363a-0a33-a06d-db54-40d4c2407473" Name="diveCam" Pos="483,552,18" Rotate="0.99144489,-0.1305262,1.3850324e-08,1.8234299e-09" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
+    <Properties />
+    <Components>
+     <Component CryXmlVersion="2" TypeGUID="bae91d5c-8cfb-40b2-8397-f5a9eedb9ac4" TypeName="Cry::Audio::DefaultComponents::CListenerComponent" GUID="de79cc49-9942-2421-2d8c-109debfe48f3" Name="Listener" UserAdded="true">
+      <Transform>
+       <translation>
+        <position>
+         <element element="0"/>
+         <element element="0"/>
+         <element element="0"/>
+        </position>
+       </translation>
+       <rotation x="0" y="-0" z="0"/>
+       <scale>
+        <element element="1"/>
+        <element element="1"/>
+        <element element="1"/>
+       </scale>
+      </Transform>
+      <properties />
+     </Component>
+     <Component CryXmlVersion="2" TypeGUID="a4cb0508-5f07-46b4-b6d4-ab76bfd550f4" TypeName="Cry::DefaultComponents::CCameraComponent" GUID="c56b52a4-4bbc-3f80-e01b-85da5f9ac2d8" Name="" UserAdded="true">
+      <Transform>
+       <translation>
+        <position>
+         <element element="0"/>
+         <element element="0"/>
+         <element element="0"/>
+        </position>
+       </translation>
+       <rotation x="0" y="-0" z="0"/>
+       <scale>
+        <element element="1"/>
+        <element element="1"/>
+        <element element="1"/>
+       </scale>
+      </Transform>
+      <properties Type="Default" Active="true" NearPlane="0.25" FarPlane="1024" FieldOfView="1.0471976"/>
+     </Component>
+    </Components>
+   </Object>
+   <Object Type="EntityWithComponent" Layer="cameras" LayerGUID="907e1bee-ce30-1bb2-fe14-7411b83f1123" Id="8178efe1-453d-fd89-8082-87665586ea67" Name="camRearFollow" Pos="514,515,100" Rotate="0.40673661,4.2540277e-10,-1.8940149e-10,0.91354549" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
+    <Properties />
+    <Components>
+     <Component CryXmlVersion="2" TypeGUID="bae91d5c-8cfb-40b2-8397-f5a9eedb9ac4" TypeName="Cry::Audio::DefaultComponents::CListenerComponent" GUID="87d84bd9-8e4e-bf39-aeb1-acf9501629e1" Name="Listener" UserAdded="true">
+      <Transform>
+       <translation>
+        <position>
+         <element element="0"/>
+         <element element="0"/>
+         <element element="0"/>
+        </position>
+       </translation>
+       <rotation x="0" y="-0" z="0"/>
+       <scale>
+        <element element="1"/>
+        <element element="1"/>
+        <element element="1"/>
+       </scale>
+      </Transform>
+      <properties />
+     </Component>
+     <Component CryXmlVersion="2" TypeGUID="a4cb0508-5f07-46b4-b6d4-ab76bfd550f4" TypeName="Cry::DefaultComponents::CCameraComponent" GUID="5c6fff68-d524-02fc-a426-8e5d27eef4cc" Name="" UserAdded="true">
+      <Transform>
+       <translation>
+        <position>
+         <element element="0"/>
+         <element element="0"/>
+         <element element="0"/>
+        </position>
+       </translation>
+       <rotation x="0" y="-0" z="0"/>
+       <scale>
+        <element element="1"/>
+        <element element="1"/>
+        <element element="1"/>
+       </scale>
+      </Transform>
+      <properties Type="Default" Active="true" NearPlane="0.25" FarPlane="1024" FieldOfView="0.43633232"/>
+     </Component>
+    </Components>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

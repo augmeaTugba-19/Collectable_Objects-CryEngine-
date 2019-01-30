@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Mesh" guid="d910e054-82b2-53af-4c5d-b537e3eab8c1">
+ <Files>
+  <File path="background_box.cgf"/>
+ </Files>
+ <Details>
+  <Detail name="materialCount">1</Detail>
+  <Detail name="triangleCount">12</Detail>
+  <Detail name="vertexCount">24</Detail>
+  <Detail name="16BitPrecision">false</Detail>
+ </Details>
+ <Dependencies>
+  <Path usageCount="1">./flappybg.mtl</Path>
+ </Dependencies>
+</AssetMetadata>

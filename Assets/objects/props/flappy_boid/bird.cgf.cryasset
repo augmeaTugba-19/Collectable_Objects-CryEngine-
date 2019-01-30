@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Mesh" guid="1812d8c2-f8ac-2211-df1d-eba6bc300899">
+ <Files>
+  <File path="bird.cgf"/>
+ </Files>
+ <Details>
+  <Detail name="materialCount">1</Detail>
+  <Detail name="triangleCount">968</Detail>
+  <Detail name="vertexCount">2000</Detail>
+  <Detail name="16BitPrecision">false</Detail>
+ </Details>
+ <Dependencies>
+  <Path usageCount="1">materials/generic/metal/metal_red_scratched.mtl</Path>
+ </Dependencies>
+</AssetMetadata>

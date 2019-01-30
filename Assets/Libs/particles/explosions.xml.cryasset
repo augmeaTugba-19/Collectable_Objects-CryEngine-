@@ -1,0 +1,8 @@
+<AssetMetadata version="0" type="Xml" guid="60a3b6c2-7d9a-b5fb-6e15-0015460d8984">
+ <Files>
+  <File path="explosions.xml"/>
+ </Files>
+ <Details>
+  <Detail name="rootTag">ParticleLibrary</Detail>
+ </Details>
+</AssetMetadata>

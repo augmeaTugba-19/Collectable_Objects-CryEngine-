@@ -1,0 +1,11 @@
+<Material MtlFlags="524288" Shader="Illum" GenMask="80400000" StringGenMask="%NORMAL_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_concrete" MatTemplate="" Diffuse="1,1,1" Specular="0.021219011,0.021219011,0.021219011" Opacity="1" Shininess="255" vertModifType="0" LayerAct="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/generic/wood/wood_fine_b_rotten_diff.tif">
+   <TexMod TexMod_RotateType="0" TexMod_TexGenType="0" TexMod_bTexGenProjected="0" TileU="8"/>
+  </Texture>
+  <Texture Map="Bumpmap" File="textures/generic/wood/wood_fine_b_rotten_ddna.tif">
+   <TexMod TexMod_RotateType="0" TexMod_TexGenType="0" TexMod_bTexGenProjected="0" TileU="8"/>
+  </Texture>
+ </Textures>
+ <PublicParams EmittanceMapGamma="1" SSSIndex="0"/>
+</Material>

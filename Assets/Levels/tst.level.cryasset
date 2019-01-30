@@ -28,6 +28,10 @@
   <Path>%engine%/engineassets/textures/grey.dds</Path>
   <Path>%engine%/engineassets/textures/skys/night/half_moon.dds</Path>
   <Path>libs/environmentpresets/levels/tst.xml</Path>
-  <Path>scripts/ai/factions.xml</Path>
+  <Path>particles/pfx1/explosions/flashbang/explode.pfx</Path>
+  <Path>particles/pfx1/explosions/flashbang/explode/audio.pfx</Path>
+  <Path>particles/pfx2/explosion_a.pfx</Path>
+  <Path>particles/pfx2/explosion_glass.pfx</Path>
+  <Path>particles/pfx2/scorestar.pfx</Path>
  </Dependencies>
 </AssetMetadata>

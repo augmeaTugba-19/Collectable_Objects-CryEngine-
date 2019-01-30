@@ -1,0 +1,15 @@
+<Material MtlFlags="524544" vertModifType="0">
+ <SubMaterials>
+  <Material Name="birdColor_SUB" MtlFlags="524416" Shader="Illum" GenMask="80000000" StringGenMask="%SUBSURFACE_SCATTERING" SurfaceType="mat_concrete" MatTemplate="" Diffuse="0.95597351,0,0" Specular="0.50000763,0.50000763,0.50000763" Opacity="1" Shininess="10" vertModifType="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="%engine%/engineassets/textures/white.dds"/>
+   </Textures>
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0"/>
+  </Material>
+  <Material Name="birdProxy_SUB" MtlFlags="524416" Shader="Illum" GenMask="180000000" StringGenMask="%BILLBOARD%SUBSURFACE_SCATTERING" SurfaceType="mat_concrete" MatTemplate="" Diffuse="1,0,1" Specular="0.5,0.5,0.5" Opacity="1" Shininess="10" vertModifType="0" LayerAct="1">
+   <Textures />
+   <PublicParams EmittanceMapGamma="1" SSSIndex="0"/>
+  </Material>
+ </SubMaterials>
+ <PublicParams EmittanceMapGamma="1" SSSIndex="0"/>
+</Material>

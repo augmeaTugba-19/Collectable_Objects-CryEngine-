@@ -1,0 +1,12 @@
+<AssetMetadata version="0" type="Character" guid="4896e995-2e05-48e4-a498-df8bc2c77071">
+ <Files>
+  <File path="flappyplayer.cdf"/>
+ </Files>
+ <Details />
+ <Dependencies>
+  <Path>objects/characters/flappyPlayer/flappySkel.chr</Path>
+  <Path>objects/characters/flappyPlayer/lowPolyBirdMAT.mtl</Path>
+  <Path>objects/characters/flappyPlayer/flappyPlayer.skin</Path>
+  <Path>objects/flappyplayer/lowpolybirdmat.mtl</Path>
+ </Dependencies>
+</AssetMetadata>

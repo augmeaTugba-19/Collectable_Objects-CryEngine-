@@ -1,0 +1,10 @@
+<AssetMetadata version="0" type="Texture" guid="51cf6c4c-3ea0-9858-a7b7-8d8f6aabaf53">
+ <Files>
+  <File path="cloudtiling_diff.dds"/>
+ </Files>
+ <Details>
+  <Detail name="width">2048</Detail>
+  <Detail name="height">2048</Detail>
+  <Detail name="mipCount">10</Detail>
+ </Details>
+</AssetMetadata>

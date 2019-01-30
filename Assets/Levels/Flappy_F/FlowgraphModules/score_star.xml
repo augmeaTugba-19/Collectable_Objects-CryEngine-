@@ -1,0 +1,43 @@
+<Graph isModule="1" moduleName="score_star" Description="" Group="" enabled="1" MultiPlayer="ClientServer">
+ <ModuleInputsOutputs>
+  <Port Name="entParticleEffect" Type="3" Input="1"/>
+  <Port Name="entStar" Type="3" Input="1"/>
+ </ModuleInputsOutputs>
+ <Nodes>
+  <Node Id="1" Class="Module:Start_score_star" pos="-432,288,0"/>
+  <Node Id="2" Class="Module:End_score_star" pos="-162,198,0">
+   <Inputs />
+  </Node>
+  <Node Id="11" Class="entity:BasicEntity" pos="-126,378,0">
+   <Inputs entityId="0" Hide="0" MakeInvulnerable="0" MakeVulnerable="0" Ragdollize="0" Remove="0" ResetHealth="0" UnHide="0"/>
+  </Node>
+  <Node Id="427" Class="entity:ParticleEffect" pos="72,216,0">
+   <Inputs entityId="0" Disable="0" Enable="0" Kill="0" Restart="0" Spawn="0"/>
+  </Node>
+  <Node Id="432" Name="trigger_particle_effect" Class="_comment" pos="72,198,0"/>
+  <Node Id="433" Name="hide_star_on_contact" Class="_comment" pos="-126,360,0"/>
+  <Node Id="434" Name="spinning_star_that_explodes_and_disappears_on_contact" Class="_commentbox" pos="-450,126.00034,0">
+   <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="1314" Height="504"/>
+   <NodeSize Width="1314" Height="531.64063"/>
+  </Node>
+  <Node Id="707" Class="Audio:Trigger" pos="540,288,0">
+   <Inputs entityId="0" audioTrigger_PlayTrigger="squawk_distressed" audioTrigger_StopTrigger=""/>
+  </Node>
+  <Node Id="708" Name="play_reaction_sound" Class="_comment" pos="540,270,0"/>
+  <Node Id="709" Class="Time:Delay" pos="306,342,0">
+   <Inputs delay="0.3" resetOnInput="0"/>
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="2" nodeOut="1" portIn="Cancel" portOut="Cancel" enabled="1"/>
+  <Edge nodeIn="11" nodeOut="1" portIn="Hide" portOut="Start" enabled="1"/>
+  <Edge nodeIn="11" nodeOut="1" portIn="entityId" portOut="entStar" enabled="1"/>
+  <Edge nodeIn="427" nodeOut="1" portIn="Enable" portOut="Start" enabled="1"/>
+  <Edge nodeIn="427" nodeOut="1" portIn="Spawn" portOut="Start" enabled="1"/>
+  <Edge nodeIn="427" nodeOut="1" portIn="entityId" portOut="entParticleEffect" enabled="1"/>
+  <Edge nodeIn="709" nodeOut="1" portIn="in" portOut="Start" enabled="1"/>
+  <Edge nodeIn="707" nodeOut="709" portIn="Play" portOut="out" enabled="1"/>
+ </Edges>
+ <GraphTokens />
+</Graph>

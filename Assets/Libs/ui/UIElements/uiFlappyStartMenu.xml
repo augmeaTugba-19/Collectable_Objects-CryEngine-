@@ -1,0 +1,20 @@
+<!-- Category name, of your own choosing -->
+<UIElements name="uiFlappyStartMenu" render_lockless="1">
+
+    <!-- Object name, again, of your own choosing -->
+    <UIElement name="uiFlappyStartMenu" render_lockless="1">
+        <!-- Point it to the correct files and give it some default settings -->
+        <GFx file="uiFlappyStartMenu.gfx" layer="0">
+            <Constraints>
+                <Align mode="dynamic" valign="center" halign="center" scale="0" max="0"/>
+            </Constraints>
+        </GFx>
+		
+		<events>
+			<event name="SetDifficulty" fscommand="SetDifficulty">
+				<param name="difficulty" desc="integer where 1 is easiest, 4 is hardest" />
+			</event>		
+		</events>
+		
+	</UIElement>
+</UIElements>

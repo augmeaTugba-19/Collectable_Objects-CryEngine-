@@ -1004,7 +1004,7 @@
      </Component>
     </Components>
    </Object>
-   <Object Type="EntityWithComponent" Layer="Main" LayerGUID="546ddf4d-cce0-a42e-0168-e2f8ac1b7c15" Id="bc43f215-00bf-d463-26da-62a1447fa7d5" Name="Entity-38" Pos="240,249.94998,32.500008" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
+   <Object Type="EntityWithComponent" Layer="Main" LayerGUID="546ddf4d-cce0-a42e-0168-e2f8ac1b7c15" Id="bc43f215-00bf-d463-26da-62a1447fa7d5" Name="SpawnPoint" Pos="240,249.94998,32.500008" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
     <Properties />
     <Components>
      <Component CryXmlVersion="2" TypeGUID="41316132-8a1e-4073-b0cd-a242fd3d2e90" TypeName="CSpawnPointComponent" GUID="d0e0108f-8443-669a-c2f4-67bf6d22425c" Name="" UserAdded="true">

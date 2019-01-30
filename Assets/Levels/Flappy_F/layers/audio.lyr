@@ -1,0 +1,60 @@
+<ObjectLayer>
+ <Layer Name="Audio" FullName="Audio" GUID="669d0ef5-5645-d1da-fa7c-c864c3b52dba" Hidden="0" Frozen="0" Expanded="0" Type="0" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="0" Color="16733695" Timestamp="1545302662">
+  <LayerObjects>
+   <Object Type="AreaBox" Layer="Audio" LayerGUID="669d0ef5-5645-d1da-fa7c-c864c3b52dba" Id="f171c00f-4567-cb92-d919-8c2966147b18" Name="ab_GameOverOceanBox" Pos="483,551,16" Rotate="1,0,0,0" Scale="1,1,1" ColorRGB="16711680" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" InnerFadeDistance="0" AreaId="-1" FadeInZone="0" Width="30" Length="30" Height="1" GroupId="0" Priority="0" DisplayFilled="1" DisplaySoundInfo="0" EntityClass="AreaBox" HasEntity="1" BoxMin="-15,-15,0" BoxMax="15,15,1">
+    <Properties />
+    <Components>
+     <Component typeId="feb82854-291c-4aba-9652-ddd7f403f24a" guid="bf367068-e496-c4fc-fbe6-fad2f513e1bf">
+      <Area Id="-1" Group="0" Proximity="0" Priority="0" InnerFadeDistance="0" BoxMin="-15,-15,0" BoxMax="15,15,1">
+       <SoundData>
+        <Side1 ObstructSound="0"/>
+        <Side2 ObstructSound="0"/>
+        <Side3 ObstructSound="0"/>
+        <Side4 ObstructSound="0"/>
+        <Side5 ObstructSound="0"/>
+        <Side6 ObstructSound="0"/>
+       </SoundData>
+       <Entities>
+        <Entity GUID="0582ef32-5648-44d0-caff-68e3eb3486cd"/>
+       </Entities>
+      </Area>
+     </Component>
+    </Components>
+    <Entities>
+     <Entity Id="0582ef32-5648-44d0-caff-68e3eb3486cd"/>
+    </Entities>
+    <SoundData Side1="0" Side2="0" Side3="0" Side4="0" Side5="0" Side6="0"/>
+   </Object>
+   <Object Type="AreaBox" Layer="Audio" LayerGUID="669d0ef5-5645-d1da-fa7c-c864c3b52dba" Id="aa99eb11-4b85-3604-a00f-abeeb4fdf6a0" Name="ab_AreaBoxOceanAmbience-2" Pos="483,552,70" Rotate="1,0,0,0" Scale="1,1,1" ColorRGB="16711680" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" InnerFadeDistance="0" AreaId="-1" FadeInZone="0" Width="30" Length="30" Height="1" GroupId="0" Priority="0" DisplayFilled="1" DisplaySoundInfo="0" EntityClass="AreaBox" HasEntity="1" BoxMin="-15,-15,0" BoxMax="15,15,1">
+    <Properties />
+    <Components>
+     <Component typeId="feb82854-291c-4aba-9652-ddd7f403f24a" guid="bf367068-e496-c4fc-fbe6-fad2f513e1bf">
+      <Area Id="-1" Group="0" Proximity="0" Priority="0" InnerFadeDistance="0" BoxMin="-15,-15,0" BoxMax="15,15,1">
+       <SoundData>
+        <Side1 ObstructSound="0"/>
+        <Side2 ObstructSound="0"/>
+        <Side3 ObstructSound="0"/>
+        <Side4 ObstructSound="0"/>
+        <Side5 ObstructSound="0"/>
+        <Side6 ObstructSound="0"/>
+       </SoundData>
+       <Entities>
+        <Entity GUID="ff3fc783-b6a0-8222-b064-4512d15582d0"/>
+       </Entities>
+      </Area>
+     </Component>
+    </Components>
+    <Entities>
+     <Entity Id="ff3fc783-b6a0-8222-b064-4512d15582d0"/>
+    </Entities>
+    <SoundData Side1="0" Side2="0" Side3="0" Side4="0" Side5="0" Side6="0"/>
+   </Object>
+   <Object Type="AudioAreaAmbience" Layer="Audio" LayerGUID="669d0ef5-5645-d1da-fa7c-c864c3b52dba" Id="0582ef32-5648-44d0-caff-68e3eb3486cd" Name="aaa_GameOverOceanAmbience" Pos="493.819,553.99847,20.597092" Rotate="1,0,0,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="AudioAreaAmbience" HasEntity="1">
+    <Properties bEnabled="1" audioEnvironmentEnvironment="" fEnvironmentDistance="5" audioRTPCGlobalRtpc="" eiOcclusionType="1" audioTriggerPlayTrigger="ocean" audioRTPCRtpc="" fRtpcDistance="100" audioTriggerStopTrigger="stop_game" bTriggerAreasOnMove="0"/>
+   </Object>
+   <Object Type="AudioAreaAmbience" Layer="Audio" LayerGUID="669d0ef5-5645-d1da-fa7c-c864c3b52dba" Id="ff3fc783-b6a0-8222-b064-4512d15582d0" Name="aaa_AudioAreaOceanAmbience-2" Pos="479.5,552,75" Rotate="1,0,0,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="AudioAreaAmbience" HasEntity="1">
+    <Properties bEnabled="1" audioEnvironmentEnvironment="" fEnvironmentDistance="5" audioRTPCGlobalRtpc="" eiOcclusionType="1" audioTriggerPlayTrigger="ocean" audioRTPCRtpc="" fRtpcDistance="100" audioTriggerStopTrigger="stop_game" bTriggerAreasOnMove="0"/>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

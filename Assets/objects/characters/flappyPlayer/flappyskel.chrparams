@@ -1,0 +1,10 @@
+<Params>
+ <AnimationList>
+  <Animation name="$AnimEventDatabase" path="objects/characters/flappyPlayer/flappyanimevents.animevents"/>
+  <Animation name="#filepath" path="objects/characters/flappyPlayer"/>
+  <Animation name="*" path="*/*.caf"/>
+  <Animation name="*" path="*/*.bspace"/>
+  <Animation name="*" path="*/*.comb"/>
+  <Animation name="*" path="*/*.i_caf"/>
+ </AnimationList>
+</Params>

@@ -1,0 +1,12 @@
+<GameTokens>
+ <GameTokensLibrary>
+  <LevelLibrary Name="Level">
+   <GameToken Name="intScore" Type="Int" Value="0" LocalOnly="1"/>
+   <GameToken Name="booIsDead" Type="Bool" Value="false" LocalOnly="1"/>
+   <GameToken Name="fltPipeSpeed" Type="Float" Value="0.000000" LocalOnly="1"/>
+   <GameToken Name="intDifficulty" Type="Int" Value="0" LocalOnly="1"/>
+   <GameToken Name="intVertPipeMovement" Type="Int" Value="0" LocalOnly="1"/>
+   <GameToken Name="fltTimeBetweenJumps" Type="Float" Value="0.000000" LocalOnly="1"/>
+  </LevelLibrary>
+ </GameTokensLibrary>
+</GameTokens>

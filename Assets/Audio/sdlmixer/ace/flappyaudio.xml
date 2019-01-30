@@ -1,0 +1,95 @@
+<AudioSystemData name="FlappyAudio" version="3">
+ <Triggers>
+  <Trigger name="stop_game">
+   <Event name="fall_and_splash.ogg" path="" type="stop"/>
+   <Event name="ocean.ogg" path="" type="stop"/>
+   <Event name="sinking.ogg" path="" type="stop"/>
+  </Trigger>
+  <Trigger name="start_game"/>
+  <Trigger name="ocean">
+   <Event name="ocean.ogg" path="" type="start" enable_panning="false" enable_dist_attenuation="true" attenuation_dist_min="0" attenuation_dist_max="100" volume="-14" fade_in_time="0" fade_out_time="0" loop_count="0"/>
+  </Trigger>
+  <Trigger name="pipe_collision">
+   <Event name="pipeCollisionWithSquawk.ogg" path="" type="start" enable_panning="false" enable_dist_attenuation="false" attenuation_dist_min="0" attenuation_dist_max="100" volume="-10" fade_in_time="0" fade_out_time="0" loop_count="1"/>
+  </Trigger>
+  <Trigger name="sinking">
+   <Event name="sinking.ogg" path="" type="start" enable_panning="false" enable_dist_attenuation="true" attenuation_dist_min="0" attenuation_dist_max="100" volume="-6" fade_in_time="0" fade_out_time="0" loop_count="1"/>
+  </Trigger>
+  <Trigger name="squawk_low">
+   <Event name="squawk_low.ogg" path="" type="start" enable_panning="false" enable_dist_attenuation="false" attenuation_dist_min="0" attenuation_dist_max="100" volume="0" fade_in_time="0" fade_out_time="0" loop_count="1"/>
+  </Trigger>
+  <Trigger name="squawk_medium">
+   <Event name="squawk_medium.ogg" path="" type="start" enable_panning="false" enable_dist_attenuation="false" attenuation_dist_min="0" attenuation_dist_max="100" volume="0" fade_in_time="0" fade_out_time="0" loop_count="1"/>
+  </Trigger>
+  <Trigger name="squawk_high">
+   <Event name="squawk_high.ogg" path="" type="start" enable_panning="false" enable_dist_attenuation="false" attenuation_dist_min="0" attenuation_dist_max="100" volume="0" fade_in_time="0" fade_out_time="0" loop_count="1"/>
+  </Trigger>
+  <Trigger name="shriek">
+   <Event name="shriek.ogg" path="" type="start" enable_panning="false" enable_dist_attenuation="false" attenuation_dist_min="0" attenuation_dist_max="100" volume="-6" fade_in_time="0" fade_out_time="0" loop_count="1"/>
+  </Trigger>
+  <Trigger name="squawk_medium_high">
+   <Event name="squawk_medium_high.ogg" path="" type="start" enable_panning="false" enable_dist_attenuation="false" attenuation_dist_min="0" attenuation_dist_max="100" volume="0" fade_in_time="0" fade_out_time="0" loop_count="1"/>
+  </Trigger>
+  <Trigger name="starElectrical">
+   <Event name="star_electrical.ogg" path="" type="start" enable_panning="false" enable_dist_attenuation="false" attenuation_dist_min="0" attenuation_dist_max="100" volume="-6" fade_in_time="0" fade_out_time="0" loop_count="1"/>
+  </Trigger>
+  <Trigger name="squawk_distressed">
+   <Event name="squawk_distressed.ogg" path="" type="start" enable_panning="false" enable_dist_attenuation="false" attenuation_dist_min="0" attenuation_dist_max="100" volume="0" fade_in_time="0" fade_out_time="0" loop_count="1"/>
+  </Trigger>
+  <Trigger name="death">
+   <Event name="death_funny_long.ogg" path="" type="start" enable_panning="false" enable_dist_attenuation="false" attenuation_dist_min="0" attenuation_dist_max="100" volume="-6" fade_in_time="0" fade_out_time="0" loop_count="1"/>
+  </Trigger>
+  <Trigger name="GameOverFallAndSplash">
+   <Event name="fall_and_splash.ogg" path="" type="start" enable_panning="false" enable_dist_attenuation="false" attenuation_dist_min="0" attenuation_dist_max="100" volume="-6" fade_in_time="0" fade_out_time="0" loop_count="1"/>
+  </Trigger>
+  <Trigger name="pfxMonitorLingeringElec">
+   <Event name="star_electrical.ogg" path="" type="start" enable_panning="false" enable_dist_attenuation="false" attenuation_dist_min="0" attenuation_dist_max="100" volume="-3" fade_in_time="0" fade_out_time="0" loop_count="1"/>
+  </Trigger>
+  <Trigger name="explosionDeepshort">
+   <Event name="explosionDeepShort.ogg" path="" type="start" enable_panning="false" enable_dist_attenuation="false" attenuation_dist_min="0" attenuation_dist_max="100" volume="-9" fade_in_time="0" fade_out_time="0" loop_count="1"/>
+  </Trigger>
+  <Trigger name="glass_breaking1">
+   <Event name="glass_breaking1.ogg" path="" type="start" enable_panning="false" enable_dist_attenuation="false" attenuation_dist_min="0" attenuation_dist_max="100" volume="-3" fade_in_time="0" fade_out_time="0" loop_count="1"/>
+  </Trigger>
+  <Trigger name="glass_breaking2">
+   <Event name="glass_breaking2.ogg" path="" type="start" enable_panning="false" enable_dist_attenuation="false" attenuation_dist_min="0" attenuation_dist_max="100" volume="-3" fade_in_time="0" fade_out_time="0" loop_count="1"/>
+  </Trigger>
+  <Trigger name="glass_breaking3">
+   <Event name="glass_breaking3.ogg" path="" type="start" enable_panning="false" enable_dist_attenuation="false" attenuation_dist_min="0" attenuation_dist_max="100" volume="-3" fade_in_time="0" fade_out_time="0" loop_count="1"/>
+  </Trigger>
+  <Trigger name="glass_breaking4">
+   <Event name="glass_breaking4.ogg" path="" type="start" enable_panning="false" enable_dist_attenuation="false" attenuation_dist_min="0" attenuation_dist_max="100" volume="-3" fade_in_time="0" fade_out_time="0" loop_count="1"/>
+  </Trigger>
+  <Trigger name="glass_breaking5">
+   <Event name="glass_breaking5.ogg" path="" type="start" enable_panning="false" enable_dist_attenuation="false" attenuation_dist_min="0" attenuation_dist_max="100" volume="-3" fade_in_time="0" fade_out_time="0" loop_count="1"/>
+  </Trigger>
+  <Trigger name="pfxTankAlienShell">
+   <Event name="star_electrical.ogg" path="" type="start" enable_panning="false" enable_dist_attenuation="false" attenuation_dist_min="0" attenuation_dist_max="100" volume="0" fade_in_time="0" fade_out_time="0" loop_count="1"/>
+   <Event name="explosionDeepQuickReport.ogg" path="" type="start" enable_panning="false" enable_dist_attenuation="false" attenuation_dist_min="0" attenuation_dist_max="100" volume="-9" fade_in_time="0" fade_out_time="0" loop_count="1"/>
+  </Trigger>
+  <Trigger name="pfxFlashBang">
+   <Event name="explosion5_deepReport.ogg" path="" type="start" enable_panning="false" enable_dist_attenuation="false" attenuation_dist_min="0" attenuation_dist_max="100" volume="-9" fade_in_time="0" fade_out_time="0" loop_count="1"/>
+   <Event name="explosionHugeDeepMuffled.ogg" path="" type="start" enable_panning="false" enable_dist_attenuation="false" attenuation_dist_min="0" attenuation_dist_max="100" volume="0" fade_in_time="0" fade_out_time="0" loop_count="1"/>
+  </Trigger>
+  <Trigger name="pfxExplodingGlass">
+   <Event name="glass_breaking5.ogg" path="" type="start" enable_panning="false" enable_dist_attenuation="false" attenuation_dist_min="0" attenuation_dist_max="100" volume="0" fade_in_time="0" fade_out_time="0" loop_count="1"/>
+  </Trigger>
+  <Trigger name="pfxRocketSnow">
+   <Event name="star_explosion_with_debris.ogg" path="" type="start" enable_panning="false" enable_dist_attenuation="false" attenuation_dist_min="0" attenuation_dist_max="100" volume="-9" fade_in_time="0" fade_out_time="0" loop_count="1"/>
+  </Trigger>
+  <Trigger name="pfxGrenadeAir">
+   <Event name="explosionGrenade.ogg" path="" type="start" enable_panning="false" enable_dist_attenuation="false" attenuation_dist_min="0" attenuation_dist_max="100" volume="-9" fade_in_time="0" fade_out_time="0" loop_count="1"/>
+  </Trigger>
+  <Trigger name="pfxMetalExplosion">
+   <Event name="explosion_deep_boom.ogg" path="" type="start" enable_panning="false" enable_dist_attenuation="false" attenuation_dist_min="0" attenuation_dist_max="100" volume="-9" fade_in_time="0" fade_out_time="0" loop_count="1"/>
+  </Trigger>
+  <Trigger name="pfxWallExplosionWallBreak">
+   <Event name="starWhoosh.ogg" path="" type="start" enable_panning="false" enable_dist_attenuation="false" attenuation_dist_min="0" attenuation_dist_max="100" volume="-9" fade_in_time="0" fade_out_time="0" loop_count="1"/>
+  </Trigger>
+ </Triggers>
+ <EditorData>
+  <Library />
+  <Folders />
+  <Controls />
+ </EditorData>
+</AudioSystemData>

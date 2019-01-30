@@ -1,0 +1,15 @@
+<AssetMetadata version="0" type="SkinnedMesh" guid="273abe78-aeff-18d6-28cc-aa59f38554b1" source="flappyPlayer.dae.zip">
+ <Files>
+  <File path="flappyPlayer.skin"/>
+ </Files>
+ <Details>
+  <Detail name="materialCount">3</Detail>
+  <Detail name="triangleCount">180</Detail>
+  <Detail name="vertexCount">360</Detail>
+  <Detail name="16BitPrecision">false</Detail>
+  <Detail name="bonesCount">7</Detail>
+ </Details>
+ <Dependencies>
+  <Path usageCount="1">./lowPolyBirdMAT.mtl</Path>
+ </Dependencies>
+</AssetMetadata>

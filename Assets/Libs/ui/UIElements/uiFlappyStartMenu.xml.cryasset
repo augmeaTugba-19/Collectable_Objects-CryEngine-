@@ -1,0 +1,8 @@
+<AssetMetadata version="0" type="Xml" guid="692b5b8b-3009-54af-2748-dd03ba7beacf">
+ <Files>
+  <File path="uiFlappyStartMenu.xml"/>
+ </Files>
+ <Details>
+  <Detail name="rootTag">UIElements</Detail>
+ </Details>
+</AssetMetadata>

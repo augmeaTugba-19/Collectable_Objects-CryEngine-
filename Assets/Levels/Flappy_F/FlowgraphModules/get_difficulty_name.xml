@@ -1,0 +1,50 @@
+<Graph isModule="1" moduleName="get_difficulty_name" Description="look up difficult level name from integer" Group="" enabled="1" MultiPlayer="ClientServer">
+ <ModuleInputsOutputs>
+  <Port Name="intCurrentDifficulty" Type="1" Input="1"/>
+  <Port Name="strCurrentDifficulty" Type="5" Input="0"/>
+ </ModuleInputsOutputs>
+ <Nodes>
+  <Node Id="1" Class="Module:Start_get_difficulty_name" pos="-162,108,0"/>
+  <Node Id="2" Class="Module:End_get_difficulty_name" pos="756,144,0">
+   <Inputs strCurrentDifficulty=""/>
+  </Node>
+  <Node Id="1335" Class="Logic:DeMultiplexer" pos="126,0,0">
+   <Inputs Index="0" Mode="2"/>
+  </Node>
+  <Node Id="1341" Class="Logic:Any" pos="576,0,0" InHideMask="1023" OutHideMask="1">
+   <Inputs />
+  </Node>
+  <Node Id="1356" Name="translate_difficulty_integer_to_difficulty_name_per_UI_menu" Class="_commentbox" pos="-180,-144.00002,0">
+   <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="1170" Height="360"/>
+   <NodeSize Width="1170" Height="387.64063"/>
+  </Node>
+  <Node Id="1358" Class="String:SetString" pos="378,-90,0">
+   <Inputs In="Fledgling"/>
+  </Node>
+  <Node Id="1359" Class="String:SetString" pos="378,-18,0">
+   <Inputs In="Starling"/>
+  </Node>
+  <Node Id="1360" Class="String:SetString" pos="378,54,0">
+   <Inputs In="Cardinal"/>
+  </Node>
+  <Node Id="1361" Class="String:SetString" pos="378,126,0">
+   <Inputs In="Hawk"/>
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="2" nodeOut="1" portIn="Cancel" portOut="Cancel" enabled="1"/>
+  <Edge nodeIn="1335" nodeOut="1" portIn="Index" portOut="intCurrentDifficulty" enabled="1"/>
+  <Edge nodeIn="1358" nodeOut="1335" portIn="Set" portOut="Port1" enabled="1"/>
+  <Edge nodeIn="1359" nodeOut="1335" portIn="Set" portOut="Port2" enabled="1"/>
+  <Edge nodeIn="1360" nodeOut="1335" portIn="Set" portOut="Port3" enabled="1"/>
+  <Edge nodeIn="1361" nodeOut="1335" portIn="Set" portOut="Port4" enabled="1"/>
+  <Edge nodeIn="2" nodeOut="1341" portIn="Success" portOut="out" enabled="1"/>
+  <Edge nodeIn="2" nodeOut="1341" portIn="strCurrentDifficulty" portOut="out" enabled="1"/>
+  <Edge nodeIn="1341" nodeOut="1358" portIn="in1" portOut="Out" enabled="1"/>
+  <Edge nodeIn="1341" nodeOut="1359" portIn="in2" portOut="Out" enabled="1"/>
+  <Edge nodeIn="1341" nodeOut="1360" portIn="in3" portOut="Out" enabled="1"/>
+  <Edge nodeIn="1341" nodeOut="1361" portIn="in4" portOut="Out" enabled="1"/>
+ </Edges>
+ <GraphTokens />
+</Graph>

@@ -1,0 +1,17 @@
+<!-- display live score -->
+<UIElements name="uiFlappyScoreMessage">
+    <!-- Object name of your own choosing -->
+    <UIElement name="uiFlappyScoreMessage" render_lockless="1">
+        <!-- Point it to the correct file and set position -->
+        <GFx file="uiFlappyScoreMessage.gfx" layer="0">
+            <Constraints>
+                <Align mode="dynamic" valign="center" halign="center" scale="0" max="0"/>
+            </Constraints>
+        </GFx>
+	<functions>
+		<function name="DisplayScoreMsg" funcname="DisplayScoreMsg" desc="Updates message">
+			<param name="text" desc="New score" type="str" />
+		</function>
+	</functions>
+    </UIElement>
+</UIElements>

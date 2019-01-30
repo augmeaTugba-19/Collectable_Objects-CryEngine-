@@ -1,0 +1,1754 @@
+<ObjectLayer>
+ <Layer Name="pipes" FullName="pipes" GUID="8fc5696b-dd62-91b4-1c9d-4fbfc752e78f" Hidden="0" Frozen="0" Expanded="0" Type="0" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="0" Color="43775" Timestamp="1545302662">
+  <LayerObjects>
+   <Object Type="Entity" Layer="pipes" LayerGUID="8fc5696b-dd62-91b4-1c9d-4fbfc752e78f" Id="d3929df6-154a-673b-afa1-0da6500a43c1" Name="scoreTrigger1" LinkedTo="affef8ae-47ca-80a3-1afc-1895f5181ce1" Pos="0,0,3.5" Rotate="1,0,0,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="ProximityTrigger" HasEntity="1">
+    <Properties bActivateWithUseButton="0" DimX="4" DimY="3" DimZ="10" bEnabled="1" EnterDelay="0" ExitDelay="0" esFactionFilter="" bInVehicleOnly="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="0" OnlySelectedEntity="FlappyBoid" bOnlySpecialAI="0" PlaySequence="" bRemoveOnTrigger="0" ScriptCommand="" bTriggerOnce="0" UsableMessage="">
+     <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="pipes" LayerGUID="8fc5696b-dd62-91b4-1c9d-4fbfc752e78f" Id="b6b5c76d-3e2f-f9ec-ca58-ef4282517399" Name="scoreStar4" LinkedTo="e26f3639-a928-c117-b307-a66511155e99" Pos="0,0,3.7000003" Rotate="0.68819094,0.68819094,0.16245982,0.16245982" Scale="0.79999995,0.79999995,0.79999995" ColorRGB="65535" UseCustomLevelLayerColor="0" Material="materials/generic/glass/glass_frosted_red" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="BasicEntity" HasEntity="1">
+    <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/props/flappy_boid/star.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <MultiplayerOptions bNetworked="0"/>
+     <Physics Density="-1" Mass="-1" bPhysicalize="0" bPushableByPlayers="0" bRigidBody="0">
+      <CollisionFiltering>
+       <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_large_kickable="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+       <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_large_kickable="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+      </CollisionFiltering>
+     </Physics>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="pipes" LayerGUID="8fc5696b-dd62-91b4-1c9d-4fbfc752e78f" Id="6f823db7-174d-08bc-19a9-6f3dadd716e8" Name="scoreTrigger2" LinkedTo="b821c0e6-c0c0-f5e9-9a4a-b41c05e85f45" Pos="0,0,3.5" Rotate="1,0,0,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="ProximityTrigger" HasEntity="1">
+    <Properties bActivateWithUseButton="0" DimX="4" DimY="3" DimZ="10" bEnabled="1" EnterDelay="0" ExitDelay="0" esFactionFilter="" bInVehicleOnly="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="0" OnlySelectedEntity="FlappyBoid" bOnlySpecialAI="0" PlaySequence="" bRemoveOnTrigger="0" ScriptCommand="" bTriggerOnce="0" UsableMessage="">
+     <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
+    </Properties>
+   </Object>
+   <Object Type="ParticleEntity" Layer="pipes" LayerGUID="8fc5696b-dd62-91b4-1c9d-4fbfc752e78f" Id="10179cdd-d2df-549b-c668-2785cd000b73" Name="scoreEffect3" LinkedTo="c541bf8a-b9f2-c977-fe89-5178c81721a2" Pos="0,0,4" Rotate="1,0,0,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="ParticleEffect" HasEntity="1" ParticleEntityName="particles/pfx2/explosion_glass.pfx">
+    <Properties bActive="0" esAttachForm="Vertices" esAttachType="None" Comment="" bCountPerUnit="0" CountScale="1" NetworkSync="0" ParticleEffect="particles/pfx2/explosion_glass.pfx" bPrime="1" PulsePeriod="0" bRegisterByBBox="0" Scale="1" soclasses_SmartObjectClass="" SpeedScale="1" Strength="-1" TimeScale="1">
+     <Audio bEnableAudio="1" audioRTPCRtpc="particlefx" esSoundObstructionType="Ignore"/>
+    </Properties>
+    <Components>
+     <Component CryXmlVersion="2" TypeGUID="7925bc64-521f-4a2a-9068-c9c9a1d3499e" TypeName="Cry::DefaultComponents::CParticleComponent" GUID="4c360ed1-cbf3-ae74-2102-e8a3b33de976" Name="" UserAdded="true">
+      <Transform>
+       <translation>
+        <position>
+         <element element="0"/>
+         <element element="0"/>
+         <element element="0"/>
+        </position>
+       </translation>
+       <rotation x="0" y="-0" z="0"/>
+       <scale>
+        <element element="1"/>
+        <element element="1"/>
+        <element element="1"/>
+       </scale>
+      </Transform>
+      <properties Enabled="true" FilePath="particles/pfx2/explosion_glass.pfx">
+       <Attributes>
+        <Attributes />
+       </Attributes>
+       <Features />
+       <SpawnParams prime="true" scale="1" countScale="1" speedScale="1" timeScale="1" spec="Default" ignoreVvisAreas="false" ignoreTerrainBlend="true" ignoreDecalBlend="true" seed="-1"/>
+      </properties>
+     </Component>
+    </Components>
+   </Object>
+   <Object Type="Entity" Layer="pipes" LayerGUID="8fc5696b-dd62-91b4-1c9d-4fbfc752e78f" Id="e26f3639-a928-c117-b307-a66511155e99" Name="pipeBottom4" Pos="440,500,96" Rotate="1,0,0,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" Material="materials/generic/metal/generic_metal" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="RigidBodyEx" HasEntity="1">
+    <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/props/flappy_boid/pipe.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+     <AI bUsedAsDynamicObstacle="1"/>
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <MultiplayerOptions bNetworked="0"/>
+     <Physics bActivateOnDamage="0" bCanBreakOthers="1" Density="-1" Mass="-1" bPhysicalize="1" bPushableByPlayers="1" bResting="0" bRigidBody="1" bRigidBodyActive="1">
+      <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+      <CGFPropsOverride player_can_break="">
+       <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+       <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+       <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+      </CGFPropsOverride>
+      <CollisionFiltering>
+       <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_large_kickable="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+       <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_large_kickable="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+      </CollisionFiltering>
+      <ForeignData bMovingPlatform="0"/>
+      <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+     </Physics>
+    </Properties>
+    <FlowGraph Description="" Group="pipeMovement" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="747" Class="Movement:MoveEntityTo" pos="2160,144,0" GraphEntity="0">
+       <Inputs entityId="0" Destination="0,0,0" DynamicUpdate="1" ValueType="0" Speed="0" EaseDistance="0" EaseOutDistance="0" CoordSys="0"/>
+      </Node>
+      <Node Id="748" Class="Mission:GameToken" pos="1602,396,0">
+       <Inputs gametoken_Token="Level.booIsDead" compare_Value="false" FireOnStart="0" FireOnlyOnResultChange="0"/>
+      </Node>
+      <Node Id="749" Class="Entity:BeamEntity" pos="4050,-90,0" GraphEntity="0">
+       <Inputs entityId="0" CoordSys="1" Position="0,0,0" Rotation="0,0,0" UseZeroRot="0" Scale="0,0,0"/>
+      </Node>
+      <Node Id="750" Class="Vec3:FromVec3" pos="3510,72,0">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="751" Class="Vec3:ToVec3" pos="3852,72,0">
+       <Inputs x="0" y="0" z="0"/>
+      </Node>
+      <Node Id="752" Class="Math:Random" pos="3006,180,0">
+       <Inputs min="0" max="0"/>
+      </Node>
+      <Node Id="753" Class="Math:Add" pos="3690,162,0">
+       <Inputs A="0" B="0"/>
+      </Node>
+      <Node Id="754" Class="Vec3:FromVec3" pos="90,108,0">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="755" Class="Vec3:ToVec3" pos="432,162,0">
+       <Inputs x="0" y="0" z="0"/>
+      </Node>
+      <Node Id="756" Class="Math:Random" pos="-396,216,0">
+       <Inputs min="0" max="0"/>
+      </Node>
+      <Node Id="757" Class="Math:Add" pos="270,198,0">
+       <Inputs A="0" B="0"/>
+      </Node>
+      <Node Id="758" Class="Logic:Any" pos="-738,-54,0">
+       <Inputs />
+      </Node>
+      <Node Id="759" Name="pipe_movement_with_all_enhancements" Class="_commentbox" pos="-1224,-207.81082,0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="5508" Height="738"/>
+       <NodeSize Width="5508" Height="793.45129"/>
+      </Node>
+      <Node Id="762" Class="entity:BasicEntity" pos="4644,144,0" EntityGUID="b6b5c76d-3e2f-f9ec-ca58-ef4282517399">
+       <Inputs entityId="0" Hide="0" MakeInvulnerable="0" MakeVulnerable="0" Ragdollize="0" Remove="0" ResetHealth="0" UnHide="0"/>
+      </Node>
+      <Node Id="763" Name="reveal_score_star_again_on_loop_reset" Class="_comment" pos="4644,126,0"/>
+      <Node Id="764" Name="on_death,_STOP_current_pipe_movement_AND" Class="_comment" pos="1602,360,0"/>
+      <Node Id="765" Name="randomize_Z_of_start_position" Class="_commentbox" pos="2412,-27.560703,0">
+       <Inputs TextSize="1" Color="0.610496,0.89627,0.428691" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1566" Height="270"/>
+       <NodeSize Width="1566" Height="325.45129"/>
+      </Node>
+      <Node Id="766" Name="randomize_Z_of_end_position" Class="_commentbox" pos="-432,8.1893387,0">
+       <Inputs TextSize="1" Color="0.610496,0.904661,0.428691" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="990" Height="252"/>
+       <NodeSize Width="990" Height="307.45129"/>
+      </Node>
+      <Node Id="767" Name="move_pipe_to_end_position" Class="_comment" pos="2160,126,0"/>
+      <Node Id="768" Name="send_pipe_back_to_start" Class="_comment" pos="4050,-108,0"/>
+      <Node Id="770" Class="Entity:PropertySet" pos="5922,-108,0" EntityGUID="79d915f1-975d-f43a-c262-bb698b6d6580">
+       <Inputs entityId="0" entityProperties_Property="Properties:ParticleEffect" Value="" perArchetype="1"/>
+      </Node>
+      <Node Id="771" Name="randomly_choose_particle_effect" Class="_comment" pos="4752,-90,0"/>
+      <Node Id="772" Class="Logic:DeMultiplexer" pos="4914,-54,0">
+       <Inputs Index="0" Mode="2"/>
+      </Node>
+      <Node Id="773" Class="Math:Random" pos="4662,-72,0">
+       <Inputs min="0" max="7"/>
+      </Node>
+      <Node Id="774" Class="String:SetString" pos="5184,-180,0">
+       <Inputs In="explosions.monitor.a_lingering_elec"/>
+      </Node>
+      <Node Id="775" Class="Logic:Any" pos="5580,-54,0">
+       <Inputs />
+      </Node>
+      <Node Id="776" Class="String:SetString" pos="5202,-126,0">
+       <Inputs In="explosions.rocket.soil_alt1"/>
+      </Node>
+      <Node Id="777" Class="String:SetString" pos="5184,-72,0">
+       <Inputs In="explosions.tank30.alien_shell"/>
+      </Node>
+      <Node Id="778" Class="String:SetString" pos="5238,-18,0">
+       <Inputs In="explosions.rocket.snow"/>
+      </Node>
+      <Node Id="779" Name="set_randomized_particle_effect" Class="_comment" pos="5922,-126,0"/>
+      <Node Id="780" Class="Time:Delay" pos="5706,-126,0">
+       <Inputs delay="2" resetOnInput="0"/>
+      </Node>
+      <Node Id="781" Class="String:SetString" pos="5202,36,0">
+       <Inputs In="particles/pfx2/explosion_glass.pfx"/>
+      </Node>
+      <Node Id="782" Class="String:SetString" pos="5202,90,0">
+       <Inputs In="explosions.grenade_air.explosion"/>
+      </Node>
+      <Node Id="783" Class="String:SetString" pos="5238,144,0">
+       <Inputs In="explosions.rocket.metal2"/>
+      </Node>
+      <Node Id="784" Class="String:SetString" pos="5202,198,0">
+       <Inputs In="explosions.wall_explosion.wall_break"/>
+      </Node>
+      <Node Id="785" Class="Game:Start" pos="4068,288,0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="786" Class="Logic:Any" pos="4518,-72,0">
+       <Inputs />
+      </Node>
+      <Node Id="787" Name="randomly_choose_pipe_material" Class="_comment" pos="4896,702,0"/>
+      <Node Id="788" Class="Logic:DeMultiplexer" pos="4914,720,0">
+       <Inputs Index="0" Mode="2"/>
+      </Node>
+      <Node Id="789" Class="Math:Random" pos="4680,702,0">
+       <Inputs min="0" max="7"/>
+      </Node>
+      <Node Id="790" Class="String:SetString" pos="5202,594,0">
+       <Inputs In="materials/generic/concrete/roof_tar_paper_01"/>
+      </Node>
+      <Node Id="791" Class="Logic:Any" pos="5706,720,0">
+       <Inputs />
+      </Node>
+      <Node Id="792" Class="String:SetString" pos="5220,648,0">
+       <Inputs In="materials/generic/concrete/rough_concrete_c"/>
+      </Node>
+      <Node Id="793" Class="String:SetString" pos="5184,702,0">
+       <Inputs In="materials/generic/concrete/plaster_rough_stones_moss"/>
+      </Node>
+      <Node Id="794" Class="String:SetString" pos="5238,756,0">
+       <Inputs In="materials/generic/concrete/plaster_red_a"/>
+      </Node>
+      <Node Id="795" Class="String:SetString" pos="5202,810,0">
+       <Inputs In="materials/generic/concrete/floor_mosaic_tiles_b"/>
+      </Node>
+      <Node Id="796" Class="String:SetString" pos="5202,864,0">
+       <Inputs In="materials/generic/brick/brick_damaged"/>
+      </Node>
+      <Node Id="797" Class="String:SetString" pos="5202,918,0">
+       <Inputs In="materials/generic/brick/brick_rough_01"/>
+      </Node>
+      <Node Id="798" Class="String:SetString" pos="5184,972,0">
+       <Inputs In="materials/generic/metal/checkerplate_floor"/>
+      </Node>
+      <Node Id="799" Class="Logic:Any" pos="4536,702,0">
+       <Inputs />
+      </Node>
+      <Node Id="800" Name="set_BOTTOM_pipe_material" Class="_comment" pos="5886,774,0"/>
+      <Node Id="801" Name="set_TOP_pipe_material" Class="_comment" pos="5886,594,0"/>
+      <Node Id="802" Class="Material:EntityMaterialChange" pos="5886,612,0" EntityGUID="85b86763-3b4e-b9dc-90f0-83224dac3bec">
+       <Inputs entityId="0" slot="-1" mat_Material="" Serialize="0"/>
+      </Node>
+      <Node Id="803" Class="Material:EntityMaterialChange" pos="5886,792,0" GraphEntity="0">
+       <Inputs entityId="0" slot="-1" mat_Material="" Serialize="0"/>
+      </Node>
+      <Node Id="804" Name="randomize_pipe_material_on_each_loop_start" Class="_commentbox" pos="4482,512.39886,0">
+       <Inputs TextSize="1" Color="0.879623,0.693872,0.913099" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1638" Height="504"/>
+       <NodeSize Width="1638" Height="559.45129"/>
+      </Node>
+      <Node Id="805" Name="choose_from_variety_of_particle_FX" Class="_comment" pos="5202,-198,0"/>
+      <Node Id="806" Name="on_game_start_OR_loop_restart" Class="_comment" pos="4536,684,0"/>
+      <Node Id="808" Class="Mission:GameToken" pos="1458,72,0">
+       <Inputs gametoken_Token="Level.fltPipeSpeed" compare_Value="" FireOnStart="0" FireOnlyOnResultChange="0"/>
+      </Node>
+      <Node Id="810" Class="Vec3:MagnitudeVec3" pos="1098,216,0">
+       <Inputs vector="0,0,0"/>
+      </Node>
+      <Node Id="811" Class="Vec3:SubVec3" pos="918,216,0">
+       <Inputs A="0,0,0" B="0,0,0"/>
+      </Node>
+      <Node Id="812" Name="calculate_ACTUAL_distance_to_randomized_end_point" Class="_comment" pos="918,198,0"/>
+      <Node Id="813" Name="get_current_X_position_of_pipe" Class="_comment" pos="900,378,0"/>
+      <Node Id="814" Class="Math:Div" pos="1350,234,0">
+       <Inputs A="0" B="0"/>
+      </Node>
+      <Node Id="817" Name="randomize_particle_effect_on_loop_reset" Class="_commentbox" pos="4482,-279.60114,0">
+       <Inputs TextSize="1" Color="0.665387,0.806952,0.947307" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1764" Height="666"/>
+       <NodeSize Width="1764" Height="721.45129"/>
+      </Node>
+      <Node Id="818" Name="NOTE_that_every_point_scored_increases_pipe_speed_game_token" Class="_comment" pos="1458,36,0"/>
+      <Node Id="822" Class="Entity:GetPos" pos="666,378,0" GraphEntity="0">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="828" Class="Vec3:FromVec3" pos="954,396,0">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="833" Name="calculate_DIFFERENCE_between_straight" Class="_comment" pos="1332,198,0"/>
+      <Node Id="836" Name="Thus,_current_pipe_speed_needs_to_be_adjusted_dynamically" Class="_comment" pos="1458,54,0"/>
+      <Node Id="837" Name="NOTE:_straight_line_distance_will" Class="_comment" pos="1350,288,0"/>
+      <Node Id="853" Class="Vec3:FromVec3" pos="954,306,0">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="854" Name="get_X_position_of_end_point" Class="_comment" pos="918,288,0"/>
+      <Node Id="856" Class="Math:Sub" pos="1152,342,0">
+       <Inputs A="0" B="0"/>
+      </Node>
+      <Node Id="857" Name="calculate_straight_line_distance" Class="_comment" pos="1134,324,0"/>
+      <Node Id="858" Name="by_ignoring_difference_in_Z_position" Class="_comment" pos="1152,396,0"/>
+      <Node Id="869" Class="Mission:GameTokenGet" pos="2430,216,0">
+       <Inputs gametoken_Token="Level.intVertPipeMovement"/>
+      </Node>
+      <Node Id="874" Class="Math:Mul" pos="-558,216,0">
+       <Inputs A="0" B="-1"/>
+      </Node>
+      <Node Id="875" Class="Math:Mul" pos="2808,162,0">
+       <Inputs A="0" B="-1"/>
+      </Node>
+      <Node Id="878" Name="generate_lower_limit" Class="_comment" pos="2790,144,0"/>
+      <Node Id="879" Name="generate_lower_limit" Class="_comment" pos="-594,180,0"/>
+      <Node Id="880" Name="pass_range_of_vertical_pipe_movement_AFTER_user_chooses_in_UI_menu_(&lt;&gt;0)" Class="_comment" pos="-972,378,0"/>
+      <Node Id="885" Class="Math:Mul" pos="1836,216,0">
+       <Inputs A="0" B="0"/>
+      </Node>
+      <Node Id="886" Name="adjust_speed_for_actual_distance_so_pipes_remain_evenly_spaced" Class="_commentbox" pos="648,-45.810757,0">
+       <Inputs TextSize="1" Color="0.846873,0.715694,0.155926" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1476" Height="540"/>
+       <NodeSize Width="1476" Height="595.45129"/>
+      </Node>
+      <Node Id="887" Name="increase_speed_proportional_to_distance" Class="_comment" pos="1818,198,0"/>
+      <Node Id="888" Name="line_and_actual_distance" Class="_comment" pos="1332,216,0"/>
+      <Node Id="889" Name="always_be_&lt;=_actual_distance" Class="_comment" pos="1350,306,0"/>
+      <Node Id="894" Name="get_range_of_vertical_movement" Class="_comment" pos="2430,198,0"/>
+      <Node Id="899" Class="Time:Delay" pos="-972,-36,0">
+       <Inputs delay="1" resetOnInput="0"/>
+      </Node>
+      <Node Id="900" Class="Game:Start" pos="-1188,-36,0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="902" Class="Logic:Gate" pos="1980,252,0">
+       <Inputs Closed="0"/>
+      </Node>
+      <Node Id="903" Name="prevent_new_pipe_movement_from_starting" Class="_comment" pos="1602,378,0"/>
+      <Node Id="1037" Class="Logic:Gate" pos="-576,288,0">
+       <Inputs Closed="0"/>
+      </Node>
+      <Node Id="1039" Class="Mission:GameToken" pos="-954,252,0">
+       <Inputs gametoken_Token="Level.intVertPipeMovement" compare_Value="0" FireOnStart="1" FireOnlyOnResultChange="0"/>
+      </Node>
+      <Node Id="1042" Class="Entity:GetPos" pos="-162,90,0" EntityGUID="b4eda7fe-f755-251e-bee8-3bb73b9a7df4">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="1043" Name="for_random_Z_value" Class="_comment" pos="-594,198,0"/>
+      <Node Id="1222" Class="Entity:GetPos" pos="3240,54,0" EntityGUID="bcff787f-00ea-c77c-26a6-8416c02dabfe">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="869" nodeOut="747" portIn="Trigger" portOut="Finish" enabled="1"/>
+      <Edge nodeIn="747" nodeOut="748" portIn="Stop" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="902" nodeOut="748" portIn="Close" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="902" nodeOut="748" portIn="Open" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="758" nodeOut="749" portIn="in1" portOut="Done" enabled="1"/>
+      <Edge nodeIn="762" nodeOut="749" portIn="UnHide" portOut="Done" enabled="1"/>
+      <Edge nodeIn="786" nodeOut="749" portIn="in1" portOut="Done" enabled="1"/>
+      <Edge nodeIn="799" nodeOut="749" portIn="in1" portOut="Done" enabled="1"/>
+      <Edge nodeIn="751" nodeOut="750" portIn="x" portOut="x" enabled="1"/>
+      <Edge nodeIn="751" nodeOut="750" portIn="y" portOut="y" enabled="1"/>
+      <Edge nodeIn="753" nodeOut="750" portIn="A" portOut="z" enabled="1"/>
+      <Edge nodeIn="749" nodeOut="751" portIn="Beam" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="749" nodeOut="751" portIn="Position" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="753" nodeOut="752" portIn="B" portOut="out" enabled="1"/>
+      <Edge nodeIn="1222" nodeOut="752" portIn="Get" portOut="out" enabled="1"/>
+      <Edge nodeIn="751" nodeOut="753" portIn="z" portOut="out" enabled="1"/>
+      <Edge nodeIn="755" nodeOut="754" portIn="x" portOut="x" enabled="1"/>
+      <Edge nodeIn="755" nodeOut="754" portIn="y" portOut="y" enabled="1"/>
+      <Edge nodeIn="757" nodeOut="754" portIn="A" portOut="z" enabled="1"/>
+      <Edge nodeIn="747" nodeOut="755" portIn="Destination" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="811" nodeOut="755" portIn="A" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="822" nodeOut="755" portIn="Get" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="853" nodeOut="755" portIn="vec3" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="757" nodeOut="756" portIn="B" portOut="out" enabled="1"/>
+      <Edge nodeIn="1042" nodeOut="756" portIn="Get" portOut="out" enabled="1"/>
+      <Edge nodeIn="755" nodeOut="757" portIn="z" portOut="out" enabled="1"/>
+      <Edge nodeIn="1037" nodeOut="758" portIn="In" portOut="out" enabled="1"/>
+      <Edge nodeIn="774" nodeOut="772" portIn="Set" portOut="Port0" enabled="1"/>
+      <Edge nodeIn="776" nodeOut="772" portIn="Set" portOut="Port1" enabled="1"/>
+      <Edge nodeIn="777" nodeOut="772" portIn="Set" portOut="Port2" enabled="1"/>
+      <Edge nodeIn="778" nodeOut="772" portIn="Set" portOut="Port3" enabled="1"/>
+      <Edge nodeIn="781" nodeOut="772" portIn="Set" portOut="Port4" enabled="1"/>
+      <Edge nodeIn="782" nodeOut="772" portIn="Set" portOut="Port5" enabled="1"/>
+      <Edge nodeIn="783" nodeOut="772" portIn="Set" portOut="Port6" enabled="1"/>
+      <Edge nodeIn="784" nodeOut="772" portIn="Set" portOut="Port7" enabled="1"/>
+      <Edge nodeIn="772" nodeOut="773" portIn="Index" portOut="outRounded" enabled="1"/>
+      <Edge nodeIn="775" nodeOut="774" portIn="in1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="770" nodeOut="775" portIn="Value" portOut="out" enabled="1"/>
+      <Edge nodeIn="780" nodeOut="775" portIn="in" portOut="out" enabled="1"/>
+      <Edge nodeIn="775" nodeOut="776" portIn="in2" portOut="Out" enabled="1"/>
+      <Edge nodeIn="775" nodeOut="777" portIn="in3" portOut="Out" enabled="1"/>
+      <Edge nodeIn="775" nodeOut="778" portIn="in4" portOut="Out" enabled="1"/>
+      <Edge nodeIn="770" nodeOut="780" portIn="Set" portOut="out" enabled="1"/>
+      <Edge nodeIn="775" nodeOut="781" portIn="in5" portOut="Out" enabled="1"/>
+      <Edge nodeIn="775" nodeOut="782" portIn="in6" portOut="Out" enabled="1"/>
+      <Edge nodeIn="775" nodeOut="783" portIn="in7" portOut="Out" enabled="1"/>
+      <Edge nodeIn="775" nodeOut="784" portIn="in8" portOut="Out" enabled="1"/>
+      <Edge nodeIn="786" nodeOut="785" portIn="in2" portOut="output" enabled="1"/>
+      <Edge nodeIn="799" nodeOut="785" portIn="in2" portOut="output" enabled="1"/>
+      <Edge nodeIn="773" nodeOut="786" portIn="generate" portOut="out" enabled="1"/>
+      <Edge nodeIn="790" nodeOut="788" portIn="Set" portOut="Port0" enabled="1"/>
+      <Edge nodeIn="792" nodeOut="788" portIn="Set" portOut="Port1" enabled="1"/>
+      <Edge nodeIn="793" nodeOut="788" portIn="Set" portOut="Port2" enabled="1"/>
+      <Edge nodeIn="794" nodeOut="788" portIn="Set" portOut="Port3" enabled="1"/>
+      <Edge nodeIn="795" nodeOut="788" portIn="Set" portOut="Port4" enabled="1"/>
+      <Edge nodeIn="796" nodeOut="788" portIn="Set" portOut="Port5" enabled="1"/>
+      <Edge nodeIn="797" nodeOut="788" portIn="Set" portOut="Port6" enabled="1"/>
+      <Edge nodeIn="798" nodeOut="788" portIn="Set" portOut="Port7" enabled="1"/>
+      <Edge nodeIn="788" nodeOut="789" portIn="Index" portOut="outRounded" enabled="1"/>
+      <Edge nodeIn="791" nodeOut="790" portIn="in1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="802" nodeOut="791" portIn="Set" portOut="out" enabled="1"/>
+      <Edge nodeIn="802" nodeOut="791" portIn="mat_Material" portOut="out" enabled="1"/>
+      <Edge nodeIn="803" nodeOut="791" portIn="Set" portOut="out" enabled="1"/>
+      <Edge nodeIn="803" nodeOut="791" portIn="mat_Material" portOut="out" enabled="1"/>
+      <Edge nodeIn="791" nodeOut="792" portIn="in2" portOut="Out" enabled="1"/>
+      <Edge nodeIn="791" nodeOut="793" portIn="in3" portOut="Out" enabled="1"/>
+      <Edge nodeIn="791" nodeOut="794" portIn="in4" portOut="Out" enabled="1"/>
+      <Edge nodeIn="791" nodeOut="795" portIn="in5" portOut="Out" enabled="1"/>
+      <Edge nodeIn="791" nodeOut="796" portIn="in6" portOut="Out" enabled="1"/>
+      <Edge nodeIn="791" nodeOut="797" portIn="in7" portOut="Out" enabled="1"/>
+      <Edge nodeIn="791" nodeOut="798" portIn="in8" portOut="Out" enabled="1"/>
+      <Edge nodeIn="789" nodeOut="799" portIn="generate" portOut="out" enabled="1"/>
+      <Edge nodeIn="885" nodeOut="808" portIn="A" portOut="Out" enabled="1"/>
+      <Edge nodeIn="814" nodeOut="810" portIn="A" portOut="length" enabled="1"/>
+      <Edge nodeIn="810" nodeOut="811" portIn="vector" portOut="out" enabled="1"/>
+      <Edge nodeIn="885" nodeOut="814" portIn="B" portOut="out" enabled="1"/>
+      <Edge nodeIn="811" nodeOut="822" portIn="B" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="828" nodeOut="822" portIn="vec3" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="856" nodeOut="828" portIn="B" portOut="x" enabled="1"/>
+      <Edge nodeIn="856" nodeOut="853" portIn="A" portOut="x" enabled="1"/>
+      <Edge nodeIn="814" nodeOut="856" portIn="B" portOut="out" enabled="1"/>
+      <Edge nodeIn="752" nodeOut="869" portIn="max" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="875" nodeOut="869" portIn="A" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="756" nodeOut="874" portIn="min" portOut="out" enabled="1"/>
+      <Edge nodeIn="752" nodeOut="875" portIn="generate" portOut="out" enabled="1"/>
+      <Edge nodeIn="752" nodeOut="875" portIn="min" portOut="out" enabled="1"/>
+      <Edge nodeIn="747" nodeOut="885" portIn="Speed" portOut="out" enabled="1"/>
+      <Edge nodeIn="902" nodeOut="885" portIn="In" portOut="out" enabled="1"/>
+      <Edge nodeIn="758" nodeOut="899" portIn="in2" portOut="out" enabled="1"/>
+      <Edge nodeIn="899" nodeOut="900" portIn="in" portOut="output" enabled="1"/>
+      <Edge nodeIn="747" nodeOut="902" portIn="Start" portOut="Out" enabled="1"/>
+      <Edge nodeIn="756" nodeOut="1037" portIn="generate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="756" nodeOut="1039" portIn="max" portOut="Out" enabled="1"/>
+      <Edge nodeIn="874" nodeOut="1039" portIn="A" portOut="Out" enabled="1"/>
+      <Edge nodeIn="1037" nodeOut="1039" portIn="Open" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="1037" nodeOut="1039" portIn="Close" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="754" nodeOut="1042" portIn="vec3" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="750" nodeOut="1222" portIn="vec3" portOut="Pos" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="Entity" Layer="pipes" LayerGUID="8fc5696b-dd62-91b4-1c9d-4fbfc752e78f" Id="b821c0e6-c0c0-f5e9-9a4a-b41c05e85f45" Name="pipeBottom2" Pos="470,500,96" Rotate="1,0,0,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" Material="materials/generic/metal/generic_metal" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="RigidBodyEx" HasEntity="1">
+    <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/props/flappy_boid/pipe.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+     <AI bUsedAsDynamicObstacle="1"/>
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <MultiplayerOptions bNetworked="0"/>
+     <Physics bActivateOnDamage="0" bCanBreakOthers="1" Density="-1" Mass="-1" bPhysicalize="1" bPushableByPlayers="1" bResting="0" bRigidBody="1" bRigidBodyActive="1">
+      <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+      <CGFPropsOverride player_can_break="">
+       <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+       <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+       <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+      </CGFPropsOverride>
+      <CollisionFiltering>
+       <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_large_kickable="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+       <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_large_kickable="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+      </CollisionFiltering>
+      <ForeignData bMovingPlatform="0"/>
+      <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+     </Physics>
+    </Properties>
+    <FlowGraph Description="" Group="pipeMovement" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="747" Class="Movement:MoveEntityTo" pos="1818,504,0" GraphEntity="0">
+       <Inputs entityId="0" Destination="0,0,0" DynamicUpdate="1" ValueType="0" Speed="0" EaseDistance="0" EaseOutDistance="0" CoordSys="0"/>
+      </Node>
+      <Node Id="748" Class="Mission:GameToken" pos="1260,756,0">
+       <Inputs gametoken_Token="Level.booIsDead" compare_Value="false" FireOnStart="0" FireOnlyOnResultChange="0"/>
+      </Node>
+      <Node Id="749" Class="Entity:BeamEntity" pos="3708,270,0" GraphEntity="0">
+       <Inputs entityId="0" CoordSys="1" Position="0,0,0" Rotation="0,0,0" UseZeroRot="0" Scale="0,0,0"/>
+      </Node>
+      <Node Id="750" Class="Vec3:FromVec3" pos="3168,432,0">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="751" Class="Vec3:ToVec3" pos="3510,432,0">
+       <Inputs x="0" y="0" z="0"/>
+      </Node>
+      <Node Id="752" Class="Math:Random" pos="2664,540,0">
+       <Inputs min="0" max="0"/>
+      </Node>
+      <Node Id="753" Class="Math:Add" pos="3348,522,0">
+       <Inputs A="0" B="0"/>
+      </Node>
+      <Node Id="754" Class="Vec3:FromVec3" pos="-252,468,0">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="755" Class="Vec3:ToVec3" pos="90,522,0">
+       <Inputs x="0" y="0" z="0"/>
+      </Node>
+      <Node Id="756" Class="Math:Random" pos="-738,576,0">
+       <Inputs min="0" max="0"/>
+      </Node>
+      <Node Id="757" Class="Math:Add" pos="-72,558,0">
+       <Inputs A="0" B="0"/>
+      </Node>
+      <Node Id="758" Class="Logic:Any" pos="-1080,306,0">
+       <Inputs />
+      </Node>
+      <Node Id="759" Name="pipe_movement_with_all_enhancements" Class="_commentbox" pos="-1566,171.34247,0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="5508" Height="738"/>
+       <NodeSize Width="5508" Height="765.78223"/>
+      </Node>
+      <Node Id="762" Class="entity:BasicEntity" pos="4662,378,0" EntityGUID="ab588214-6581-73ef-eda0-032ff788449c">
+       <Inputs entityId="0" Hide="0" MakeInvulnerable="0" MakeVulnerable="0" Ragdollize="0" Remove="0" ResetHealth="0" UnHide="0"/>
+      </Node>
+      <Node Id="763" Name="reveal_score_star_again_on_loop_reset" Class="_comment" pos="4662,360,0"/>
+      <Node Id="764" Name="on_death,_STOP_current_pipe_movement_AND" Class="_comment" pos="1260,720,0"/>
+      <Node Id="765" Name="randomize_Z_of_start_position" Class="_commentbox" pos="2070,360,0">
+       <Inputs TextSize="1" Color="0.610496,0.89627,0.428691" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1566" Height="270"/>
+       <NodeSize Width="1566" Height="297.7822"/>
+      </Node>
+      <Node Id="766" Name="randomize_Z_of_end_position" Class="_commentbox" pos="-774,387.3425,0">
+       <Inputs TextSize="1" Color="0.610496,0.904661,0.428691" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="990" Height="252"/>
+       <NodeSize Width="990" Height="279.7822"/>
+      </Node>
+      <Node Id="767" Name="move_pipe_to_end_position" Class="_comment" pos="1818,486,0"/>
+      <Node Id="768" Name="send_pipe_back_to_start" Class="_comment" pos="3708,252,0"/>
+      <Node Id="770" Class="Entity:PropertySet" pos="5940,126,0" EntityGUID="e9132818-5214-f1d0-d7b8-e1557d19febb">
+       <Inputs entityId="0" entityProperties_Property="Properties:ParticleEffect" Value="" perArchetype="1"/>
+      </Node>
+      <Node Id="771" Name="randomly_choose_particle_effect" Class="_comment" pos="4770,144,0"/>
+      <Node Id="772" Class="Logic:DeMultiplexer" pos="4932,180,0">
+       <Inputs Index="0" Mode="2"/>
+      </Node>
+      <Node Id="773" Class="Math:Random" pos="4680,162,0">
+       <Inputs min="0" max="7"/>
+      </Node>
+      <Node Id="774" Class="String:SetString" pos="5202,54,0">
+       <Inputs In="explosions.monitor.a_lingering_elec"/>
+      </Node>
+      <Node Id="775" Class="Logic:Any" pos="5598,180,0">
+       <Inputs />
+      </Node>
+      <Node Id="776" Class="String:SetString" pos="5220,108,0">
+       <Inputs In="explosions.rocket.soil_alt1"/>
+      </Node>
+      <Node Id="777" Class="String:SetString" pos="5202,162,0">
+       <Inputs In="explosions.tank30.alien_shell"/>
+      </Node>
+      <Node Id="778" Class="String:SetString" pos="5256,216,0">
+       <Inputs In="explosions.rocket.snow"/>
+      </Node>
+      <Node Id="779" Name="set_randomized_particle_effect" Class="_comment" pos="5940,108,0"/>
+      <Node Id="780" Class="Time:Delay" pos="5724,108,0">
+       <Inputs delay="2" resetOnInput="0"/>
+      </Node>
+      <Node Id="781" Class="String:SetString" pos="5220,270,0">
+       <Inputs In="particles/pfx2/explosion_glass.pfx"/>
+      </Node>
+      <Node Id="782" Class="String:SetString" pos="5220,324,0">
+       <Inputs In="explosions.grenade_air.explosion"/>
+      </Node>
+      <Node Id="783" Class="String:SetString" pos="5256,378,0">
+       <Inputs In="explosions.rocket.metal2"/>
+      </Node>
+      <Node Id="784" Class="String:SetString" pos="5220,432,0">
+       <Inputs In="explosions.wall_explosion.wall_break"/>
+      </Node>
+      <Node Id="785" Class="Game:Start" pos="3726,648,0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="786" Class="Logic:Any" pos="4248,288,0">
+       <Inputs />
+      </Node>
+      <Node Id="787" Name="randomly_choose_pipe_material" Class="_comment" pos="4914,936,0"/>
+      <Node Id="788" Class="Logic:DeMultiplexer" pos="4932,954,0">
+       <Inputs Index="0" Mode="2"/>
+      </Node>
+      <Node Id="789" Class="Math:Random" pos="4698,936,0">
+       <Inputs min="0" max="7"/>
+      </Node>
+      <Node Id="790" Class="String:SetString" pos="5220,828,0">
+       <Inputs In="materials/generic/concrete/roof_tar_paper_01"/>
+      </Node>
+      <Node Id="791" Class="Logic:Any" pos="5724,954,0">
+       <Inputs />
+      </Node>
+      <Node Id="792" Class="String:SetString" pos="5238,882,0">
+       <Inputs In="materials/generic/concrete/rough_concrete_c"/>
+      </Node>
+      <Node Id="793" Class="String:SetString" pos="5202,936,0">
+       <Inputs In="materials/generic/concrete/plaster_rough_stones_moss"/>
+      </Node>
+      <Node Id="794" Class="String:SetString" pos="5256,990,0">
+       <Inputs In="materials/generic/concrete/plaster_red_a"/>
+      </Node>
+      <Node Id="795" Class="String:SetString" pos="5220,1044,0">
+       <Inputs In="materials/generic/concrete/floor_mosaic_tiles_b"/>
+      </Node>
+      <Node Id="796" Class="String:SetString" pos="5220,1098,0">
+       <Inputs In="materials/generic/brick/brick_damaged"/>
+      </Node>
+      <Node Id="797" Class="String:SetString" pos="5220,1152,0">
+       <Inputs In="materials/generic/brick/brick_rough_01"/>
+      </Node>
+      <Node Id="798" Class="String:SetString" pos="5202,1206,0">
+       <Inputs In="materials/generic/metal/checkerplate_floor"/>
+      </Node>
+      <Node Id="799" Class="Logic:Any" pos="4266,936,0">
+       <Inputs />
+      </Node>
+      <Node Id="800" Name="set_BOTTOM_pipe_material" Class="_comment" pos="5904,1008,0"/>
+      <Node Id="801" Name="set_TOP_pipe_material" Class="_comment" pos="5904,828,0"/>
+      <Node Id="802" Class="Material:EntityMaterialChange" pos="5904,846,0" EntityGUID="71b82a76-e57a-62c7-841b-9eea9811e444">
+       <Inputs entityId="0" slot="-1" mat_Material="" Serialize="0"/>
+      </Node>
+      <Node Id="803" Class="Material:EntityMaterialChange" pos="5904,1026,0" GraphEntity="0">
+       <Inputs entityId="0" slot="-1" mat_Material="" Serialize="0"/>
+      </Node>
+      <Node Id="804" Name="randomize_pipe_material_on_each_loop_start" Class="_commentbox" pos="4518,755.8584,0">
+       <Inputs TextSize="1" Color="0.879623,0.693872,0.913099" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1620" Height="504"/>
+       <NodeSize Width="1620" Height="531.78223"/>
+      </Node>
+      <Node Id="805" Name="choose_from_variety_of_particle_FX" Class="_comment" pos="5220,36,0"/>
+      <Node Id="806" Name="on_game_start_OR_loop_restart" Class="_comment" pos="4266,918,0"/>
+      <Node Id="808" Class="Mission:GameToken" pos="1116,432,0">
+       <Inputs gametoken_Token="Level.fltPipeSpeed" compare_Value="" FireOnStart="0" FireOnlyOnResultChange="0"/>
+      </Node>
+      <Node Id="810" Class="Vec3:MagnitudeVec3" pos="756,576,0">
+       <Inputs vector="0,0,0"/>
+      </Node>
+      <Node Id="811" Class="Vec3:SubVec3" pos="576,576,0">
+       <Inputs A="0,0,0" B="0,0,0"/>
+      </Node>
+      <Node Id="812" Name="calculate_ACTUAL_distance_to_randomized_end_point" Class="_comment" pos="576,558,0"/>
+      <Node Id="813" Name="get_current_X_position_of_pipe" Class="_comment" pos="558,738,0"/>
+      <Node Id="814" Class="Math:Div" pos="1008,594,0">
+       <Inputs A="0" B="0"/>
+      </Node>
+      <Node Id="817" Name="randomize_particle_effect_on_loop_reset" Class="_commentbox" pos="4518,-36.141441,0">
+       <Inputs TextSize="1" Color="0.665387,0.806952,0.947307" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1746" Height="666"/>
+       <NodeSize Width="1746" Height="693.78223"/>
+      </Node>
+      <Node Id="818" Name="NOTE_that_every_point_scored_increases_pipe_speed_game_token" Class="_comment" pos="1116,396,0"/>
+      <Node Id="822" Class="Entity:GetPos" pos="324,738,0" GraphEntity="0">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="828" Class="Vec3:FromVec3" pos="612,756,0">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="833" Name="calculate_DIFFERENCE_between_straight" Class="_comment" pos="990,558,0"/>
+      <Node Id="836" Name="Thus,_current_pipe_speed_needs_to_be_adjusted_dynamically" Class="_comment" pos="1116,414,0"/>
+      <Node Id="837" Name="NOTE:_straight_line_distance_will" Class="_comment" pos="1008,648,0"/>
+      <Node Id="853" Class="Vec3:FromVec3" pos="612,666,0">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="854" Name="get_X_position_of_end_point" Class="_comment" pos="576,648,0"/>
+      <Node Id="856" Class="Math:Sub" pos="810,702,0">
+       <Inputs A="0" B="0"/>
+      </Node>
+      <Node Id="857" Name="calculate_straight_line_distance" Class="_comment" pos="792,684,0"/>
+      <Node Id="858" Name="by_ignoring_difference_in_Z_position" Class="_comment" pos="810,756,0"/>
+      <Node Id="869" Class="Mission:GameTokenGet" pos="2088,576,0">
+       <Inputs gametoken_Token="Level.intVertPipeMovement"/>
+      </Node>
+      <Node Id="874" Class="Math:Mul" pos="-900,576,0">
+       <Inputs A="0" B="-1"/>
+      </Node>
+      <Node Id="875" Class="Math:Mul" pos="2466,522,0">
+       <Inputs A="0" B="-1"/>
+      </Node>
+      <Node Id="878" Name="generate_lower_limit" Class="_comment" pos="2448,504,0"/>
+      <Node Id="879" Name="generate_lower_limit" Class="_comment" pos="-936,540,0"/>
+      <Node Id="880" Name="pass_range_of_vertical_pipe_movement_AFTER_user_chooses_in_UI_menu_(&lt;&gt;0)" Class="_comment" pos="-1314,738,0"/>
+      <Node Id="885" Class="Math:Mul" pos="1494,576,0">
+       <Inputs A="0" B="0"/>
+      </Node>
+      <Node Id="886" Name="adjust_speed_for_actual_distance_so_pipes_remain_evenly_spaced" Class="_commentbox" pos="306,333.3425,0">
+       <Inputs TextSize="1" Color="0.846873,0.715694,0.155926" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1476" Height="540"/>
+       <NodeSize Width="1476" Height="567.78223"/>
+      </Node>
+      <Node Id="887" Name="increase_speed_proportional_to_distance" Class="_comment" pos="1476,558,0"/>
+      <Node Id="888" Name="line_and_actual_distance" Class="_comment" pos="990,576,0"/>
+      <Node Id="889" Name="always_be_&lt;=_actual_distance" Class="_comment" pos="1008,666,0"/>
+      <Node Id="894" Name="get_range_of_vertical_movement" Class="_comment" pos="2088,558,0"/>
+      <Node Id="899" Class="Time:Delay" pos="-1314,324,0">
+       <Inputs delay="1" resetOnInput="0"/>
+      </Node>
+      <Node Id="900" Class="Game:Start" pos="-1530,324,0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="902" Class="Logic:Gate" pos="1638,612,0">
+       <Inputs Closed="0"/>
+      </Node>
+      <Node Id="903" Name="prevent_new_pipe_movement_from_starting" Class="_comment" pos="1260,738,0"/>
+      <Node Id="1037" Class="Logic:Gate" pos="-918,648,0">
+       <Inputs Closed="0"/>
+      </Node>
+      <Node Id="1039" Class="Mission:GameToken" pos="-1296,612,0">
+       <Inputs gametoken_Token="Level.intVertPipeMovement" compare_Value="0" FireOnStart="1" FireOnlyOnResultChange="0"/>
+      </Node>
+      <Node Id="1042" Class="Entity:GetPos" pos="-504,450,0" EntityGUID="b4eda7fe-f755-251e-bee8-3bb73b9a7df4">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="1043" Name="for_random_Z_value" Class="_comment" pos="-936,558,0"/>
+      <Node Id="1222" Class="Entity:GetPos" pos="2898,414,0" EntityGUID="bcff787f-00ea-c77c-26a6-8416c02dabfe">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="869" nodeOut="747" portIn="Trigger" portOut="Finish" enabled="1"/>
+      <Edge nodeIn="747" nodeOut="748" portIn="Stop" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="902" nodeOut="748" portIn="Close" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="902" nodeOut="748" portIn="Open" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="758" nodeOut="749" portIn="in1" portOut="Done" enabled="1"/>
+      <Edge nodeIn="762" nodeOut="749" portIn="UnHide" portOut="Done" enabled="1"/>
+      <Edge nodeIn="786" nodeOut="749" portIn="in1" portOut="Done" enabled="1"/>
+      <Edge nodeIn="799" nodeOut="749" portIn="in1" portOut="Done" enabled="1"/>
+      <Edge nodeIn="751" nodeOut="750" portIn="x" portOut="x" enabled="1"/>
+      <Edge nodeIn="751" nodeOut="750" portIn="y" portOut="y" enabled="1"/>
+      <Edge nodeIn="753" nodeOut="750" portIn="A" portOut="z" enabled="1"/>
+      <Edge nodeIn="749" nodeOut="751" portIn="Beam" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="749" nodeOut="751" portIn="Position" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="753" nodeOut="752" portIn="B" portOut="out" enabled="1"/>
+      <Edge nodeIn="1222" nodeOut="752" portIn="Get" portOut="out" enabled="1"/>
+      <Edge nodeIn="751" nodeOut="753" portIn="z" portOut="out" enabled="1"/>
+      <Edge nodeIn="755" nodeOut="754" portIn="x" portOut="x" enabled="1"/>
+      <Edge nodeIn="755" nodeOut="754" portIn="y" portOut="y" enabled="1"/>
+      <Edge nodeIn="757" nodeOut="754" portIn="A" portOut="z" enabled="1"/>
+      <Edge nodeIn="747" nodeOut="755" portIn="Destination" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="811" nodeOut="755" portIn="A" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="822" nodeOut="755" portIn="Get" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="853" nodeOut="755" portIn="vec3" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="757" nodeOut="756" portIn="B" portOut="out" enabled="1"/>
+      <Edge nodeIn="1042" nodeOut="756" portIn="Get" portOut="out" enabled="1"/>
+      <Edge nodeIn="755" nodeOut="757" portIn="z" portOut="out" enabled="1"/>
+      <Edge nodeIn="1037" nodeOut="758" portIn="In" portOut="out" enabled="1"/>
+      <Edge nodeIn="774" nodeOut="772" portIn="Set" portOut="Port0" enabled="1"/>
+      <Edge nodeIn="776" nodeOut="772" portIn="Set" portOut="Port1" enabled="1"/>
+      <Edge nodeIn="777" nodeOut="772" portIn="Set" portOut="Port2" enabled="1"/>
+      <Edge nodeIn="778" nodeOut="772" portIn="Set" portOut="Port3" enabled="1"/>
+      <Edge nodeIn="781" nodeOut="772" portIn="Set" portOut="Port4" enabled="1"/>
+      <Edge nodeIn="782" nodeOut="772" portIn="Set" portOut="Port5" enabled="1"/>
+      <Edge nodeIn="783" nodeOut="772" portIn="Set" portOut="Port6" enabled="1"/>
+      <Edge nodeIn="784" nodeOut="772" portIn="Set" portOut="Port7" enabled="1"/>
+      <Edge nodeIn="772" nodeOut="773" portIn="Index" portOut="outRounded" enabled="1"/>
+      <Edge nodeIn="775" nodeOut="774" portIn="in1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="770" nodeOut="775" portIn="Value" portOut="out" enabled="1"/>
+      <Edge nodeIn="780" nodeOut="775" portIn="in" portOut="out" enabled="1"/>
+      <Edge nodeIn="775" nodeOut="776" portIn="in2" portOut="Out" enabled="1"/>
+      <Edge nodeIn="775" nodeOut="777" portIn="in3" portOut="Out" enabled="1"/>
+      <Edge nodeIn="775" nodeOut="778" portIn="in4" portOut="Out" enabled="1"/>
+      <Edge nodeIn="770" nodeOut="780" portIn="Set" portOut="out" enabled="1"/>
+      <Edge nodeIn="775" nodeOut="781" portIn="in5" portOut="Out" enabled="1"/>
+      <Edge nodeIn="775" nodeOut="782" portIn="in6" portOut="Out" enabled="1"/>
+      <Edge nodeIn="775" nodeOut="783" portIn="in7" portOut="Out" enabled="1"/>
+      <Edge nodeIn="775" nodeOut="784" portIn="in8" portOut="Out" enabled="1"/>
+      <Edge nodeIn="786" nodeOut="785" portIn="in2" portOut="output" enabled="1"/>
+      <Edge nodeIn="799" nodeOut="785" portIn="in2" portOut="output" enabled="1"/>
+      <Edge nodeIn="773" nodeOut="786" portIn="generate" portOut="out" enabled="1"/>
+      <Edge nodeIn="790" nodeOut="788" portIn="Set" portOut="Port0" enabled="1"/>
+      <Edge nodeIn="792" nodeOut="788" portIn="Set" portOut="Port1" enabled="1"/>
+      <Edge nodeIn="793" nodeOut="788" portIn="Set" portOut="Port2" enabled="1"/>
+      <Edge nodeIn="794" nodeOut="788" portIn="Set" portOut="Port3" enabled="1"/>
+      <Edge nodeIn="795" nodeOut="788" portIn="Set" portOut="Port4" enabled="1"/>
+      <Edge nodeIn="796" nodeOut="788" portIn="Set" portOut="Port5" enabled="1"/>
+      <Edge nodeIn="797" nodeOut="788" portIn="Set" portOut="Port6" enabled="1"/>
+      <Edge nodeIn="798" nodeOut="788" portIn="Set" portOut="Port7" enabled="1"/>
+      <Edge nodeIn="788" nodeOut="789" portIn="Index" portOut="outRounded" enabled="1"/>
+      <Edge nodeIn="791" nodeOut="790" portIn="in1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="802" nodeOut="791" portIn="Set" portOut="out" enabled="1"/>
+      <Edge nodeIn="802" nodeOut="791" portIn="mat_Material" portOut="out" enabled="1"/>
+      <Edge nodeIn="803" nodeOut="791" portIn="Set" portOut="out" enabled="1"/>
+      <Edge nodeIn="803" nodeOut="791" portIn="mat_Material" portOut="out" enabled="1"/>
+      <Edge nodeIn="791" nodeOut="792" portIn="in2" portOut="Out" enabled="1"/>
+      <Edge nodeIn="791" nodeOut="793" portIn="in3" portOut="Out" enabled="1"/>
+      <Edge nodeIn="791" nodeOut="794" portIn="in4" portOut="Out" enabled="1"/>
+      <Edge nodeIn="791" nodeOut="795" portIn="in5" portOut="Out" enabled="1"/>
+      <Edge nodeIn="791" nodeOut="796" portIn="in6" portOut="Out" enabled="1"/>
+      <Edge nodeIn="791" nodeOut="797" portIn="in7" portOut="Out" enabled="1"/>
+      <Edge nodeIn="791" nodeOut="798" portIn="in8" portOut="Out" enabled="1"/>
+      <Edge nodeIn="789" nodeOut="799" portIn="generate" portOut="out" enabled="1"/>
+      <Edge nodeIn="885" nodeOut="808" portIn="A" portOut="Out" enabled="1"/>
+      <Edge nodeIn="814" nodeOut="810" portIn="A" portOut="length" enabled="1"/>
+      <Edge nodeIn="810" nodeOut="811" portIn="vector" portOut="out" enabled="1"/>
+      <Edge nodeIn="885" nodeOut="814" portIn="B" portOut="out" enabled="1"/>
+      <Edge nodeIn="811" nodeOut="822" portIn="B" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="828" nodeOut="822" portIn="vec3" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="856" nodeOut="828" portIn="B" portOut="x" enabled="1"/>
+      <Edge nodeIn="856" nodeOut="853" portIn="A" portOut="x" enabled="1"/>
+      <Edge nodeIn="814" nodeOut="856" portIn="B" portOut="out" enabled="1"/>
+      <Edge nodeIn="752" nodeOut="869" portIn="max" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="875" nodeOut="869" portIn="A" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="756" nodeOut="874" portIn="min" portOut="out" enabled="1"/>
+      <Edge nodeIn="752" nodeOut="875" portIn="generate" portOut="out" enabled="1"/>
+      <Edge nodeIn="752" nodeOut="875" portIn="min" portOut="out" enabled="1"/>
+      <Edge nodeIn="747" nodeOut="885" portIn="Speed" portOut="out" enabled="1"/>
+      <Edge nodeIn="902" nodeOut="885" portIn="In" portOut="out" enabled="1"/>
+      <Edge nodeIn="758" nodeOut="899" portIn="in2" portOut="out" enabled="1"/>
+      <Edge nodeIn="899" nodeOut="900" portIn="in" portOut="output" enabled="1"/>
+      <Edge nodeIn="747" nodeOut="902" portIn="Start" portOut="Out" enabled="1"/>
+      <Edge nodeIn="756" nodeOut="1037" portIn="generate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="756" nodeOut="1039" portIn="max" portOut="Out" enabled="1"/>
+      <Edge nodeIn="874" nodeOut="1039" portIn="A" portOut="Out" enabled="1"/>
+      <Edge nodeIn="1037" nodeOut="1039" portIn="Open" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="1037" nodeOut="1039" portIn="Close" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="754" nodeOut="1042" portIn="vec3" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="750" nodeOut="1222" portIn="vec3" portOut="Pos" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="Entity" Layer="pipes" LayerGUID="8fc5696b-dd62-91b4-1c9d-4fbfc752e78f" Id="2c71101f-9c3e-9f83-c845-5473979f510a" Name="scoreTrigger3" LinkedTo="c541bf8a-b9f2-c977-fe89-5178c81721a2" Pos="0,0,3.5" Rotate="1,0,0,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="ProximityTrigger" HasEntity="1">
+    <Properties bActivateWithUseButton="0" DimX="4" DimY="3" DimZ="10" bEnabled="1" EnterDelay="0" ExitDelay="0" esFactionFilter="" bInVehicleOnly="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="0" OnlySelectedEntity="FlappyBoid" bOnlySpecialAI="0" PlaySequence="" bRemoveOnTrigger="0" ScriptCommand="" bTriggerOnce="0" UsableMessage="">
+     <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="pipes" LayerGUID="8fc5696b-dd62-91b4-1c9d-4fbfc752e78f" Id="175a5672-8c4c-0dc5-462d-0e26e0cd48ba" Name="pipeTop3" LinkedTo="c541bf8a-b9f2-c977-fe89-5178c81721a2" Pos="0,0,8" Rotate="-4.3711388e-08,-0,1,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" Material="materials/generic/metal/generic_metal" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="RigidBodyEx" HasEntity="1">
+    <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/props/flappy_boid/pipe.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+     <AI bUsedAsDynamicObstacle="1"/>
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <MultiplayerOptions bNetworked="0"/>
+     <Physics bActivateOnDamage="0" bCanBreakOthers="1" Density="-1" Mass="-1" bPhysicalize="1" bPushableByPlayers="1" bResting="0" bRigidBody="1" bRigidBodyActive="1">
+      <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+      <CGFPropsOverride player_can_break="">
+       <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+       <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+       <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+      </CGFPropsOverride>
+      <CollisionFiltering>
+       <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_large_kickable="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+       <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_large_kickable="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+      </CollisionFiltering>
+      <ForeignData bMovingPlatform="0"/>
+      <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+     </Physics>
+    </Properties>
+   </Object>
+   <Object Type="ParticleEntity" Layer="pipes" LayerGUID="8fc5696b-dd62-91b4-1c9d-4fbfc752e78f" Id="79d915f1-975d-f43a-c262-bb698b6d6580" Name="scoreEffect4" LinkedTo="e26f3639-a928-c117-b307-a66511155e99" Pos="0,0,3.5" Rotate="1,0,0,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="ParticleEffect" HasEntity="1" ParticleEntityName="particles/pfx2/explosion_glass.pfx">
+    <Properties bActive="0" esAttachForm="Vertices" esAttachType="None" Comment="" bCountPerUnit="0" CountScale="1" NetworkSync="0" ParticleEffect="particles/pfx2/explosion_glass.pfx" bPrime="1" PulsePeriod="0" bRegisterByBBox="0" Scale="1" soclasses_SmartObjectClass="" SpeedScale="1" Strength="-1" TimeScale="1">
+     <Audio bEnableAudio="1" audioRTPCRtpc="particlefx" esSoundObstructionType="Ignore"/>
+    </Properties>
+    <Components>
+     <Component CryXmlVersion="2" TypeGUID="7925bc64-521f-4a2a-9068-c9c9a1d3499e" TypeName="Cry::DefaultComponents::CParticleComponent" GUID="c24a0a91-874b-300d-5795-dda159fe1fce" Name="" UserAdded="true">
+      <Transform>
+       <translation>
+        <position>
+         <element element="0"/>
+         <element element="0"/>
+         <element element="0"/>
+        </position>
+       </translation>
+       <rotation x="0" y="-0" z="0"/>
+       <scale>
+        <element element="1"/>
+        <element element="1"/>
+        <element element="1"/>
+       </scale>
+      </Transform>
+      <properties Enabled="true" FilePath="particles/pfx2/explosion_glass.pfx">
+       <Attributes>
+        <Attributes />
+       </Attributes>
+       <Features />
+       <SpawnParams prime="true" scale="1" countScale="1" speedScale="1" timeScale="1" spec="Default" ignoreVvisAreas="false" ignoreTerrainBlend="true" ignoreDecalBlend="true" seed="-1"/>
+      </properties>
+     </Component>
+    </Components>
+   </Object>
+   <Object Type="Entity" Layer="pipes" LayerGUID="8fc5696b-dd62-91b4-1c9d-4fbfc752e78f" Id="869afa42-abdb-56b7-6e64-0c1e48d907d7" Name="scoreStar3" LinkedTo="c541bf8a-b9f2-c977-fe89-5178c81721a2" Pos="0,0,3.6999969" Rotate="0.55826432,0.58604759,0.42349952,0.4068628" Scale="0.79999995,0.79999995,0.79999995" ColorRGB="65535" UseCustomLevelLayerColor="0" Material="materials/generic/glass/glass_frosted_red" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="BasicEntity" HasEntity="1">
+    <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/props/flappy_boid/star.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <MultiplayerOptions bNetworked="0"/>
+     <Physics Density="-1" Mass="-1" bPhysicalize="0" bPushableByPlayers="0" bRigidBody="0">
+      <CollisionFiltering>
+       <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_large_kickable="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+       <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_large_kickable="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+      </CollisionFiltering>
+     </Physics>
+    </Properties>
+   </Object>
+   <Object Type="ParticleEntity" Layer="pipes" LayerGUID="8fc5696b-dd62-91b4-1c9d-4fbfc752e78f" Id="416c3c21-747a-8beb-aa4f-4658eea5daf3" Name="scoreEffect1" LinkedTo="affef8ae-47ca-80a3-1afc-1895f5181ce1" Pos="0,0,4" Rotate="1,0,0,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="ParticleEffect" HasEntity="1" ParticleEntityName="particles/pfx2/explosion_glass.pfx">
+    <Properties bActive="0" esAttachForm="Vertices" esAttachType="None" Comment="" bCountPerUnit="0" CountScale="1" NetworkSync="0" ParticleEffect="particles/pfx2/explosion_glass.pfx" bPrime="1" PulsePeriod="0" bRegisterByBBox="0" Scale="1" soclasses_SmartObjectClass="" SpeedScale="1" Strength="-1" TimeScale="1">
+     <Audio bEnableAudio="1" audioRTPCRtpc="particlefx" esSoundObstructionType="Ignore"/>
+    </Properties>
+    <Components>
+     <Component CryXmlVersion="2" TypeGUID="7925bc64-521f-4a2a-9068-c9c9a1d3499e" TypeName="Cry::DefaultComponents::CParticleComponent" GUID="b415d6dc-f12e-aa06-19e7-80a497fcfbfe" Name="" UserAdded="true">
+      <Transform>
+       <translation>
+        <position>
+         <element element="0"/>
+         <element element="0"/>
+         <element element="0"/>
+        </position>
+       </translation>
+       <rotation x="0" y="-0" z="0"/>
+       <scale>
+        <element element="1"/>
+        <element element="1"/>
+        <element element="1"/>
+       </scale>
+      </Transform>
+      <properties Enabled="true" FilePath="particles/pfx2/explosion_glass.pfx">
+       <Attributes>
+        <Attributes />
+       </Attributes>
+       <Features />
+       <SpawnParams prime="true" scale="1" countScale="1" speedScale="1" timeScale="1" spec="Default" ignoreVvisAreas="false" ignoreTerrainBlend="true" ignoreDecalBlend="true" seed="-1"/>
+      </properties>
+     </Component>
+    </Components>
+   </Object>
+   <Object Type="Entity" Layer="pipes" LayerGUID="8fc5696b-dd62-91b4-1c9d-4fbfc752e78f" Id="ebf9b626-a40f-324b-2ccc-54cfa97c431d" Name="scoreTrigger4" LinkedTo="e26f3639-a928-c117-b307-a66511155e99" Pos="0,0,3.5" Rotate="1,0,0,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="ProximityTrigger" HasEntity="1">
+    <Properties bActivateWithUseButton="0" DimX="4" DimY="3" DimZ="10" bEnabled="1" EnterDelay="0" ExitDelay="0" esFactionFilter="" bInVehicleOnly="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="0" OnlySelectedEntity="FlappyBoid" bOnlySpecialAI="0" PlaySequence="" bRemoveOnTrigger="0" ScriptCommand="" bTriggerOnce="0" UsableMessage="">
+     <MultiplayerOptions bNetworked="0" bPerPlayer="0"/>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="pipes" LayerGUID="8fc5696b-dd62-91b4-1c9d-4fbfc752e78f" Id="ab588214-6581-73ef-eda0-032ff788449c" Name="scoreStar2" LinkedTo="b821c0e6-c0c0-f5e9-9a4a-b41c05e85f45" Pos="0,3.0517578e-05,3.6999969" Rotate="0.63822597,0.63948947,-0.30851257,-0.29755786" Scale="0.79999995,0.79999995,0.79999995" ColorRGB="65535" UseCustomLevelLayerColor="0" Material="materials/generic/glass/glass_frosted_red" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="BasicEntity" HasEntity="1">
+    <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/props/flappy_boid/star.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <MultiplayerOptions bNetworked="0"/>
+     <Physics Density="-1" Mass="-1" bPhysicalize="0" bPushableByPlayers="0" bRigidBody="0">
+      <CollisionFiltering>
+       <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_large_kickable="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+       <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_large_kickable="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+      </CollisionFiltering>
+     </Physics>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="pipes" LayerGUID="8fc5696b-dd62-91b4-1c9d-4fbfc752e78f" Id="337cc10f-f956-29b6-dab1-256066663ab0" Name="pipeTop1" LinkedTo="affef8ae-47ca-80a3-1afc-1895f5181ce1" Pos="0,0,8" Rotate="-4.3711388e-08,-0,1,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" Material="materials/generic/metal/generic_metal" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="RigidBodyEx" HasEntity="1">
+    <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/props/flappy_boid/pipe.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+     <AI bUsedAsDynamicObstacle="1"/>
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <MultiplayerOptions bNetworked="0"/>
+     <Physics bActivateOnDamage="0" bCanBreakOthers="1" Density="-1" Mass="-1" bPhysicalize="1" bPushableByPlayers="1" bResting="0" bRigidBody="1" bRigidBodyActive="1">
+      <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+      <CGFPropsOverride player_can_break="">
+       <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+       <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+       <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+      </CGFPropsOverride>
+      <CollisionFiltering>
+       <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_large_kickable="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+       <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_large_kickable="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+      </CollisionFiltering>
+      <ForeignData bMovingPlatform="0"/>
+      <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+     </Physics>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="pipes" LayerGUID="8fc5696b-dd62-91b4-1c9d-4fbfc752e78f" Id="affef8ae-47ca-80a3-1afc-1895f5181ce1" Name="pipeBottom1" Pos="485,500,96" Rotate="1,0,0,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" Material="materials/generic/metal/generic_metal" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="RigidBodyEx" HasEntity="1">
+    <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/props/flappy_boid/pipe.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+     <AI bUsedAsDynamicObstacle="1"/>
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <MultiplayerOptions bNetworked="0"/>
+     <Physics bActivateOnDamage="0" bCanBreakOthers="1" Density="-1" Mass="-1" bPhysicalize="1" bPushableByPlayers="1" bResting="0" bRigidBody="1" bRigidBodyActive="1">
+      <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+      <CGFPropsOverride player_can_break="">
+       <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+       <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+       <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+      </CGFPropsOverride>
+      <CollisionFiltering>
+       <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_large_kickable="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+       <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_large_kickable="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+      </CollisionFiltering>
+      <ForeignData bMovingPlatform="0"/>
+      <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+     </Physics>
+    </Properties>
+    <FlowGraph Description="" Group="pipeMovement" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="747" Class="Movement:MoveEntityTo" pos="558,432,0" GraphEntity="0">
+       <Inputs entityId="0" Destination="0,0,0" DynamicUpdate="1" ValueType="0" Speed="0" EaseDistance="0" EaseOutDistance="0" CoordSys="0"/>
+      </Node>
+      <Node Id="748" Class="Mission:GameToken" pos="0,684,0">
+       <Inputs gametoken_Token="Level.booIsDead" compare_Value="false" FireOnStart="0" FireOnlyOnResultChange="0"/>
+      </Node>
+      <Node Id="749" Class="Entity:BeamEntity" pos="2448,198,0" GraphEntity="0">
+       <Inputs entityId="0" CoordSys="1" Position="0,0,0" Rotation="0,0,0" UseZeroRot="0" Scale="0,0,0"/>
+      </Node>
+      <Node Id="750" Class="Vec3:FromVec3" pos="1908,360,0">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="751" Class="Vec3:ToVec3" pos="2250,360,0">
+       <Inputs x="0" y="0" z="0"/>
+      </Node>
+      <Node Id="752" Class="Math:Random" pos="1404,468,0">
+       <Inputs min="0" max="0"/>
+      </Node>
+      <Node Id="753" Class="Math:Add" pos="2088,450,0">
+       <Inputs A="0" B="0"/>
+      </Node>
+      <Node Id="754" Class="Vec3:FromVec3" pos="-1512,396,0">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="755" Class="Vec3:ToVec3" pos="-1170,450,0">
+       <Inputs x="0" y="0" z="0"/>
+      </Node>
+      <Node Id="756" Class="Math:Random" pos="-1998,504,0">
+       <Inputs min="0" max="0"/>
+      </Node>
+      <Node Id="757" Class="Math:Add" pos="-1332,486,0">
+       <Inputs A="0" B="0"/>
+      </Node>
+      <Node Id="758" Class="Logic:Any" pos="-2340,234,0">
+       <Inputs />
+      </Node>
+      <Node Id="759" Name="pipe_movement_with_all_enhancements" Class="_commentbox" pos="-2826,-2.7163696,0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="5508" Height="738"/>
+       <NodeSize Width="5508" Height="876.35791"/>
+      </Node>
+      <Node Id="762" Class="entity:BasicEntity" pos="3024,432,0" EntityGUID="ef350c35-2afe-9498-8963-55bc03f1a85b">
+       <Inputs entityId="0" Hide="0" MakeInvulnerable="0" MakeVulnerable="0" Ragdollize="0" Remove="0" ResetHealth="0" UnHide="0"/>
+      </Node>
+      <Node Id="763" Name="reveal_score_star_again_on_loop_reset" Class="_comment" pos="3024,414,0"/>
+      <Node Id="764" Name="on_death,_STOP_current_pipe_movement_AND" Class="_comment" pos="0,648,0"/>
+      <Node Id="765" Name="randomize_Z_of_start_position" Class="_commentbox" pos="810,177.28262,0">
+       <Inputs TextSize="1" Color="0.610496,0.89627,0.428691" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1566" Height="270"/>
+       <NodeSize Width="1566" Height="408.35794"/>
+      </Node>
+      <Node Id="766" Name="randomize_Z_of_end_position" Class="_commentbox" pos="-2034,213.28256,0">
+       <Inputs TextSize="1" Color="0.610496,0.904661,0.428691" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="990" Height="252"/>
+       <NodeSize Width="1307.1404" Height="390.35794"/>
+      </Node>
+      <Node Id="767" Name="move_pipe_to_end_position" Class="_comment" pos="558,414,0"/>
+      <Node Id="768" Name="send_pipe_back_to_start" Class="_comment" pos="2448,180,0"/>
+      <Node Id="770" Class="Entity:PropertySet" pos="4302,180,0" EntityGUID="416c3c21-747a-8beb-aa4f-4658eea5daf3">
+       <Inputs entityId="0" entityProperties_Property="Properties:ParticleEffect" Value="" perArchetype="1"/>
+      </Node>
+      <Node Id="771" Name="randomly_choose_particle_effect" Class="_comment" pos="3132,198,0"/>
+      <Node Id="772" Class="Logic:DeMultiplexer" pos="3294,234,0">
+       <Inputs Index="0" Mode="2"/>
+      </Node>
+      <Node Id="773" Class="Math:Random" pos="3042,216,0">
+       <Inputs min="0" max="7"/>
+      </Node>
+      <Node Id="774" Class="String:SetString" pos="3564,108,0">
+       <Inputs In="explosions.monitor.a_lingering_elec"/>
+      </Node>
+      <Node Id="775" Class="Logic:Any" pos="3960,234,0">
+       <Inputs />
+      </Node>
+      <Node Id="776" Class="String:SetString" pos="3582,162,0">
+       <Inputs In="explosions.rocket.water"/>
+      </Node>
+      <Node Id="777" Class="String:SetString" pos="3564,216,0">
+       <Inputs In="explosions.tank30.alien_shell"/>
+      </Node>
+      <Node Id="778" Class="String:SetString" pos="3618,270,0">
+       <Inputs In="explosions.rocket.snow"/>
+      </Node>
+      <Node Id="779" Name="set_randomized_particle_effect" Class="_comment" pos="4302,162,0"/>
+      <Node Id="780" Class="Time:Delay" pos="4086,162,0">
+       <Inputs delay="2" resetOnInput="0"/>
+      </Node>
+      <Node Id="781" Class="String:SetString" pos="3582,324,0">
+       <Inputs In="particles/pfx2/explosion_glass.pfx"/>
+      </Node>
+      <Node Id="782" Class="String:SetString" pos="3582,378,0">
+       <Inputs In="explosions.grenade_air.explosion"/>
+      </Node>
+      <Node Id="783" Class="String:SetString" pos="3618,432,0">
+       <Inputs In="explosions.rocket.metal2"/>
+      </Node>
+      <Node Id="784" Class="String:SetString" pos="3582,486,0">
+       <Inputs In="explosions.wall_explosion.wall_break"/>
+      </Node>
+      <Node Id="785" Class="Game:Start" pos="2466,576,0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="786" Class="Logic:Any" pos="2898,216,0">
+       <Inputs />
+      </Node>
+      <Node Id="787" Name="randomly_choose_pipe_material" Class="_comment" pos="3330,918,0"/>
+      <Node Id="788" Class="Logic:DeMultiplexer" pos="3348,936,0">
+       <Inputs Index="0" Mode="2"/>
+      </Node>
+      <Node Id="789" Class="Math:Random" pos="3114,918,0">
+       <Inputs min="0" max="7"/>
+      </Node>
+      <Node Id="790" Class="String:SetString" pos="3636,810,0">
+       <Inputs In="materials/generic/concrete/roof_tar_paper_01"/>
+      </Node>
+      <Node Id="791" Class="Logic:Any" pos="4140,936,0">
+       <Inputs />
+      </Node>
+      <Node Id="792" Class="String:SetString" pos="3654,864,0">
+       <Inputs In="materials/generic/concrete/rough_concrete_c"/>
+      </Node>
+      <Node Id="793" Class="String:SetString" pos="3618,918,0">
+       <Inputs In="materials/generic/concrete/plaster_rough_stones_moss"/>
+      </Node>
+      <Node Id="794" Class="String:SetString" pos="3672,972,0">
+       <Inputs In="materials/generic/concrete/plaster_red_a"/>
+      </Node>
+      <Node Id="795" Class="String:SetString" pos="3636,1026,0">
+       <Inputs In="materials/generic/concrete/floor_mosaic_tiles_b"/>
+      </Node>
+      <Node Id="796" Class="String:SetString" pos="3636,1080,0">
+       <Inputs In="materials/generic/brick/brick_damaged"/>
+      </Node>
+      <Node Id="797" Class="String:SetString" pos="3636,1134,0">
+       <Inputs In="materials/generic/brick/brick_rough_01"/>
+      </Node>
+      <Node Id="798" Class="String:SetString" pos="3618,1188,0">
+       <Inputs In="materials/generic/metal/checkerplate_floor"/>
+      </Node>
+      <Node Id="799" Class="Logic:Any" pos="2934,918,0">
+       <Inputs />
+      </Node>
+      <Node Id="800" Name="set_BOTTOM_pipe_material" Class="_comment" pos="4320,990,0"/>
+      <Node Id="801" Name="set_TOP_pipe_material" Class="_comment" pos="4320,810,0"/>
+      <Node Id="802" Class="Material:EntityMaterialChange" pos="4320,828,0" EntityGUID="337cc10f-f956-29b6-dab1-256066663ab0">
+       <Inputs entityId="0" slot="-1" mat_Material="" Serialize="0"/>
+      </Node>
+      <Node Id="803" Class="Material:EntityMaterialChange" pos="4320,1008,0" GraphEntity="0">
+       <Inputs entityId="0" slot="-1" mat_Material="" Serialize="0"/>
+      </Node>
+      <Node Id="804" Name="randomize_pipe_material_on_each_loop_start" Class="_commentbox" pos="2880,627.59387,0">
+       <Inputs TextSize="1" Color="0.879623,0.693872,0.913099" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1674" Height="504"/>
+       <NodeSize Width="1986.9254" Height="642.35791"/>
+      </Node>
+      <Node Id="805" Name="choose_from_variety_of_particle_FX" Class="_comment" pos="3582,90,0"/>
+      <Node Id="806" Name="on_game_start_OR_loop_restart" Class="_comment" pos="2934,900,0"/>
+      <Node Id="808" Class="Mission:GameToken" pos="-144,360,0">
+       <Inputs gametoken_Token="Level.fltPipeSpeed" compare_Value="" FireOnStart="0" FireOnlyOnResultChange="0"/>
+      </Node>
+      <Node Id="810" Class="Vec3:MagnitudeVec3" pos="-504,504,0">
+       <Inputs vector="0,0,0"/>
+      </Node>
+      <Node Id="811" Class="Vec3:SubVec3" pos="-684,504,0">
+       <Inputs A="0,0,0" B="0,0,0"/>
+      </Node>
+      <Node Id="812" Name="calculate_ACTUAL_distance_to_randomized_end_point" Class="_comment" pos="-684,486,0"/>
+      <Node Id="813" Name="get_current_X_position_of_pipe" Class="_comment" pos="-702,666,0"/>
+      <Node Id="814" Class="Math:Div" pos="-252,522,0">
+       <Inputs A="0" B="0"/>
+      </Node>
+      <Node Id="817" Name="randomize_particle_effect_on_loop_reset" Class="_commentbox" pos="2880,-92.716614,0">
+       <Inputs TextSize="1" Color="0.665387,0.806952,0.947307" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1746" Height="666"/>
+       <NodeSize Width="1789.7086" Height="804.35791"/>
+      </Node>
+      <Node Id="818" Name="NOTE_that_every_point_scored_increases_pipe_speed_game_token" Class="_comment" pos="-144,324,0"/>
+      <Node Id="822" Class="Entity:GetPos" pos="-936,666,0" GraphEntity="0">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="828" Class="Vec3:FromVec3" pos="-648,684,0">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="833" Name="calculate_DIFFERENCE_between_straight" Class="_comment" pos="-270,486,0"/>
+      <Node Id="836" Name="Thus,_current_pipe_speed_needs_to_be_adjusted_dynamically" Class="_comment" pos="-144,342,0"/>
+      <Node Id="837" Name="NOTE:_straight_line_distance_will" Class="_comment" pos="-252,576,0"/>
+      <Node Id="853" Class="Vec3:FromVec3" pos="-648,594,0">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="854" Name="get_X_position_of_end_point" Class="_comment" pos="-684,576,0"/>
+      <Node Id="856" Class="Math:Sub" pos="-450,630,0">
+       <Inputs A="0" B="0"/>
+      </Node>
+      <Node Id="857" Name="calculate_straight_line_distance" Class="_comment" pos="-468,612,0"/>
+      <Node Id="858" Name="by_ignoring_difference_in_Z_position" Class="_comment" pos="-450,684,0"/>
+      <Node Id="869" Class="Mission:GameTokenGet" pos="828,504,0">
+       <Inputs gametoken_Token="Level.intVertPipeMovement"/>
+      </Node>
+      <Node Id="874" Class="Math:Mul" pos="-2160,504,0">
+       <Inputs A="0" B="-1"/>
+      </Node>
+      <Node Id="875" Class="Math:Mul" pos="1206,450,0">
+       <Inputs A="0" B="-1"/>
+      </Node>
+      <Node Id="878" Name="generate_lower_limit" Class="_comment" pos="1188,432,0"/>
+      <Node Id="879" Name="generate_lower_limit" Class="_comment" pos="-2196,468,0"/>
+      <Node Id="880" Name="pass_range_of_vertical_pipe_movement_AFTER_user_chooses_in_UI_menu_(&lt;&gt;0)" Class="_comment" pos="-2574,666,0"/>
+      <Node Id="885" Class="Math:Mul" pos="234,504,0">
+       <Inputs A="0" B="0"/>
+      </Node>
+      <Node Id="886" Name="adjust_speed_for_actual_distance_so_pipes_remain_evenly_spaced" Class="_commentbox" pos="-954,159.28177,0">
+       <Inputs TextSize="1" Color="0.846873,0.715694,0.155926" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1476" Height="540"/>
+       <NodeSize Width="2904.8938" Height="678.35791"/>
+      </Node>
+      <Node Id="887" Name="increase_speed_proportional_to_distance" Class="_comment" pos="216,486,0"/>
+      <Node Id="888" Name="line_and_actual_distance" Class="_comment" pos="-270,504,0"/>
+      <Node Id="889" Name="always_be_&lt;=_actual_distance" Class="_comment" pos="-252,594,0"/>
+      <Node Id="894" Name="get_range_of_vertical_movement" Class="_comment" pos="828,486,0"/>
+      <Node Id="899" Class="Time:Delay" pos="-2574,252,0">
+       <Inputs delay="1" resetOnInput="0"/>
+      </Node>
+      <Node Id="900" Class="Game:Start" pos="-2790,252,0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="902" Class="Logic:Gate" pos="378,540,0">
+       <Inputs Closed="0"/>
+      </Node>
+      <Node Id="903" Name="prevent_new_pipe_movement_from_starting" Class="_comment" pos="0,666,0"/>
+      <Node Id="1037" Class="Logic:Gate" pos="-2178,576,0">
+       <Inputs Closed="0"/>
+      </Node>
+      <Node Id="1039" Class="Mission:GameToken" pos="-2556,540,0">
+       <Inputs gametoken_Token="Level.intVertPipeMovement" compare_Value="0" FireOnStart="1" FireOnlyOnResultChange="0"/>
+      </Node>
+      <Node Id="1042" Class="Entity:GetPos" pos="-1764,378,0" EntityGUID="b4eda7fe-f755-251e-bee8-3bb73b9a7df4">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="1043" Name="for_random_Z_value" Class="_comment" pos="-2196,486,0"/>
+      <Node Id="1222" Class="Entity:GetPos" pos="1638,342,0" EntityGUID="bcff787f-00ea-c77c-26a6-8416c02dabfe">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="869" nodeOut="747" portIn="Trigger" portOut="Finish" enabled="1"/>
+      <Edge nodeIn="747" nodeOut="748" portIn="Stop" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="902" nodeOut="748" portIn="Close" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="902" nodeOut="748" portIn="Open" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="758" nodeOut="749" portIn="in1" portOut="Done" enabled="1"/>
+      <Edge nodeIn="762" nodeOut="749" portIn="UnHide" portOut="Done" enabled="1"/>
+      <Edge nodeIn="786" nodeOut="749" portIn="in1" portOut="Done" enabled="1"/>
+      <Edge nodeIn="799" nodeOut="749" portIn="in1" portOut="Done" enabled="1"/>
+      <Edge nodeIn="751" nodeOut="750" portIn="x" portOut="x" enabled="1"/>
+      <Edge nodeIn="751" nodeOut="750" portIn="y" portOut="y" enabled="1"/>
+      <Edge nodeIn="753" nodeOut="750" portIn="A" portOut="z" enabled="1"/>
+      <Edge nodeIn="749" nodeOut="751" portIn="Beam" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="749" nodeOut="751" portIn="Position" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="753" nodeOut="752" portIn="B" portOut="out" enabled="1"/>
+      <Edge nodeIn="1222" nodeOut="752" portIn="Get" portOut="out" enabled="1"/>
+      <Edge nodeIn="751" nodeOut="753" portIn="z" portOut="out" enabled="1"/>
+      <Edge nodeIn="755" nodeOut="754" portIn="x" portOut="x" enabled="1"/>
+      <Edge nodeIn="755" nodeOut="754" portIn="y" portOut="y" enabled="1"/>
+      <Edge nodeIn="757" nodeOut="754" portIn="A" portOut="z" enabled="1"/>
+      <Edge nodeIn="747" nodeOut="755" portIn="Destination" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="811" nodeOut="755" portIn="A" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="822" nodeOut="755" portIn="Get" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="853" nodeOut="755" portIn="vec3" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="757" nodeOut="756" portIn="B" portOut="out" enabled="1"/>
+      <Edge nodeIn="1042" nodeOut="756" portIn="Get" portOut="out" enabled="1"/>
+      <Edge nodeIn="755" nodeOut="757" portIn="z" portOut="out" enabled="1"/>
+      <Edge nodeIn="1037" nodeOut="758" portIn="In" portOut="out" enabled="1"/>
+      <Edge nodeIn="774" nodeOut="772" portIn="Set" portOut="Port0" enabled="1"/>
+      <Edge nodeIn="776" nodeOut="772" portIn="Set" portOut="Port1" enabled="1"/>
+      <Edge nodeIn="777" nodeOut="772" portIn="Set" portOut="Port2" enabled="1"/>
+      <Edge nodeIn="778" nodeOut="772" portIn="Set" portOut="Port3" enabled="1"/>
+      <Edge nodeIn="781" nodeOut="772" portIn="Set" portOut="Port4" enabled="1"/>
+      <Edge nodeIn="782" nodeOut="772" portIn="Set" portOut="Port5" enabled="1"/>
+      <Edge nodeIn="783" nodeOut="772" portIn="Set" portOut="Port6" enabled="1"/>
+      <Edge nodeIn="784" nodeOut="772" portIn="Set" portOut="Port7" enabled="1"/>
+      <Edge nodeIn="772" nodeOut="773" portIn="Index" portOut="outRounded" enabled="1"/>
+      <Edge nodeIn="775" nodeOut="774" portIn="in1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="770" nodeOut="775" portIn="Value" portOut="out" enabled="1"/>
+      <Edge nodeIn="780" nodeOut="775" portIn="in" portOut="out" enabled="1"/>
+      <Edge nodeIn="775" nodeOut="776" portIn="in2" portOut="Out" enabled="1"/>
+      <Edge nodeIn="775" nodeOut="777" portIn="in3" portOut="Out" enabled="1"/>
+      <Edge nodeIn="775" nodeOut="778" portIn="in4" portOut="Out" enabled="1"/>
+      <Edge nodeIn="770" nodeOut="780" portIn="Set" portOut="out" enabled="1"/>
+      <Edge nodeIn="775" nodeOut="781" portIn="in5" portOut="Out" enabled="1"/>
+      <Edge nodeIn="775" nodeOut="782" portIn="in6" portOut="Out" enabled="1"/>
+      <Edge nodeIn="775" nodeOut="783" portIn="in7" portOut="Out" enabled="1"/>
+      <Edge nodeIn="775" nodeOut="784" portIn="in8" portOut="Out" enabled="1"/>
+      <Edge nodeIn="786" nodeOut="785" portIn="in2" portOut="output" enabled="1"/>
+      <Edge nodeIn="799" nodeOut="785" portIn="in2" portOut="output" enabled="1"/>
+      <Edge nodeIn="773" nodeOut="786" portIn="generate" portOut="out" enabled="1"/>
+      <Edge nodeIn="790" nodeOut="788" portIn="Set" portOut="Port0" enabled="1"/>
+      <Edge nodeIn="792" nodeOut="788" portIn="Set" portOut="Port1" enabled="1"/>
+      <Edge nodeIn="793" nodeOut="788" portIn="Set" portOut="Port2" enabled="1"/>
+      <Edge nodeIn="794" nodeOut="788" portIn="Set" portOut="Port3" enabled="1"/>
+      <Edge nodeIn="795" nodeOut="788" portIn="Set" portOut="Port4" enabled="1"/>
+      <Edge nodeIn="796" nodeOut="788" portIn="Set" portOut="Port5" enabled="1"/>
+      <Edge nodeIn="797" nodeOut="788" portIn="Set" portOut="Port6" enabled="1"/>
+      <Edge nodeIn="798" nodeOut="788" portIn="Set" portOut="Port7" enabled="1"/>
+      <Edge nodeIn="788" nodeOut="789" portIn="Index" portOut="outRounded" enabled="1"/>
+      <Edge nodeIn="791" nodeOut="790" portIn="in1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="802" nodeOut="791" portIn="Set" portOut="out" enabled="1"/>
+      <Edge nodeIn="802" nodeOut="791" portIn="mat_Material" portOut="out" enabled="1"/>
+      <Edge nodeIn="803" nodeOut="791" portIn="Set" portOut="out" enabled="1"/>
+      <Edge nodeIn="803" nodeOut="791" portIn="mat_Material" portOut="out" enabled="1"/>
+      <Edge nodeIn="791" nodeOut="792" portIn="in2" portOut="Out" enabled="1"/>
+      <Edge nodeIn="791" nodeOut="793" portIn="in3" portOut="Out" enabled="1"/>
+      <Edge nodeIn="791" nodeOut="794" portIn="in4" portOut="Out" enabled="1"/>
+      <Edge nodeIn="791" nodeOut="795" portIn="in5" portOut="Out" enabled="1"/>
+      <Edge nodeIn="791" nodeOut="796" portIn="in6" portOut="Out" enabled="1"/>
+      <Edge nodeIn="791" nodeOut="797" portIn="in7" portOut="Out" enabled="1"/>
+      <Edge nodeIn="791" nodeOut="798" portIn="in8" portOut="Out" enabled="1"/>
+      <Edge nodeIn="789" nodeOut="799" portIn="generate" portOut="out" enabled="1"/>
+      <Edge nodeIn="885" nodeOut="808" portIn="A" portOut="Out" enabled="1"/>
+      <Edge nodeIn="814" nodeOut="810" portIn="A" portOut="length" enabled="1"/>
+      <Edge nodeIn="810" nodeOut="811" portIn="vector" portOut="out" enabled="1"/>
+      <Edge nodeIn="885" nodeOut="814" portIn="B" portOut="out" enabled="1"/>
+      <Edge nodeIn="811" nodeOut="822" portIn="B" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="828" nodeOut="822" portIn="vec3" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="856" nodeOut="828" portIn="B" portOut="x" enabled="1"/>
+      <Edge nodeIn="856" nodeOut="853" portIn="A" portOut="x" enabled="1"/>
+      <Edge nodeIn="814" nodeOut="856" portIn="B" portOut="out" enabled="1"/>
+      <Edge nodeIn="752" nodeOut="869" portIn="max" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="875" nodeOut="869" portIn="A" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="756" nodeOut="874" portIn="min" portOut="out" enabled="1"/>
+      <Edge nodeIn="752" nodeOut="875" portIn="generate" portOut="out" enabled="1"/>
+      <Edge nodeIn="752" nodeOut="875" portIn="min" portOut="out" enabled="1"/>
+      <Edge nodeIn="747" nodeOut="885" portIn="Speed" portOut="out" enabled="1"/>
+      <Edge nodeIn="902" nodeOut="885" portIn="In" portOut="out" enabled="1"/>
+      <Edge nodeIn="758" nodeOut="899" portIn="in2" portOut="out" enabled="1"/>
+      <Edge nodeIn="899" nodeOut="900" portIn="in" portOut="output" enabled="1"/>
+      <Edge nodeIn="747" nodeOut="902" portIn="Start" portOut="Out" enabled="1"/>
+      <Edge nodeIn="756" nodeOut="1037" portIn="generate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="756" nodeOut="1039" portIn="max" portOut="Out" enabled="1"/>
+      <Edge nodeIn="874" nodeOut="1039" portIn="A" portOut="Out" enabled="1"/>
+      <Edge nodeIn="1037" nodeOut="1039" portIn="Open" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="1037" nodeOut="1039" portIn="Close" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="754" nodeOut="1042" portIn="vec3" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="750" nodeOut="1222" portIn="vec3" portOut="Pos" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="Entity" Layer="pipes" LayerGUID="8fc5696b-dd62-91b4-1c9d-4fbfc752e78f" Id="85b86763-3b4e-b9dc-90f0-83224dac3bec" Name="pipeTop4" LinkedTo="e26f3639-a928-c117-b307-a66511155e99" Pos="0,0,8" Rotate="-4.3711388e-08,-0,1,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" Material="materials/generic/metal/generic_metal" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="RigidBodyEx" HasEntity="1">
+    <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/props/flappy_boid/pipe.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+     <AI bUsedAsDynamicObstacle="1"/>
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <MultiplayerOptions bNetworked="0"/>
+     <Physics bActivateOnDamage="0" bCanBreakOthers="1" Density="-1" Mass="-1" bPhysicalize="1" bPushableByPlayers="1" bResting="0" bRigidBody="1" bRigidBodyActive="1">
+      <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+      <CGFPropsOverride player_can_break="">
+       <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+       <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+       <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+      </CGFPropsOverride>
+      <CollisionFiltering>
+       <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_large_kickable="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+       <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_large_kickable="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+      </CollisionFiltering>
+      <ForeignData bMovingPlatform="0"/>
+      <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+     </Physics>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="pipes" LayerGUID="8fc5696b-dd62-91b4-1c9d-4fbfc752e78f" Id="c541bf8a-b9f2-c977-fe89-5178c81721a2" Name="pipeBottom3" Pos="455,500,96" Rotate="1,0,0,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" Material="materials/generic/metal/generic_metal" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="RigidBodyEx" HasEntity="1">
+    <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/props/flappy_boid/pipe.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+     <AI bUsedAsDynamicObstacle="1"/>
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <MultiplayerOptions bNetworked="0"/>
+     <Physics bActivateOnDamage="0" bCanBreakOthers="1" Density="-1" Mass="-1" bPhysicalize="1" bPushableByPlayers="1" bResting="0" bRigidBody="1" bRigidBodyActive="1">
+      <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+      <CGFPropsOverride player_can_break="">
+       <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+       <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+       <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+      </CGFPropsOverride>
+      <CollisionFiltering>
+       <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_large_kickable="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+       <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_large_kickable="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+      </CollisionFiltering>
+      <ForeignData bMovingPlatform="0"/>
+      <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+     </Physics>
+    </Properties>
+    <FlowGraph Description="" Group="pipeMovement" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="747" Class="Movement:MoveEntityTo" pos="2088,270,0" GraphEntity="0">
+       <Inputs entityId="0" Destination="0,0,0" DynamicUpdate="1" ValueType="0" Speed="0" EaseDistance="0" EaseOutDistance="0" CoordSys="0"/>
+      </Node>
+      <Node Id="748" Class="Mission:GameToken" pos="1530,522,0">
+       <Inputs gametoken_Token="Level.booIsDead" compare_Value="false" FireOnStart="0" FireOnlyOnResultChange="0"/>
+      </Node>
+      <Node Id="749" Class="Entity:BeamEntity" pos="3978,36,0" GraphEntity="0">
+       <Inputs entityId="0" CoordSys="1" Position="0,0,0" Rotation="0,0,0" UseZeroRot="0" Scale="0,0,0"/>
+      </Node>
+      <Node Id="750" Class="Vec3:FromVec3" pos="3438,198,0">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="751" Class="Vec3:ToVec3" pos="3780,198,0">
+       <Inputs x="0" y="0" z="0"/>
+      </Node>
+      <Node Id="752" Class="Math:Random" pos="2934,306,0">
+       <Inputs min="0" max="0"/>
+      </Node>
+      <Node Id="753" Class="Math:Add" pos="3618,288,0">
+       <Inputs A="0" B="0"/>
+      </Node>
+      <Node Id="754" Class="Vec3:FromVec3" pos="18,234,0">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="755" Class="Vec3:ToVec3" pos="360,288,0">
+       <Inputs x="0" y="0" z="0"/>
+      </Node>
+      <Node Id="756" Class="Math:Random" pos="-468,342,0">
+       <Inputs min="0" max="0"/>
+      </Node>
+      <Node Id="757" Class="Math:Add" pos="198,324,0">
+       <Inputs A="0" B="0"/>
+      </Node>
+      <Node Id="758" Class="Logic:Any" pos="-810,72,0">
+       <Inputs />
+      </Node>
+      <Node Id="759" Name="pipe_movement_with_all_enhancements" Class="_commentbox" pos="-1296,-71.841576,0">
+       <Inputs TextSize="1" Color="1,1,1" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="5508" Height="738"/>
+       <NodeSize Width="5508" Height="765.72736"/>
+      </Node>
+      <Node Id="762" Class="entity:BasicEntity" pos="4680,270,0" EntityGUID="869afa42-abdb-56b7-6e64-0c1e48d907d7">
+       <Inputs entityId="0" Hide="0" MakeInvulnerable="0" MakeVulnerable="0" Ragdollize="0" Remove="0" ResetHealth="0" UnHide="0"/>
+      </Node>
+      <Node Id="763" Name="reveal_score_star_again_on_loop_reset" Class="_comment" pos="4680,252,0"/>
+      <Node Id="764" Name="on_death,_STOP_current_pipe_movement_AND" Class="_comment" pos="1530,486,0"/>
+      <Node Id="765" Name="randomize_Z_of_start_position" Class="_commentbox" pos="2340,108,0">
+       <Inputs TextSize="1" Color="0.610496,0.89627,0.428691" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1566" Height="288"/>
+       <NodeSize Width="1566" Height="315.72739"/>
+      </Node>
+      <Node Id="766" Name="randomize_Z_of_end_position" Class="_commentbox" pos="-504,144.15839,0">
+       <Inputs TextSize="1" Color="0.610496,0.904661,0.428691" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="990" Height="252"/>
+       <NodeSize Width="990" Height="279.72739"/>
+      </Node>
+      <Node Id="767" Name="move_pipe_to_end_position" Class="_comment" pos="2088,252,0"/>
+      <Node Id="768" Name="send_pipe_back_to_start" Class="_comment" pos="3978,18,0"/>
+      <Node Id="770" Class="Entity:PropertySet" pos="5958,18,0" EntityGUID="10179cdd-d2df-549b-c668-2785cd000b73">
+       <Inputs entityId="0" entityProperties_Property="Properties:ParticleEffect" Value="" perArchetype="1"/>
+      </Node>
+      <Node Id="771" Name="randomly_choose_particle_effect" Class="_comment" pos="4788,36,0"/>
+      <Node Id="772" Class="Logic:DeMultiplexer" pos="4950,72,0">
+       <Inputs Index="0" Mode="2"/>
+      </Node>
+      <Node Id="773" Class="Math:Random" pos="4698,54,0">
+       <Inputs min="0" max="7"/>
+      </Node>
+      <Node Id="774" Class="String:SetString" pos="5220,-54,0">
+       <Inputs In="explosions.monitor.a_lingering_elec"/>
+      </Node>
+      <Node Id="775" Class="Logic:Any" pos="5616,72,0">
+       <Inputs />
+      </Node>
+      <Node Id="776" Class="String:SetString" pos="5238,0,0">
+       <Inputs In="explosions.rocket.soil_alt1"/>
+      </Node>
+      <Node Id="777" Class="String:SetString" pos="5220,54,0">
+       <Inputs In="explosions.tank30.alien_shell"/>
+      </Node>
+      <Node Id="778" Class="String:SetString" pos="5274,108,0">
+       <Inputs In="explosions.rocket.snow"/>
+      </Node>
+      <Node Id="779" Name="set_randomized_particle_effect" Class="_comment" pos="5958,0,0"/>
+      <Node Id="780" Class="Time:Delay" pos="5742,0,0">
+       <Inputs delay="2" resetOnInput="0"/>
+      </Node>
+      <Node Id="781" Class="String:SetString" pos="5238,162,0">
+       <Inputs In="particles/pfx2/explosion_glass.pfx"/>
+      </Node>
+      <Node Id="782" Class="String:SetString" pos="5238,216,0">
+       <Inputs In="explosions.grenade_air.explosion"/>
+      </Node>
+      <Node Id="783" Class="String:SetString" pos="5274,270,0">
+       <Inputs In="explosions.rocket.metal2"/>
+      </Node>
+      <Node Id="784" Class="String:SetString" pos="5238,324,0">
+       <Inputs In="explosions.wall_explosion.wall_break"/>
+      </Node>
+      <Node Id="785" Class="Game:Start" pos="3996,414,0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="786" Class="Logic:Any" pos="4554,54,0">
+       <Inputs />
+      </Node>
+      <Node Id="787" Name="randomly_choose_pipe_material" Class="_comment" pos="4932,828,0"/>
+      <Node Id="788" Class="Logic:DeMultiplexer" pos="4950,846,0">
+       <Inputs Index="0" Mode="2"/>
+      </Node>
+      <Node Id="789" Class="Math:Random" pos="4716,828,0">
+       <Inputs min="0" max="7"/>
+      </Node>
+      <Node Id="790" Class="String:SetString" pos="5238,720,0">
+       <Inputs In="materials/generic/concrete/roof_tar_paper_01"/>
+      </Node>
+      <Node Id="791" Class="Logic:Any" pos="5742,846,0">
+       <Inputs />
+      </Node>
+      <Node Id="792" Class="String:SetString" pos="5256,774,0">
+       <Inputs In="materials/generic/concrete/rough_concrete_c"/>
+      </Node>
+      <Node Id="793" Class="String:SetString" pos="5220,828,0">
+       <Inputs In="materials/generic/concrete/plaster_rough_stones_moss"/>
+      </Node>
+      <Node Id="794" Class="String:SetString" pos="5274,882,0">
+       <Inputs In="materials/generic/concrete/plaster_red_a"/>
+      </Node>
+      <Node Id="795" Class="String:SetString" pos="5238,936,0">
+       <Inputs In="materials/generic/concrete/floor_mosaic_tiles_b"/>
+      </Node>
+      <Node Id="796" Class="String:SetString" pos="5238,990,0">
+       <Inputs In="materials/generic/brick/brick_damaged"/>
+      </Node>
+      <Node Id="797" Class="String:SetString" pos="5238,1044,0">
+       <Inputs In="materials/generic/brick/brick_rough_01"/>
+      </Node>
+      <Node Id="798" Class="String:SetString" pos="5220,1098,0">
+       <Inputs In="materials/generic/metal/checkerplate_floor"/>
+      </Node>
+      <Node Id="799" Class="Logic:Any" pos="4572,828,0">
+       <Inputs />
+      </Node>
+      <Node Id="800" Name="set_BOTTOM_pipe_material" Class="_comment" pos="5922,900,0"/>
+      <Node Id="801" Name="set_TOP_pipe_material" Class="_comment" pos="5922,720,0"/>
+      <Node Id="802" Class="Material:EntityMaterialChange" pos="5922,738,0" EntityGUID="175a5672-8c4c-0dc5-462d-0e26e0cd48ba">
+       <Inputs entityId="0" slot="-1" mat_Material="" Serialize="0"/>
+      </Node>
+      <Node Id="803" Class="Material:EntityMaterialChange" pos="5922,918,0" GraphEntity="0">
+       <Inputs entityId="0" slot="-1" mat_Material="" Serialize="0"/>
+      </Node>
+      <Node Id="804" Name="randomize_pipe_material_on_each_loop_start" Class="_commentbox" pos="4536,647.91327,0">
+       <Inputs TextSize="1" Color="0.879623,0.693872,0.913099" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1620" Height="504"/>
+       <NodeSize Width="1620" Height="531.72736"/>
+      </Node>
+      <Node Id="805" Name="choose_from_variety_of_particle_FX" Class="_comment" pos="5238,-72,0"/>
+      <Node Id="806" Name="on_game_start_OR_loop_restart" Class="_comment" pos="4572,810,0"/>
+      <Node Id="808" Class="Mission:GameToken" pos="1386,198,0">
+       <Inputs gametoken_Token="Level.fltPipeSpeed" compare_Value="" FireOnStart="0" FireOnlyOnResultChange="0"/>
+      </Node>
+      <Node Id="810" Class="Vec3:MagnitudeVec3" pos="1026,342,0">
+       <Inputs vector="0,0,0"/>
+      </Node>
+      <Node Id="811" Class="Vec3:SubVec3" pos="846,342,0">
+       <Inputs A="0,0,0" B="0,0,0"/>
+      </Node>
+      <Node Id="812" Name="calculate_ACTUAL_distance_to_randomized_end_point" Class="_comment" pos="846,324,0"/>
+      <Node Id="813" Name="get_current_X_position_of_pipe" Class="_comment" pos="828,504,0"/>
+      <Node Id="814" Class="Math:Div" pos="1278,360,0">
+       <Inputs A="0" B="0"/>
+      </Node>
+      <Node Id="817" Name="randomize_particle_effect_on_loop_reset" Class="_commentbox" pos="4536,-144.0864,0">
+       <Inputs TextSize="1" Color="0.665387,0.806952,0.947307" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1746" Height="666"/>
+       <NodeSize Width="1746" Height="693.72736"/>
+      </Node>
+      <Node Id="818" Name="NOTE_that_every_point_scored_increases_pipe_speed_game_token" Class="_comment" pos="1386,162,0"/>
+      <Node Id="822" Class="Entity:GetPos" pos="594,504,0" GraphEntity="0">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="828" Class="Vec3:FromVec3" pos="882,522,0">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="833" Name="calculate_DIFFERENCE_between_straight" Class="_comment" pos="1260,324,0"/>
+      <Node Id="836" Name="Thus,_current_pipe_speed_needs_to_be_adjusted_dynamically" Class="_comment" pos="1386,180,0"/>
+      <Node Id="837" Name="NOTE:_straight_line_distance_will" Class="_comment" pos="1278,414,0"/>
+      <Node Id="853" Class="Vec3:FromVec3" pos="882,432,0">
+       <Inputs vec3="0,0,0"/>
+      </Node>
+      <Node Id="854" Name="get_X_position_of_end_point" Class="_comment" pos="846,414,0"/>
+      <Node Id="856" Class="Math:Sub" pos="1080,468,0">
+       <Inputs A="0" B="0"/>
+      </Node>
+      <Node Id="857" Name="calculate_straight_line_distance" Class="_comment" pos="1062,450,0"/>
+      <Node Id="858" Name="by_ignoring_difference_in_Z_position" Class="_comment" pos="1080,522,0"/>
+      <Node Id="869" Class="Mission:GameTokenGet" pos="2358,342,0">
+       <Inputs gametoken_Token="Level.intVertPipeMovement"/>
+      </Node>
+      <Node Id="874" Class="Math:Mul" pos="-630,342,0">
+       <Inputs A="0" B="-1"/>
+      </Node>
+      <Node Id="875" Class="Math:Mul" pos="2736,288,0">
+       <Inputs A="0" B="-1"/>
+      </Node>
+      <Node Id="878" Name="generate_lower_limit" Class="_comment" pos="2718,270,0"/>
+      <Node Id="879" Name="generate_lower_limit" Class="_comment" pos="-666,306,0"/>
+      <Node Id="880" Name="pass_range_of_vertical_pipe_movement_AFTER_user_chooses_in_UI_menu_(&lt;&gt;0)" Class="_comment" pos="-1044,504,0"/>
+      <Node Id="885" Class="Math:Mul" pos="1764,342,0">
+       <Inputs A="0" B="0"/>
+      </Node>
+      <Node Id="886" Name="adjust_speed_for_actual_distance_so_pipes_remain_evenly_spaced" Class="_commentbox" pos="576,90.158424,0">
+       <Inputs TextSize="1" Color="0.846873,0.715694,0.155926" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+       <ResizeBorder X="0" Y="0" Width="1476" Height="540"/>
+       <NodeSize Width="1476" Height="567.72736"/>
+      </Node>
+      <Node Id="887" Name="increase_speed_proportional_to_distance" Class="_comment" pos="1746,324,0"/>
+      <Node Id="888" Name="line_and_actual_distance" Class="_comment" pos="1260,342,0"/>
+      <Node Id="889" Name="always_be_&lt;=_actual_distance" Class="_comment" pos="1278,432,0"/>
+      <Node Id="894" Name="get_range_of_vertical_movement" Class="_comment" pos="2358,324,0"/>
+      <Node Id="899" Class="Time:Delay" pos="-1044,90,0">
+       <Inputs delay="1" resetOnInput="0"/>
+      </Node>
+      <Node Id="900" Class="Game:Start" pos="-1260,90,0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="902" Class="Logic:Gate" pos="1908,378,0">
+       <Inputs Closed="0"/>
+      </Node>
+      <Node Id="903" Name="prevent_new_pipe_movement_from_starting" Class="_comment" pos="1530,504,0"/>
+      <Node Id="1037" Class="Logic:Gate" pos="-648,414,0">
+       <Inputs Closed="0"/>
+      </Node>
+      <Node Id="1039" Class="Mission:GameToken" pos="-1026,378,0">
+       <Inputs gametoken_Token="Level.intVertPipeMovement" compare_Value="0" FireOnStart="1" FireOnlyOnResultChange="0"/>
+      </Node>
+      <Node Id="1042" Class="Entity:GetPos" pos="-234,216,0" EntityGUID="b4eda7fe-f755-251e-bee8-3bb73b9a7df4">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+      <Node Id="1043" Name="for_random_Z_value" Class="_comment" pos="-666,324,0"/>
+      <Node Id="1222" Class="Entity:GetPos" pos="3168,180,0" EntityGUID="bcff787f-00ea-c77c-26a6-8416c02dabfe">
+       <Inputs entityId="0" CoordSys="1"/>
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="869" nodeOut="747" portIn="Trigger" portOut="Finish" enabled="1"/>
+      <Edge nodeIn="747" nodeOut="748" portIn="Stop" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="902" nodeOut="748" portIn="Close" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="902" nodeOut="748" portIn="Open" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="758" nodeOut="749" portIn="in1" portOut="Done" enabled="1"/>
+      <Edge nodeIn="762" nodeOut="749" portIn="UnHide" portOut="Done" enabled="1"/>
+      <Edge nodeIn="786" nodeOut="749" portIn="in1" portOut="Done" enabled="1"/>
+      <Edge nodeIn="799" nodeOut="749" portIn="in1" portOut="Done" enabled="1"/>
+      <Edge nodeIn="751" nodeOut="750" portIn="x" portOut="x" enabled="1"/>
+      <Edge nodeIn="751" nodeOut="750" portIn="y" portOut="y" enabled="1"/>
+      <Edge nodeIn="753" nodeOut="750" portIn="A" portOut="z" enabled="1"/>
+      <Edge nodeIn="749" nodeOut="751" portIn="Beam" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="749" nodeOut="751" portIn="Position" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="753" nodeOut="752" portIn="B" portOut="out" enabled="1"/>
+      <Edge nodeIn="1222" nodeOut="752" portIn="Get" portOut="out" enabled="1"/>
+      <Edge nodeIn="751" nodeOut="753" portIn="z" portOut="out" enabled="1"/>
+      <Edge nodeIn="755" nodeOut="754" portIn="x" portOut="x" enabled="1"/>
+      <Edge nodeIn="755" nodeOut="754" portIn="y" portOut="y" enabled="1"/>
+      <Edge nodeIn="757" nodeOut="754" portIn="A" portOut="z" enabled="1"/>
+      <Edge nodeIn="747" nodeOut="755" portIn="Destination" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="811" nodeOut="755" portIn="A" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="822" nodeOut="755" portIn="Get" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="853" nodeOut="755" portIn="vec3" portOut="vec3" enabled="1"/>
+      <Edge nodeIn="757" nodeOut="756" portIn="B" portOut="out" enabled="1"/>
+      <Edge nodeIn="1042" nodeOut="756" portIn="Get" portOut="out" enabled="1"/>
+      <Edge nodeIn="755" nodeOut="757" portIn="z" portOut="out" enabled="1"/>
+      <Edge nodeIn="1037" nodeOut="758" portIn="In" portOut="out" enabled="1"/>
+      <Edge nodeIn="774" nodeOut="772" portIn="Set" portOut="Port0" enabled="1"/>
+      <Edge nodeIn="776" nodeOut="772" portIn="Set" portOut="Port1" enabled="1"/>
+      <Edge nodeIn="777" nodeOut="772" portIn="Set" portOut="Port2" enabled="1"/>
+      <Edge nodeIn="778" nodeOut="772" portIn="Set" portOut="Port3" enabled="1"/>
+      <Edge nodeIn="781" nodeOut="772" portIn="Set" portOut="Port4" enabled="1"/>
+      <Edge nodeIn="782" nodeOut="772" portIn="Set" portOut="Port5" enabled="1"/>
+      <Edge nodeIn="783" nodeOut="772" portIn="Set" portOut="Port6" enabled="1"/>
+      <Edge nodeIn="784" nodeOut="772" portIn="Set" portOut="Port7" enabled="1"/>
+      <Edge nodeIn="772" nodeOut="773" portIn="Index" portOut="outRounded" enabled="1"/>
+      <Edge nodeIn="775" nodeOut="774" portIn="in1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="770" nodeOut="775" portIn="Value" portOut="out" enabled="1"/>
+      <Edge nodeIn="780" nodeOut="775" portIn="in" portOut="out" enabled="1"/>
+      <Edge nodeIn="775" nodeOut="776" portIn="in2" portOut="Out" enabled="1"/>
+      <Edge nodeIn="775" nodeOut="777" portIn="in3" portOut="Out" enabled="1"/>
+      <Edge nodeIn="775" nodeOut="778" portIn="in4" portOut="Out" enabled="1"/>
+      <Edge nodeIn="770" nodeOut="780" portIn="Set" portOut="out" enabled="1"/>
+      <Edge nodeIn="775" nodeOut="781" portIn="in5" portOut="Out" enabled="1"/>
+      <Edge nodeIn="775" nodeOut="782" portIn="in6" portOut="Out" enabled="1"/>
+      <Edge nodeIn="775" nodeOut="783" portIn="in7" portOut="Out" enabled="1"/>
+      <Edge nodeIn="775" nodeOut="784" portIn="in8" portOut="Out" enabled="1"/>
+      <Edge nodeIn="786" nodeOut="785" portIn="in2" portOut="output" enabled="1"/>
+      <Edge nodeIn="799" nodeOut="785" portIn="in2" portOut="output" enabled="1"/>
+      <Edge nodeIn="773" nodeOut="786" portIn="generate" portOut="out" enabled="1"/>
+      <Edge nodeIn="790" nodeOut="788" portIn="Set" portOut="Port0" enabled="1"/>
+      <Edge nodeIn="792" nodeOut="788" portIn="Set" portOut="Port1" enabled="1"/>
+      <Edge nodeIn="793" nodeOut="788" portIn="Set" portOut="Port2" enabled="1"/>
+      <Edge nodeIn="794" nodeOut="788" portIn="Set" portOut="Port3" enabled="1"/>
+      <Edge nodeIn="795" nodeOut="788" portIn="Set" portOut="Port4" enabled="1"/>
+      <Edge nodeIn="796" nodeOut="788" portIn="Set" portOut="Port5" enabled="1"/>
+      <Edge nodeIn="797" nodeOut="788" portIn="Set" portOut="Port6" enabled="1"/>
+      <Edge nodeIn="798" nodeOut="788" portIn="Set" portOut="Port7" enabled="1"/>
+      <Edge nodeIn="788" nodeOut="789" portIn="Index" portOut="outRounded" enabled="1"/>
+      <Edge nodeIn="791" nodeOut="790" portIn="in1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="802" nodeOut="791" portIn="Set" portOut="out" enabled="1"/>
+      <Edge nodeIn="802" nodeOut="791" portIn="mat_Material" portOut="out" enabled="1"/>
+      <Edge nodeIn="803" nodeOut="791" portIn="Set" portOut="out" enabled="1"/>
+      <Edge nodeIn="803" nodeOut="791" portIn="mat_Material" portOut="out" enabled="1"/>
+      <Edge nodeIn="791" nodeOut="792" portIn="in2" portOut="Out" enabled="1"/>
+      <Edge nodeIn="791" nodeOut="793" portIn="in3" portOut="Out" enabled="1"/>
+      <Edge nodeIn="791" nodeOut="794" portIn="in4" portOut="Out" enabled="1"/>
+      <Edge nodeIn="791" nodeOut="795" portIn="in5" portOut="Out" enabled="1"/>
+      <Edge nodeIn="791" nodeOut="796" portIn="in6" portOut="Out" enabled="1"/>
+      <Edge nodeIn="791" nodeOut="797" portIn="in7" portOut="Out" enabled="1"/>
+      <Edge nodeIn="791" nodeOut="798" portIn="in8" portOut="Out" enabled="1"/>
+      <Edge nodeIn="789" nodeOut="799" portIn="generate" portOut="out" enabled="1"/>
+      <Edge nodeIn="885" nodeOut="808" portIn="A" portOut="Out" enabled="1"/>
+      <Edge nodeIn="814" nodeOut="810" portIn="A" portOut="length" enabled="1"/>
+      <Edge nodeIn="810" nodeOut="811" portIn="vector" portOut="out" enabled="1"/>
+      <Edge nodeIn="885" nodeOut="814" portIn="B" portOut="out" enabled="1"/>
+      <Edge nodeIn="811" nodeOut="822" portIn="B" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="828" nodeOut="822" portIn="vec3" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="856" nodeOut="828" portIn="B" portOut="x" enabled="1"/>
+      <Edge nodeIn="856" nodeOut="853" portIn="A" portOut="x" enabled="1"/>
+      <Edge nodeIn="814" nodeOut="856" portIn="B" portOut="out" enabled="1"/>
+      <Edge nodeIn="752" nodeOut="869" portIn="max" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="875" nodeOut="869" portIn="A" portOut="OutValue" enabled="1"/>
+      <Edge nodeIn="756" nodeOut="874" portIn="min" portOut="out" enabled="1"/>
+      <Edge nodeIn="752" nodeOut="875" portIn="generate" portOut="out" enabled="1"/>
+      <Edge nodeIn="752" nodeOut="875" portIn="min" portOut="out" enabled="1"/>
+      <Edge nodeIn="747" nodeOut="885" portIn="Speed" portOut="out" enabled="1"/>
+      <Edge nodeIn="902" nodeOut="885" portIn="In" portOut="out" enabled="1"/>
+      <Edge nodeIn="758" nodeOut="899" portIn="in2" portOut="out" enabled="1"/>
+      <Edge nodeIn="899" nodeOut="900" portIn="in" portOut="output" enabled="1"/>
+      <Edge nodeIn="747" nodeOut="902" portIn="Start" portOut="Out" enabled="1"/>
+      <Edge nodeIn="756" nodeOut="1037" portIn="generate" portOut="Out" enabled="1"/>
+      <Edge nodeIn="756" nodeOut="1039" portIn="max" portOut="Out" enabled="1"/>
+      <Edge nodeIn="874" nodeOut="1039" portIn="A" portOut="Out" enabled="1"/>
+      <Edge nodeIn="1037" nodeOut="1039" portIn="Open" portOut="Equal False" enabled="1"/>
+      <Edge nodeIn="1037" nodeOut="1039" portIn="Close" portOut="Equal True" enabled="1"/>
+      <Edge nodeIn="754" nodeOut="1042" portIn="vec3" portOut="Pos" enabled="1"/>
+      <Edge nodeIn="750" nodeOut="1222" portIn="vec3" portOut="Pos" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="Entity" Layer="pipes" LayerGUID="8fc5696b-dd62-91b4-1c9d-4fbfc752e78f" Id="71b82a76-e57a-62c7-841b-9eea9811e444" Name="pipeTop2" LinkedTo="b821c0e6-c0c0-f5e9-9a4a-b41c05e85f45" Pos="0,0,8" Rotate="-4.3711388e-08,-0,1,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" Material="materials/generic/metal/generic_metal" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="RigidBodyEx" HasEntity="1">
+    <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/props/flappy_boid/pipe.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+     <AI bUsedAsDynamicObstacle="1"/>
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <MultiplayerOptions bNetworked="0"/>
+     <Physics bActivateOnDamage="0" bCanBreakOthers="1" Density="-1" Mass="-1" bPhysicalize="1" bPushableByPlayers="1" bResting="0" bRigidBody="1" bRigidBodyActive="1">
+      <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+      <CGFPropsOverride player_can_break="">
+       <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+       <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+       <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+      </CGFPropsOverride>
+      <CollisionFiltering>
+       <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_large_kickable="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+       <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_large_kickable="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+      </CollisionFiltering>
+      <ForeignData bMovingPlatform="0"/>
+      <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+     </Physics>
+    </Properties>
+   </Object>
+   <Object Type="Entity" Layer="pipes" LayerGUID="8fc5696b-dd62-91b4-1c9d-4fbfc752e78f" Id="ef350c35-2afe-9498-8963-55bc03f1a85b" Name="scoreStar1" LinkedTo="affef8ae-47ca-80a3-1afc-1895f5181ce1" Pos="0,0,3.7000003" Rotate="0.70710677,0.70710677,4.2146844e-08,-4.2146844e-08" Scale="0.79999995,0.79999995,0.79999995" ColorRGB="65535" UseCustomLevelLayerColor="0" Material="materials/generic/glass/glass_frosted_red" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="BasicEntity" HasEntity="1">
+    <Properties bCanTriggerAreas="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/props/flappy_boid/star.cgf" bPickable="0" soclasses_SmartObjectClass="" bUsable="0" UseMessage="">
+     <Health bInvulnerable="0" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <MultiplayerOptions bNetworked="0"/>
+     <Physics Density="-1" Mass="-1" bPhysicalize="0" bPushableByPlayers="0" bRigidBody="0">
+      <CollisionFiltering>
+       <collisionIgnore bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_large_kickable="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+       <collisionType bT_collision_class_articulated="0" bT_collision_class_living="0" bT_collision_class_particle="0" bT_collision_class_soft="0" bT_collision_class_terrain="0" bT_collision_class_wheeled="0" bT_gcc_ai="0" bT_gcc_large_kickable="0" bT_gcc_player_body="0" bT_gcc_player_capsule="0" bT_gcc_ragdoll="0" bT_gcc_rigid="0" bT_gcc_vehicle="0" bT_gcc_vtol="0"/>
+      </CollisionFiltering>
+     </Physics>
+    </Properties>
+   </Object>
+   <Object Type="ParticleEntity" Layer="pipes" LayerGUID="8fc5696b-dd62-91b4-1c9d-4fbfc752e78f" Id="e9132818-5214-f1d0-d7b8-e1557d19febb" Name="scoreEffect2" LinkedTo="b821c0e6-c0c0-f5e9-9a4a-b41c05e85f45" Pos="0,0,4" Rotate="1,0,0,0" Scale="1,1,1" ColorRGB="65535" UseCustomLevelLayerColor="0" MinSpec="0" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="ParticleEffect" HasEntity="1" ParticleEntityName="particles/pfx2/explosion_glass.pfx">
+    <Properties bActive="0" esAttachForm="Vertices" esAttachType="None" Comment="" bCountPerUnit="0" CountScale="1" NetworkSync="0" ParticleEffect="particles/pfx2/explosion_glass.pfx" bPrime="1" PulsePeriod="0" bRegisterByBBox="0" Scale="1" soclasses_SmartObjectClass="" SpeedScale="1" Strength="-1" TimeScale="1">
+     <Audio bEnableAudio="1" audioRTPCRtpc="particlefx" esSoundObstructionType="Ignore"/>
+    </Properties>
+    <Components>
+     <Component CryXmlVersion="2" TypeGUID="7925bc64-521f-4a2a-9068-c9c9a1d3499e" TypeName="Cry::DefaultComponents::CParticleComponent" GUID="6f1fa428-603b-446b-fdcc-0382431114df" Name="" UserAdded="true">
+      <Transform>
+       <translation>
+        <position>
+         <element element="0"/>
+         <element element="0"/>
+         <element element="0"/>
+        </position>
+       </translation>
+       <rotation x="0" y="-0" z="0"/>
+       <scale>
+        <element element="1"/>
+        <element element="1"/>
+        <element element="1"/>
+       </scale>
+      </Transform>
+      <properties Enabled="true" FilePath="particles/pfx2/explosion_glass.pfx">
+       <Attributes>
+        <Attributes />
+       </Attributes>
+       <Features />
+       <SpawnParams prime="true" scale="1" countScale="1" speedScale="1" timeScale="1" spec="Default" ignoreVvisAreas="false" ignoreTerrainBlend="true" ignoreDecalBlend="true" seed="-1"/>
+      </properties>
+     </Component>
+    </Components>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>

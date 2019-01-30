@@ -1,0 +1,8 @@
+<AssetMetadata version="0" type="Xml" guid="db8d156d-bbb9-5dee-b88e-42166aae2b9e">
+ <Files>
+  <File path="score_star.xml"/>
+ </Files>
+ <Details>
+  <Detail name="rootTag">Graph</Detail>
+ </Details>
+</AssetMetadata>

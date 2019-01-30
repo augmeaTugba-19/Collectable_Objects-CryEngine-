@@ -1,0 +1,14 @@
+<AssetMetadata version="0" type="Mesh" guid="7faeff10-bcdb-81d3-186c-69d0feecb084">
+ <Files>
+  <File path="nine.cgf"/>
+ </Files>
+ <Details>
+  <Detail name="materialCount">3</Detail>
+  <Detail name="triangleCount">164</Detail>
+  <Detail name="vertexCount">188</Detail>
+  <Detail name="16BitPrecision">false</Detail>
+ </Details>
+ <Dependencies>
+  <Path usageCount="1">./3dtext.mtl</Path>
+ </Dependencies>
+</AssetMetadata>
