@@ -1,0 +1,5 @@
+user/
+solutions/
+logbackups/
+*.log
+*.cryasset
