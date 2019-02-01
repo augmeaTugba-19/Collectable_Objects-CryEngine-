@@ -3,6 +3,10 @@
   <File path="tst/tst.level"/>
  </Files>
  <Dependencies>
+  <Path>%editor%/materials/areasolid.dds</Path>
+  <Path>%editor%/materials/areasolid.mtl</Path>
+  <Path>%editor%/objects/mtlobjects.mtl</Path>
+  <Path>%editor%/objects/mtlsphere.cgf</Path>
   <Path>%engine%/engineassets/icons/averagememoryusage.dds</Path>
   <Path>%engine%/engineassets/icons/highmemoryusage.dds</Path>
   <Path>%engine%/engineassets/icons/livepreview.dds</Path>
@@ -14,24 +18,45 @@
   <Path>%engine%/engineassets/materials/fog/oceanoutof.mtl</Path>
   <Path>%engine%/engineassets/materials/fog/oceanoutoflowspec.mtl</Path>
   <Path>%engine%/engineassets/materials/material_terrain_default.mtl</Path>
+  <Path>%engine%/engineassets/materials/meshimporter/mi_previewvertexalpha.mtl</Path>
+  <Path>%engine%/engineassets/materials/meshimporter/mi_previewvertexcolor.mtl</Path>
   <Path>%engine%/engineassets/materials/sky/sky.mtl</Path>
   <Path>%engine%/engineassets/materials/water/ocean_default.mtl</Path>
   <Path>%engine%/engineassets/materials/water/wateroceanbottom.mtl</Path>
   <Path>%engine%/engineassets/objects/primitive_box.cgf</Path>
   <Path>%engine%/engineassets/objects/primitive_sphere.cgf</Path>
+  <Path>%engine%/engineassets/texturemsg/color_black.dds</Path>
   <Path>%engine%/engineassets/texturemsg/defaultnouvs.dds</Path>
-  <Path>%engine%/engineassets/texturemsg/defaultsolids.mtl</Path>
   <Path>%engine%/engineassets/textures/defaults/16_12.dds</Path>
   <Path>%engine%/engineassets/textures/defaults/16_34.dds</Path>
   <Path>%engine%/engineassets/textures/defaults/16_5.dds</Path>
   <Path>%engine%/engineassets/textures/defaults/16_grey.dds</Path>
   <Path>%engine%/engineassets/textures/grey.dds</Path>
   <Path>%engine%/engineassets/textures/skys/night/half_moon.dds</Path>
+  <Path>engineassets/textures/grey.dds</Path>
   <Path>libs/environmentpresets/levels/tst.xml</Path>
-  <Path>particles/pfx1/explosions/flashbang/explode.pfx</Path>
-  <Path>particles/pfx1/explosions/flashbang/explode/audio.pfx</Path>
-  <Path>particles/pfx2/explosion_a.pfx</Path>
+  <Path>materials/flappycloudbg.mtl</Path>
+  <Path>materials/generic/glass/glass_frosted_red.mtl</Path>
+  <Path>materials/generic/wood/wood_beams_a_red+surface.mtl</Path>
+  <Path>materials/generic/wood/wood_beams_tiled_raft.mtl</Path>
+  <Path>materials/generic/wood/wood_rough_b_wet+surface.mtl</Path>
+  <Path>materials/invisible.mtl</Path>
+  <Path>objects/characters/flappyplayer/lowpolybirdmat.mtl</Path>
+  <Path>objects/props/flappy_boid/background_box.cgf</Path>
+  <Path>objects/props/flappy_boid/bird.cgf</Path>
+  <Path>objects/props/flappy_boid/flappyboid.mtl</Path>
+  <Path>objects/props/flappy_boid/flappycloudbg.mtl</Path>
+  <Path>objects/props/flappy_boid/pipe.cgf</Path>
+  <Path>objects/props/flappy_boid/pipe_closed.cgf</Path>
+  <Path>objects/props/flappy_boid/pipe_closed_large.cgf</Path>
+  <Path>objects/props/flappy_boid/pipe_edgy.cgf</Path>
+  <Path>objects/props/flappy_boid/pipe_edgy_large.cgf</Path>
+  <Path>objects/props/flappy_boid/pipe_glass.cgf</Path>
+  <Path>objects/props/flappy_boid/pipe_glass_large.cgf</Path>
+  <Path>objects/props/flappy_boid/scorestarcolorful.cgf</Path>
+  <Path>objects/props/flappy_boid/wood_fine_b_rotten_tiled.mtl</Path>
+  <Path>objects/props/misc/3dtext/3dtext.mtl</Path>
   <Path>particles/pfx2/explosion_glass.pfx</Path>
-  <Path>particles/pfx2/scorestar.pfx</Path>
+  <Path>scripts/ai/factions.xml</Path>
  </Dependencies>
 </AssetMetadata>

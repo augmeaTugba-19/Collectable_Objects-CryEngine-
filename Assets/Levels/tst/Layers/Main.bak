@@ -1,6 +1,60 @@
 <ObjectLayer>
  <Layer Name="Main" FullName="Main" GUID="546ddf4d-cce0-a42e-0168-e2f8ac1b7c15" Hidden="0" Frozen="0" Expanded="0" Type="0" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1">
   <LayerObjects>
+   <Object Type="EmptyEntity" Layer="Main" LayerGUID="546ddf4d-cce0-a42e-0168-e2f8ac1b7c15" Id="7663c3f5-1062-e48e-5ba8-0dc210ff2ea5" Name="CollectableObject-04" Pos="251.2,266.60001,32.5" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
+    <Properties />
+    <Components>
+     <Component CryXmlVersion="2" TypeGUID="6ddd0033-6aaa-4b71-b8ea-108258205e29" TypeName="Cry::DefaultComponents::CStaticMeshComponent" GUID="1354a23a-b9ca-099a-16fd-a710a0bf8489" Name="" UserAdded="true">
+      <Transform>
+       <translation>
+        <position>
+         <element element="0"/>
+         <element element="0"/>
+         <element element="0"/>
+        </position>
+       </translation>
+       <rotation x="0" y="-0" z="0"/>
+       <scale>
+        <element element="1"/>
+        <element element="1"/>
+        <element element="1"/>
+       </scale>
+      </Transform>
+      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="materials/generic/glass/glass_frosted_red.mtl">
+       <Render ShadowSpec="Low" IgnoreVisArea="false" ViewDistRatio="100" LODDistance="100" GIMode="None"/>
+       <Physics WeightType="EWeightType::Mass" Density="9.9999997e-05" Mass="10"/>
+      </properties>
+     </Component>
+     <Component CryXmlVersion="2" TypeGUID="912c6ce8-56f7-4ffa-9134-f98d4e307bd6" TypeName="Cry::DefaultComponents::CRigidBodyComponent" GUID="0faaf6b6-7134-9693-d8dc-70fc590e65bc" Name="" UserAdded="true">
+      <properties Networked="false" EnabledByDefault="true" Resting="false" Type="Rigid" SendCollisionSignal="false">
+       <Buoyancy Damping="1" Density="1" Resistance="1"/>
+      </properties>
+     </Component>
+     <Component CryXmlVersion="2" TypeGUID="106facad-4099-4993-a9cc-f558a8586307" TypeName="Cry::DefaultComponents::CSpherePrimitiveComponent" GUID="61187a6b-0fa9-3066-2ad5-23c46a65a9b3" Name="" UserAdded="true">
+      <Transform>
+       <translation>
+        <position>
+         <element element="0"/>
+         <element element="0"/>
+         <element element="0"/>
+        </position>
+       </translation>
+       <rotation x="0" y="-0" z="0"/>
+       <scale>
+        <element element="0.5"/>
+        <element element="2"/>
+        <element element="1"/>
+       </scale>
+      </Transform>
+      <properties Radius="1" Surface="" ReactToCollisions="true">
+       <Physics WeightType="EWeightType::Mass" Density="9.9999997e-05" Mass="10"/>
+      </properties>
+     </Component>
+     <Component CryXmlVersion="2" TypeGUID="12970526-7c0b-4fd8-beb5-b5d027f6a368" TypeName="collectableObject" GUID="12052c38-fa0a-f481-ed23-453ecc3a0411" Name="" UserAdded="true">
+      <properties />
+     </Component>
+    </Components>
+   </Object>
    <Object Type="EmptyEntity" Layer="Main" LayerGUID="546ddf4d-cce0-a42e-0168-e2f8ac1b7c15" Id="938ea958-d01d-c30e-61ba-3a2f31ee7084" Name="CollectableObject-01" Pos="240,270,32.5" Rotate="0.99999845,0.0017453278,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
     <Properties />
     <Components>
@@ -20,7 +74,7 @@
         <element element="1"/>
        </scale>
       </Transform>
-      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="">
+      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="materials/generic/glass/glass_frosted_red.mtl">
        <Render ShadowSpec="Low" IgnoreVisArea="false" ViewDistRatio="100" LODDistance="100" GIMode="None"/>
        <Physics WeightType="EWeightType::Mass" Density="9.9999997e-05" Mass="10"/>
       </properties>
@@ -74,7 +128,7 @@
         <element element="1"/>
        </scale>
       </Transform>
-      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="">
+      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="materials/generic/glass/glass_frosted_red.mtl">
        <Render ShadowSpec="Low" IgnoreVisArea="false" ViewDistRatio="100" LODDistance="100" GIMode="None"/>
        <Physics WeightType="EWeightType::Mass" Density="9.9999997e-05" Mass="10"/>
       </properties>
@@ -109,7 +163,7 @@
      </Component>
     </Components>
    </Object>
-   <Object Type="EmptyEntity" Layer="Main" LayerGUID="546ddf4d-cce0-a42e-0168-e2f8ac1b7c15" Id="7663c3f5-1062-e48e-5ba8-0dc210ff2ea5" Name="CollectableObject-04" Pos="251.2,266.60001,32.5" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
+   <Object Type="EmptyEntity" Layer="Main" LayerGUID="546ddf4d-cce0-a42e-0168-e2f8ac1b7c15" Id="30f1d748-6c80-ceed-bc93-5e8a4e0a01fd" Name="CollectableObject-02" Pos="244,269.60001,32.5" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
     <Properties />
     <Components>
      <Component CryXmlVersion="2" TypeGUID="6ddd0033-6aaa-4b71-b8ea-108258205e29" TypeName="Cry::DefaultComponents::CStaticMeshComponent" GUID="1354a23a-b9ca-099a-16fd-a710a0bf8489" Name="" UserAdded="true">
@@ -128,7 +182,7 @@
         <element element="1"/>
        </scale>
       </Transform>
-      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="">
+      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="materials/generic/glass/glass_frosted_red.mtl">
        <Render ShadowSpec="Low" IgnoreVisArea="false" ViewDistRatio="100" LODDistance="100" GIMode="None"/>
        <Physics WeightType="EWeightType::Mass" Density="9.9999997e-05" Mass="10"/>
       </properties>
@@ -158,7 +212,7 @@
        <Physics WeightType="EWeightType::Mass" Density="9.9999997e-05" Mass="10"/>
       </properties>
      </Component>
-     <Component CryXmlVersion="2" TypeGUID="12970526-7c0b-4fd8-beb5-b5d027f6a368" TypeName="collectableObject" GUID="12052c38-fa0a-f481-ed23-453ecc3a0411" Name="" UserAdded="true">
+     <Component CryXmlVersion="2" TypeGUID="12970526-7c0b-4fd8-beb5-b5d027f6a368" TypeName="collectableObject" GUID="d469555a-b0fd-6214-4b47-f818d63fa141" Name="" UserAdded="true">
       <properties />
      </Component>
     </Components>
@@ -182,7 +236,7 @@
         <element element="1"/>
        </scale>
       </Transform>
-      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="">
+      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="materials/generic/glass/glass_frosted_red.mtl">
        <Render ShadowSpec="Low" IgnoreVisArea="false" ViewDistRatio="100" LODDistance="100" GIMode="None"/>
        <Physics WeightType="EWeightType::Mass" Density="9.9999997e-05" Mass="10"/>
       </properties>
@@ -236,7 +290,7 @@
         <element element="1"/>
        </scale>
       </Transform>
-      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="">
+      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="materials/generic/glass/glass_frosted_red.mtl">
        <Render ShadowSpec="Low" IgnoreVisArea="false" ViewDistRatio="100" LODDistance="100" GIMode="None"/>
        <Physics WeightType="EWeightType::Mass" Density="9.9999997e-05" Mass="10"/>
       </properties>
@@ -271,91 +325,6 @@
      </Component>
     </Components>
    </Object>
-   <Object Type="EmptyEntity" Layer="Main" LayerGUID="546ddf4d-cce0-a42e-0168-e2f8ac1b7c15" Id="30f1d748-6c80-ceed-bc93-5e8a4e0a01fd" Name="CollectableObject-02" Pos="244,269.60001,32.5" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
-    <Properties />
-    <Components>
-     <Component CryXmlVersion="2" TypeGUID="6ddd0033-6aaa-4b71-b8ea-108258205e29" TypeName="Cry::DefaultComponents::CStaticMeshComponent" GUID="1354a23a-b9ca-099a-16fd-a710a0bf8489" Name="" UserAdded="true">
-      <Transform>
-       <translation>
-        <position>
-         <element element="0"/>
-         <element element="0"/>
-         <element element="0"/>
-        </position>
-       </translation>
-       <rotation x="0" y="-0" z="0"/>
-       <scale>
-        <element element="1"/>
-        <element element="1"/>
-        <element element="1"/>
-       </scale>
-      </Transform>
-      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="">
-       <Render ShadowSpec="Low" IgnoreVisArea="false" ViewDistRatio="100" LODDistance="100" GIMode="None"/>
-       <Physics WeightType="EWeightType::Mass" Density="9.9999997e-05" Mass="10"/>
-      </properties>
-     </Component>
-     <Component CryXmlVersion="2" TypeGUID="912c6ce8-56f7-4ffa-9134-f98d4e307bd6" TypeName="Cry::DefaultComponents::CRigidBodyComponent" GUID="0faaf6b6-7134-9693-d8dc-70fc590e65bc" Name="" UserAdded="true">
-      <properties Networked="false" EnabledByDefault="true" Resting="false" Type="Rigid" SendCollisionSignal="false">
-       <Buoyancy Damping="1" Density="1" Resistance="1"/>
-      </properties>
-     </Component>
-     <Component CryXmlVersion="2" TypeGUID="106facad-4099-4993-a9cc-f558a8586307" TypeName="Cry::DefaultComponents::CSpherePrimitiveComponent" GUID="61187a6b-0fa9-3066-2ad5-23c46a65a9b3" Name="" UserAdded="true">
-      <Transform>
-       <translation>
-        <position>
-         <element element="0"/>
-         <element element="0"/>
-         <element element="0"/>
-        </position>
-       </translation>
-       <rotation x="0" y="-0" z="0"/>
-       <scale>
-        <element element="0.5"/>
-        <element element="2"/>
-        <element element="1"/>
-       </scale>
-      </Transform>
-      <properties Radius="1" Surface="" ReactToCollisions="true">
-       <Physics WeightType="EWeightType::Mass" Density="9.9999997e-05" Mass="10"/>
-      </properties>
-     </Component>
-     <Component CryXmlVersion="2" TypeGUID="12970526-7c0b-4fd8-beb5-b5d027f6a368" TypeName="collectableObject" GUID="d469555a-b0fd-6214-4b47-f818d63fa141" Name="" UserAdded="true">
-      <properties />
-     </Component>
-    </Components>
-   </Object>
-   <Object Type="EmptyEntity" Layer="Main" LayerGUID="546ddf4d-cce0-a42e-0168-e2f8ac1b7c15" Id="ac75da30-551a-74bc-3b01-aa751c7269e1" Name="Border-4" LinkedTo="2ed08dbe-9e56-1cbd-4f94-b4aa1f3fdf51" Pos="-0.51020384,-24.500015,0" Rotate="1,0,0,0" Scale="0.020408163,49.999996,0.99999994" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
-    <Properties />
-    <Components>
-     <Component CryXmlVersion="2" TypeGUID="6ddd0033-6aaa-4b71-b8ea-108258205e29" TypeName="Cry::DefaultComponents::CStaticMeshComponent" GUID="848244db-1854-0b95-0e69-66d8c2f3170d" Name="" UserAdded="true">
-      <Transform>
-       <translation>
-        <position>
-         <element element="0"/>
-         <element element="0"/>
-         <element element="0"/>
-        </position>
-       </translation>
-       <rotation x="0" y="-0" z="0"/>
-       <scale>
-        <element element="1"/>
-        <element element="1"/>
-        <element element="1"/>
-       </scale>
-      </Transform>
-      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_box.cgf" Material="%ENGINE%/EngineAssets/Objects/editorprimitive">
-       <Render ShadowSpec="Low" IgnoreVisArea="false" ViewDistRatio="100" LODDistance="100" GIMode="None"/>
-       <Physics WeightType="EWeightType::Immovable" Density="9.9999997e-05" Mass="10"/>
-      </properties>
-     </Component>
-     <Component CryXmlVersion="2" TypeGUID="912c6ce8-56f7-4ffa-9134-f98d4e307bd6" TypeName="Cry::DefaultComponents::CRigidBodyComponent" GUID="8e5233fb-b778-b3c7-4dd4-9656c0b1910f" Name="" UserAdded="true">
-      <properties Networked="false" EnabledByDefault="true" Resting="false" Type="Rigid" SendCollisionSignal="false">
-       <Buoyancy Damping="1" Density="1" Resistance="1"/>
-      </properties>
-     </Component>
-    </Components>
-   </Object>
    <Object Type="EmptyEntity" Layer="Main" LayerGUID="546ddf4d-cce0-a42e-0168-e2f8ac1b7c15" Id="307479aa-f4d4-996a-d6f7-f65a2961be4c" Name="CollectableObject-16" Pos="244,230.39999,32.5" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
     <Properties />
     <Components>
@@ -375,7 +344,7 @@
         <element element="1"/>
        </scale>
       </Transform>
-      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="">
+      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="materials/generic/glass/glass_frosted_red.mtl">
        <Render ShadowSpec="Low" IgnoreVisArea="false" ViewDistRatio="100" LODDistance="100" GIMode="None"/>
        <Physics WeightType="EWeightType::Mass" Density="9.9999997e-05" Mass="10"/>
       </properties>
@@ -429,7 +398,7 @@
         <element element="1"/>
        </scale>
       </Transform>
-      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="">
+      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="materials/generic/glass/glass_frosted_red.mtl">
        <Render ShadowSpec="Low" IgnoreVisArea="false" ViewDistRatio="100" LODDistance="100" GIMode="None"/>
        <Physics WeightType="EWeightType::Mass" Density="9.9999997e-05" Mass="10"/>
       </properties>
@@ -483,7 +452,7 @@
         <element element="1"/>
        </scale>
       </Transform>
-      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="">
+      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="materials/generic/glass/glass_frosted_red.mtl">
        <Render ShadowSpec="Low" IgnoreVisArea="false" ViewDistRatio="100" LODDistance="100" GIMode="None"/>
        <Physics WeightType="EWeightType::Mass" Density="9.9999997e-05" Mass="10"/>
       </properties>
@@ -537,7 +506,7 @@
         <element element="1"/>
        </scale>
       </Transform>
-      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="">
+      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="materials/generic/glass/glass_frosted_red.mtl">
        <Render ShadowSpec="Low" IgnoreVisArea="false" ViewDistRatio="100" LODDistance="100" GIMode="None"/>
        <Physics WeightType="EWeightType::Mass" Density="9.9999997e-05" Mass="10"/>
       </properties>
@@ -591,7 +560,7 @@
         <element element="1"/>
        </scale>
       </Transform>
-      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="">
+      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="materials/generic/glass/glass_frosted_red.mtl">
        <Render ShadowSpec="Low" IgnoreVisArea="false" ViewDistRatio="100" LODDistance="100" GIMode="None"/>
        <Physics WeightType="EWeightType::Mass" Density="9.9999997e-05" Mass="10"/>
       </properties>
@@ -645,7 +614,7 @@
         <element element="1"/>
        </scale>
       </Transform>
-      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="">
+      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="materials/generic/glass/glass_frosted_red.mtl">
        <Render ShadowSpec="Low" IgnoreVisArea="false" ViewDistRatio="100" LODDistance="100" GIMode="None"/>
        <Physics WeightType="EWeightType::Mass" Density="9.9999997e-05" Mass="10"/>
       </properties>
@@ -680,60 +649,6 @@
      </Component>
     </Components>
    </Object>
-   <Object Type="EmptyEntity" Layer="Main" LayerGUID="546ddf4d-cce0-a42e-0168-e2f8ac1b7c15" Id="475229ef-0774-5e56-cead-f16ee3e935d2" Name="CollectableObject-17" Pos="240,230,32.5" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
-    <Properties />
-    <Components>
-     <Component CryXmlVersion="2" TypeGUID="6ddd0033-6aaa-4b71-b8ea-108258205e29" TypeName="Cry::DefaultComponents::CStaticMeshComponent" GUID="1354a23a-b9ca-099a-16fd-a710a0bf8489" Name="" UserAdded="true">
-      <Transform>
-       <translation>
-        <position>
-         <element element="0"/>
-         <element element="0"/>
-         <element element="0"/>
-        </position>
-       </translation>
-       <rotation x="0" y="-0" z="0"/>
-       <scale>
-        <element element="1"/>
-        <element element="1"/>
-        <element element="1"/>
-       </scale>
-      </Transform>
-      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="">
-       <Render ShadowSpec="Low" IgnoreVisArea="false" ViewDistRatio="100" LODDistance="100" GIMode="None"/>
-       <Physics WeightType="EWeightType::Mass" Density="9.9999997e-05" Mass="10"/>
-      </properties>
-     </Component>
-     <Component CryXmlVersion="2" TypeGUID="912c6ce8-56f7-4ffa-9134-f98d4e307bd6" TypeName="Cry::DefaultComponents::CRigidBodyComponent" GUID="0faaf6b6-7134-9693-d8dc-70fc590e65bc" Name="" UserAdded="true">
-      <properties Networked="false" EnabledByDefault="true" Resting="false" Type="Rigid" SendCollisionSignal="false">
-       <Buoyancy Damping="1" Density="1" Resistance="1"/>
-      </properties>
-     </Component>
-     <Component CryXmlVersion="2" TypeGUID="106facad-4099-4993-a9cc-f558a8586307" TypeName="Cry::DefaultComponents::CSpherePrimitiveComponent" GUID="61187a6b-0fa9-3066-2ad5-23c46a65a9b3" Name="" UserAdded="true">
-      <Transform>
-       <translation>
-        <position>
-         <element element="0"/>
-         <element element="0"/>
-         <element element="0"/>
-        </position>
-       </translation>
-       <rotation x="0" y="-0" z="0"/>
-       <scale>
-        <element element="0.5"/>
-        <element element="2"/>
-        <element element="1"/>
-       </scale>
-      </Transform>
-      <properties Radius="1" Surface="" ReactToCollisions="true">
-       <Physics WeightType="EWeightType::Mass" Density="9.9999997e-05" Mass="10"/>
-      </properties>
-     </Component>
-     <Component CryXmlVersion="2" TypeGUID="12970526-7c0b-4fd8-beb5-b5d027f6a368" TypeName="collectableObject" GUID="de577f1f-904b-7143-e152-833b480ca5f6" Name="" UserAdded="true">
-      <properties />
-     </Component>
-    </Components>
-   </Object>
    <Object Type="EmptyEntity" Layer="Main" LayerGUID="546ddf4d-cce0-a42e-0168-e2f8ac1b7c15" Id="c0b0f8f9-117b-9bed-09b4-ba11a3ae8788" Name="CollectableObject-26" Pos="220.39999,254,32.5" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
     <Properties />
     <Components>
@@ -753,7 +668,7 @@
         <element element="1"/>
        </scale>
       </Transform>
-      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="">
+      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="materials/generic/glass/glass_frosted_red.mtl">
        <Render ShadowSpec="Low" IgnoreVisArea="false" ViewDistRatio="100" LODDistance="100" GIMode="None"/>
        <Physics WeightType="EWeightType::Mass" Density="9.9999997e-05" Mass="10"/>
       </properties>
@@ -788,7 +703,7 @@
      </Component>
     </Components>
    </Object>
-   <Object Type="EmptyEntity" Layer="Main" LayerGUID="546ddf4d-cce0-a42e-0168-e2f8ac1b7c15" Id="3b82556e-9008-cb33-1820-615e4249f609" Name="CollectableObject-25" Pos="220.09773,250,32.5" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
+   <Object Type="EmptyEntity" Layer="Main" LayerGUID="546ddf4d-cce0-a42e-0168-e2f8ac1b7c15" Id="475229ef-0774-5e56-cead-f16ee3e935d2" Name="CollectableObject-17" Pos="240,230,32.5" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
     <Properties />
     <Components>
      <Component CryXmlVersion="2" TypeGUID="6ddd0033-6aaa-4b71-b8ea-108258205e29" TypeName="Cry::DefaultComponents::CStaticMeshComponent" GUID="1354a23a-b9ca-099a-16fd-a710a0bf8489" Name="" UserAdded="true">
@@ -807,61 +722,7 @@
         <element element="1"/>
        </scale>
       </Transform>
-      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="%ENGINE%/EngineAssets/Objects/editorprimitive">
-       <Render ShadowSpec="Low" IgnoreVisArea="false" ViewDistRatio="100" LODDistance="100" GIMode="None"/>
-       <Physics WeightType="EWeightType::Immovable" Density="9.9999997e-05" Mass="10"/>
-      </properties>
-     </Component>
-     <Component CryXmlVersion="2" TypeGUID="912c6ce8-56f7-4ffa-9134-f98d4e307bd6" TypeName="Cry::DefaultComponents::CRigidBodyComponent" GUID="0faaf6b6-7134-9693-d8dc-70fc590e65bc" Name="" UserAdded="true">
-      <properties Networked="false" EnabledByDefault="true" Resting="false" Type="Rigid" SendCollisionSignal="false">
-       <Buoyancy Damping="1" Density="1" Resistance="1"/>
-      </properties>
-     </Component>
-     <Component CryXmlVersion="2" TypeGUID="106facad-4099-4993-a9cc-f558a8586307" TypeName="Cry::DefaultComponents::CSpherePrimitiveComponent" GUID="61187a6b-0fa9-3066-2ad5-23c46a65a9b3" Name="" UserAdded="true">
-      <Transform>
-       <translation>
-        <position>
-         <element element="0"/>
-         <element element="0"/>
-         <element element="0"/>
-        </position>
-       </translation>
-       <rotation x="0" y="-0" z="0"/>
-       <scale>
-        <element element="0.5"/>
-        <element element="2"/>
-        <element element="1"/>
-       </scale>
-      </Transform>
-      <properties Radius="1" Surface="" ReactToCollisions="true">
-       <Physics WeightType="EWeightType::Mass" Density="9.9999997e-05" Mass="10"/>
-      </properties>
-     </Component>
-     <Component CryXmlVersion="2" TypeGUID="12970526-7c0b-4fd8-beb5-b5d027f6a368" TypeName="collectableObject" GUID="76cb70ae-9117-dddb-0e0d-5f0304e03628" Name="" UserAdded="true">
-      <properties />
-     </Component>
-    </Components>
-   </Object>
-   <Object Type="EmptyEntity" Layer="Main" LayerGUID="546ddf4d-cce0-a42e-0168-e2f8ac1b7c15" Id="bfa4fb6a-fcd6-683c-8623-4970e1f77c53" Name="CollectableObject-22" Pos="223.39999,238.8,32.5" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
-    <Properties />
-    <Components>
-     <Component CryXmlVersion="2" TypeGUID="6ddd0033-6aaa-4b71-b8ea-108258205e29" TypeName="Cry::DefaultComponents::CStaticMeshComponent" GUID="1354a23a-b9ca-099a-16fd-a710a0bf8489" Name="" UserAdded="true">
-      <Transform>
-       <translation>
-        <position>
-         <element element="0"/>
-         <element element="0"/>
-         <element element="0"/>
-        </position>
-       </translation>
-       <rotation x="0" y="-0" z="0"/>
-       <scale>
-        <element element="1"/>
-        <element element="1"/>
-        <element element="1"/>
-       </scale>
-      </Transform>
-      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="">
+      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="materials/generic/glass/glass_frosted_red.mtl">
        <Render ShadowSpec="Low" IgnoreVisArea="false" ViewDistRatio="100" LODDistance="100" GIMode="None"/>
        <Physics WeightType="EWeightType::Mass" Density="9.9999997e-05" Mass="10"/>
       </properties>
@@ -891,7 +752,7 @@
        <Physics WeightType="EWeightType::Mass" Density="9.9999997e-05" Mass="10"/>
       </properties>
      </Component>
-     <Component CryXmlVersion="2" TypeGUID="12970526-7c0b-4fd8-beb5-b5d027f6a368" TypeName="collectableObject" GUID="a1c16c42-fafe-74d2-ad70-89f794f9ff49" Name="" UserAdded="true">
+     <Component CryXmlVersion="2" TypeGUID="12970526-7c0b-4fd8-beb5-b5d027f6a368" TypeName="collectableObject" GUID="de577f1f-904b-7143-e152-833b480ca5f6" Name="" UserAdded="true">
       <properties />
      </Component>
     </Components>
@@ -915,7 +776,7 @@
         <element element="1"/>
        </scale>
       </Transform>
-      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="">
+      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="materials/generic/glass/glass_frosted_red.mtl">
        <Render ShadowSpec="Low" IgnoreVisArea="false" ViewDistRatio="100" LODDistance="100" GIMode="None"/>
        <Physics WeightType="EWeightType::Mass" Density="9.9999997e-05" Mass="10"/>
       </properties>
@@ -950,6 +811,114 @@
      </Component>
     </Components>
    </Object>
+   <Object Type="EmptyEntity" Layer="Main" LayerGUID="546ddf4d-cce0-a42e-0168-e2f8ac1b7c15" Id="bfa4fb6a-fcd6-683c-8623-4970e1f77c53" Name="CollectableObject-22" Pos="223.39999,238.8,32.5" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
+    <Properties />
+    <Components>
+     <Component CryXmlVersion="2" TypeGUID="6ddd0033-6aaa-4b71-b8ea-108258205e29" TypeName="Cry::DefaultComponents::CStaticMeshComponent" GUID="1354a23a-b9ca-099a-16fd-a710a0bf8489" Name="" UserAdded="true">
+      <Transform>
+       <translation>
+        <position>
+         <element element="0"/>
+         <element element="0"/>
+         <element element="0"/>
+        </position>
+       </translation>
+       <rotation x="0" y="-0" z="0"/>
+       <scale>
+        <element element="1"/>
+        <element element="1"/>
+        <element element="1"/>
+       </scale>
+      </Transform>
+      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="materials/generic/glass/glass_frosted_red.mtl">
+       <Render ShadowSpec="Low" IgnoreVisArea="false" ViewDistRatio="100" LODDistance="100" GIMode="None"/>
+       <Physics WeightType="EWeightType::Mass" Density="9.9999997e-05" Mass="10"/>
+      </properties>
+     </Component>
+     <Component CryXmlVersion="2" TypeGUID="912c6ce8-56f7-4ffa-9134-f98d4e307bd6" TypeName="Cry::DefaultComponents::CRigidBodyComponent" GUID="0faaf6b6-7134-9693-d8dc-70fc590e65bc" Name="" UserAdded="true">
+      <properties Networked="false" EnabledByDefault="true" Resting="false" Type="Rigid" SendCollisionSignal="false">
+       <Buoyancy Damping="1" Density="1" Resistance="1"/>
+      </properties>
+     </Component>
+     <Component CryXmlVersion="2" TypeGUID="106facad-4099-4993-a9cc-f558a8586307" TypeName="Cry::DefaultComponents::CSpherePrimitiveComponent" GUID="61187a6b-0fa9-3066-2ad5-23c46a65a9b3" Name="" UserAdded="true">
+      <Transform>
+       <translation>
+        <position>
+         <element element="0"/>
+         <element element="0"/>
+         <element element="0"/>
+        </position>
+       </translation>
+       <rotation x="0" y="-0" z="0"/>
+       <scale>
+        <element element="0.5"/>
+        <element element="2"/>
+        <element element="1"/>
+       </scale>
+      </Transform>
+      <properties Radius="1" Surface="" ReactToCollisions="true">
+       <Physics WeightType="EWeightType::Mass" Density="9.9999997e-05" Mass="10"/>
+      </properties>
+     </Component>
+     <Component CryXmlVersion="2" TypeGUID="12970526-7c0b-4fd8-beb5-b5d027f6a368" TypeName="collectableObject" GUID="a1c16c42-fafe-74d2-ad70-89f794f9ff49" Name="" UserAdded="true">
+      <properties />
+     </Component>
+    </Components>
+   </Object>
+   <Object Type="EmptyEntity" Layer="Main" LayerGUID="546ddf4d-cce0-a42e-0168-e2f8ac1b7c15" Id="3b82556e-9008-cb33-1820-615e4249f609" Name="CollectableObject-25" Pos="220.09773,250,32.5" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
+    <Properties />
+    <Components>
+     <Component CryXmlVersion="2" TypeGUID="6ddd0033-6aaa-4b71-b8ea-108258205e29" TypeName="Cry::DefaultComponents::CStaticMeshComponent" GUID="1354a23a-b9ca-099a-16fd-a710a0bf8489" Name="" UserAdded="true">
+      <Transform>
+       <translation>
+        <position>
+         <element element="0"/>
+         <element element="0"/>
+         <element element="0"/>
+        </position>
+       </translation>
+       <rotation x="0" y="-0" z="0"/>
+       <scale>
+        <element element="1"/>
+        <element element="1"/>
+        <element element="1"/>
+       </scale>
+      </Transform>
+      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="materials/generic/glass/glass_frosted_red.mtl">
+       <Render ShadowSpec="Low" IgnoreVisArea="false" ViewDistRatio="100" LODDistance="100" GIMode="None"/>
+       <Physics WeightType="EWeightType::Immovable" Density="9.9999997e-05" Mass="10"/>
+      </properties>
+     </Component>
+     <Component CryXmlVersion="2" TypeGUID="912c6ce8-56f7-4ffa-9134-f98d4e307bd6" TypeName="Cry::DefaultComponents::CRigidBodyComponent" GUID="0faaf6b6-7134-9693-d8dc-70fc590e65bc" Name="" UserAdded="true">
+      <properties Networked="false" EnabledByDefault="true" Resting="false" Type="Rigid" SendCollisionSignal="false">
+       <Buoyancy Damping="1" Density="1" Resistance="1"/>
+      </properties>
+     </Component>
+     <Component CryXmlVersion="2" TypeGUID="106facad-4099-4993-a9cc-f558a8586307" TypeName="Cry::DefaultComponents::CSpherePrimitiveComponent" GUID="61187a6b-0fa9-3066-2ad5-23c46a65a9b3" Name="" UserAdded="true">
+      <Transform>
+       <translation>
+        <position>
+         <element element="0"/>
+         <element element="0"/>
+         <element element="0"/>
+        </position>
+       </translation>
+       <rotation x="0" y="-0" z="0"/>
+       <scale>
+        <element element="0.5"/>
+        <element element="2"/>
+        <element element="1"/>
+       </scale>
+      </Transform>
+      <properties Radius="1" Surface="" ReactToCollisions="true">
+       <Physics WeightType="EWeightType::Mass" Density="9.9999997e-05" Mass="10"/>
+      </properties>
+     </Component>
+     <Component CryXmlVersion="2" TypeGUID="12970526-7c0b-4fd8-beb5-b5d027f6a368" TypeName="collectableObject" GUID="76cb70ae-9117-dddb-0e0d-5f0304e03628" Name="" UserAdded="true">
+      <properties />
+     </Component>
+    </Components>
+   </Object>
    <Object Type="EmptyEntity" Layer="Main" LayerGUID="546ddf4d-cce0-a42e-0168-e2f8ac1b7c15" Id="25ded16b-66a5-a07d-829c-80469644b75b" Name="CollectableObject-23" Pos="221.60001,242.39999,32.5" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
     <Properties />
     <Components>
@@ -969,7 +938,7 @@
         <element element="1"/>
        </scale>
       </Transform>
-      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="">
+      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="materials/generic/glass/glass_frosted_red.mtl">
        <Render ShadowSpec="Low" IgnoreVisArea="false" ViewDistRatio="100" LODDistance="100" GIMode="None"/>
        <Physics WeightType="EWeightType::Mass" Density="9.9999997e-05" Mass="10"/>
       </properties>
@@ -1004,6 +973,29 @@
      </Component>
     </Components>
    </Object>
+   <Object Type="EntityWithComponent" Layer="Main" LayerGUID="546ddf4d-cce0-a42e-0168-e2f8ac1b7c15" Id="bc43f215-00bf-d463-26da-62a1447fa7d5" Name="SpawnPoint" Pos="240,249.94998,32.500008" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
+    <Properties />
+    <Components>
+     <Component CryXmlVersion="2" TypeGUID="41316132-8a1e-4073-b0cd-a242fd3d2e90" TypeName="CSpawnPointComponent" GUID="d0e0108f-8443-669a-c2f4-67bf6d22425c" Name="" UserAdded="true">
+      <Transform>
+       <translation>
+        <position>
+         <element element="0"/>
+         <element element="0"/>
+         <element element="0"/>
+        </position>
+       </translation>
+       <rotation x="0" y="-0" z="0"/>
+       <scale>
+        <element element="1"/>
+        <element element="1"/>
+        <element element="1"/>
+       </scale>
+      </Transform>
+      <properties />
+     </Component>
+    </Components>
+   </Object>
    <Object Type="EmptyEntity" Layer="Main" LayerGUID="546ddf4d-cce0-a42e-0168-e2f8ac1b7c15" Id="fca08fc1-79c6-c653-cc7b-d1d233c4701f" Name="CollectableObject-21" Pos="225.8,235.8,32.5" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
     <Properties />
     <Components>
@@ -1023,7 +1015,7 @@
         <element element="1"/>
        </scale>
       </Transform>
-      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="">
+      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="materials/generic/glass/glass_frosted_red.mtl">
        <Render ShadowSpec="Low" IgnoreVisArea="false" ViewDistRatio="100" LODDistance="100" GIMode="None"/>
        <Physics WeightType="EWeightType::Mass" Density="9.9999997e-05" Mass="10"/>
       </properties>
@@ -1058,29 +1050,6 @@
      </Component>
     </Components>
    </Object>
-   <Object Type="EntityWithComponent" Layer="Main" LayerGUID="546ddf4d-cce0-a42e-0168-e2f8ac1b7c15" Id="bc43f215-00bf-d463-26da-62a1447fa7d5" Name="SpawnPoint" Pos="240,249.94998,32.500008" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
-    <Properties />
-    <Components>
-     <Component CryXmlVersion="2" TypeGUID="41316132-8a1e-4073-b0cd-a242fd3d2e90" TypeName="CSpawnPointComponent" GUID="d0e0108f-8443-669a-c2f4-67bf6d22425c" Name="" UserAdded="true">
-      <Transform>
-       <translation>
-        <position>
-         <element element="0"/>
-         <element element="0"/>
-         <element element="0"/>
-        </position>
-       </translation>
-       <rotation x="0" y="-0" z="0"/>
-       <scale>
-        <element element="1"/>
-        <element element="1"/>
-        <element element="1"/>
-       </scale>
-      </Transform>
-      <properties />
-     </Component>
-    </Components>
-   </Object>
    <Object Type="EmptyEntity" Layer="Main" LayerGUID="546ddf4d-cce0-a42e-0168-e2f8ac1b7c15" Id="f9f0b009-a5b3-9d66-bc1e-8505d8366271" Name="CollectableObject-12" Pos="256.60001,238.8,32.5" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
     <Properties />
     <Components>
@@ -1100,7 +1069,7 @@
         <element element="1"/>
        </scale>
       </Transform>
-      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="">
+      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="materials/generic/glass/glass_frosted_red.mtl">
        <Render ShadowSpec="Low" IgnoreVisArea="false" ViewDistRatio="100" LODDistance="100" GIMode="None"/>
        <Physics WeightType="EWeightType::Mass" Density="9.9999997e-05" Mass="10"/>
       </properties>
@@ -1135,60 +1104,6 @@
      </Component>
     </Components>
    </Object>
-   <Object Type="EmptyEntity" Layer="Main" LayerGUID="546ddf4d-cce0-a42e-0168-e2f8ac1b7c15" Id="2bea4be5-7ab3-a8b3-a769-97a9bd6e37f2" Name="CollectableObject-15" Pos="247.60001,231.60001,32.5" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
-    <Properties />
-    <Components>
-     <Component CryXmlVersion="2" TypeGUID="6ddd0033-6aaa-4b71-b8ea-108258205e29" TypeName="Cry::DefaultComponents::CStaticMeshComponent" GUID="1354a23a-b9ca-099a-16fd-a710a0bf8489" Name="" UserAdded="true">
-      <Transform>
-       <translation>
-        <position>
-         <element element="0"/>
-         <element element="0"/>
-         <element element="0"/>
-        </position>
-       </translation>
-       <rotation x="0" y="-0" z="0"/>
-       <scale>
-        <element element="1"/>
-        <element element="1"/>
-        <element element="1"/>
-       </scale>
-      </Transform>
-      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="">
-       <Render ShadowSpec="Low" IgnoreVisArea="false" ViewDistRatio="100" LODDistance="100" GIMode="None"/>
-       <Physics WeightType="EWeightType::Mass" Density="9.9999997e-05" Mass="10"/>
-      </properties>
-     </Component>
-     <Component CryXmlVersion="2" TypeGUID="912c6ce8-56f7-4ffa-9134-f98d4e307bd6" TypeName="Cry::DefaultComponents::CRigidBodyComponent" GUID="0faaf6b6-7134-9693-d8dc-70fc590e65bc" Name="" UserAdded="true">
-      <properties Networked="false" EnabledByDefault="true" Resting="false" Type="Rigid" SendCollisionSignal="false">
-       <Buoyancy Damping="1" Density="1" Resistance="1"/>
-      </properties>
-     </Component>
-     <Component CryXmlVersion="2" TypeGUID="106facad-4099-4993-a9cc-f558a8586307" TypeName="Cry::DefaultComponents::CSpherePrimitiveComponent" GUID="61187a6b-0fa9-3066-2ad5-23c46a65a9b3" Name="" UserAdded="true">
-      <Transform>
-       <translation>
-        <position>
-         <element element="0"/>
-         <element element="0"/>
-         <element element="0"/>
-        </position>
-       </translation>
-       <rotation x="0" y="-0" z="0"/>
-       <scale>
-        <element element="0.5"/>
-        <element element="2"/>
-        <element element="1"/>
-       </scale>
-      </Transform>
-      <properties Radius="1" Surface="" ReactToCollisions="true">
-       <Physics WeightType="EWeightType::Mass" Density="9.9999997e-05" Mass="10"/>
-      </properties>
-     </Component>
-     <Component CryXmlVersion="2" TypeGUID="12970526-7c0b-4fd8-beb5-b5d027f6a368" TypeName="collectableObject" GUID="7319d971-3ed8-334d-3345-e11fd2c55660" Name="" UserAdded="true">
-      <properties />
-     </Component>
-    </Components>
-   </Object>
    <Object Type="EmptyEntity" Layer="Main" LayerGUID="546ddf4d-cce0-a42e-0168-e2f8ac1b7c15" Id="82f59348-6110-ffc1-41b1-7c159f534cd3" Name="CollectableObject-13" Pos="254.2,235.8,32.5" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
     <Properties />
     <Components>
@@ -1208,7 +1123,7 @@
         <element element="1"/>
        </scale>
       </Transform>
-      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="">
+      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="materials/generic/glass/glass_frosted_red.mtl">
        <Render ShadowSpec="Low" IgnoreVisArea="false" ViewDistRatio="100" LODDistance="100" GIMode="None"/>
        <Physics WeightType="EWeightType::Mass" Density="9.9999997e-05" Mass="10"/>
       </properties>
@@ -1243,6 +1158,60 @@
      </Component>
     </Components>
    </Object>
+   <Object Type="EmptyEntity" Layer="Main" LayerGUID="546ddf4d-cce0-a42e-0168-e2f8ac1b7c15" Id="2bea4be5-7ab3-a8b3-a769-97a9bd6e37f2" Name="CollectableObject-15" Pos="247.60001,231.60001,32.5" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
+    <Properties />
+    <Components>
+     <Component CryXmlVersion="2" TypeGUID="6ddd0033-6aaa-4b71-b8ea-108258205e29" TypeName="Cry::DefaultComponents::CStaticMeshComponent" GUID="1354a23a-b9ca-099a-16fd-a710a0bf8489" Name="" UserAdded="true">
+      <Transform>
+       <translation>
+        <position>
+         <element element="0"/>
+         <element element="0"/>
+         <element element="0"/>
+        </position>
+       </translation>
+       <rotation x="0" y="-0" z="0"/>
+       <scale>
+        <element element="1"/>
+        <element element="1"/>
+        <element element="1"/>
+       </scale>
+      </Transform>
+      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="materials/generic/glass/glass_frosted_red.mtl">
+       <Render ShadowSpec="Low" IgnoreVisArea="false" ViewDistRatio="100" LODDistance="100" GIMode="None"/>
+       <Physics WeightType="EWeightType::Mass" Density="9.9999997e-05" Mass="10"/>
+      </properties>
+     </Component>
+     <Component CryXmlVersion="2" TypeGUID="912c6ce8-56f7-4ffa-9134-f98d4e307bd6" TypeName="Cry::DefaultComponents::CRigidBodyComponent" GUID="0faaf6b6-7134-9693-d8dc-70fc590e65bc" Name="" UserAdded="true">
+      <properties Networked="false" EnabledByDefault="true" Resting="false" Type="Rigid" SendCollisionSignal="false">
+       <Buoyancy Damping="1" Density="1" Resistance="1"/>
+      </properties>
+     </Component>
+     <Component CryXmlVersion="2" TypeGUID="106facad-4099-4993-a9cc-f558a8586307" TypeName="Cry::DefaultComponents::CSpherePrimitiveComponent" GUID="61187a6b-0fa9-3066-2ad5-23c46a65a9b3" Name="" UserAdded="true">
+      <Transform>
+       <translation>
+        <position>
+         <element element="0"/>
+         <element element="0"/>
+         <element element="0"/>
+        </position>
+       </translation>
+       <rotation x="0" y="-0" z="0"/>
+       <scale>
+        <element element="0.5"/>
+        <element element="2"/>
+        <element element="1"/>
+       </scale>
+      </Transform>
+      <properties Radius="1" Surface="" ReactToCollisions="true">
+       <Physics WeightType="EWeightType::Mass" Density="9.9999997e-05" Mass="10"/>
+      </properties>
+     </Component>
+     <Component CryXmlVersion="2" TypeGUID="12970526-7c0b-4fd8-beb5-b5d027f6a368" TypeName="collectableObject" GUID="7319d971-3ed8-334d-3345-e11fd2c55660" Name="" UserAdded="true">
+      <properties />
+     </Component>
+    </Components>
+   </Object>
    <Object Type="EmptyEntity" Layer="Main" LayerGUID="546ddf4d-cce0-a42e-0168-e2f8ac1b7c15" Id="09b59627-b398-bfe4-8377-ca95a6794905" Name="CollectableObject-10" Pos="259.60001,246,32.5" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
     <Properties />
     <Components>
@@ -1262,7 +1231,7 @@
         <element element="1"/>
        </scale>
       </Transform>
-      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="">
+      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="materials/generic/glass/glass_frosted_red.mtl">
        <Render ShadowSpec="Low" IgnoreVisArea="false" ViewDistRatio="100" LODDistance="100" GIMode="None"/>
        <Physics WeightType="EWeightType::Mass" Density="9.9999997e-05" Mass="10"/>
       </properties>
@@ -1316,7 +1285,7 @@
         <element element="1"/>
        </scale>
       </Transform>
-      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="">
+      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="materials/generic/glass/glass_frosted_red.mtl">
        <Render ShadowSpec="Low" IgnoreVisArea="false" ViewDistRatio="100" LODDistance="100" GIMode="None"/>
        <Physics WeightType="EWeightType::Mass" Density="9.9999997e-05" Mass="10"/>
       </properties>
@@ -1370,7 +1339,7 @@
         <element element="1"/>
        </scale>
       </Transform>
-      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="">
+      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="materials/generic/glass/glass_frosted_red.mtl">
        <Render ShadowSpec="Low" IgnoreVisArea="false" ViewDistRatio="100" LODDistance="100" GIMode="None"/>
        <Physics WeightType="EWeightType::Mass" Density="9.9999997e-05" Mass="10"/>
       </properties>
@@ -1424,7 +1393,7 @@
         <element element="1"/>
        </scale>
       </Transform>
-      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="">
+      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="materials/generic/glass/glass_frosted_red.mtl">
        <Render ShadowSpec="Low" IgnoreVisArea="false" ViewDistRatio="100" LODDistance="100" GIMode="None"/>
        <Physics WeightType="EWeightType::Mass" Density="9.9999997e-05" Mass="10"/>
       </properties>
@@ -1478,7 +1447,7 @@
         <element element="1"/>
        </scale>
       </Transform>
-      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="">
+      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="materials/generic/glass/glass_frosted_red.mtl">
        <Render ShadowSpec="Low" IgnoreVisArea="false" ViewDistRatio="100" LODDistance="100" GIMode="None"/>
        <Physics WeightType="EWeightType::Mass" Density="9.9999997e-05" Mass="10"/>
       </properties>
@@ -1532,7 +1501,7 @@
         <element element="1"/>
        </scale>
       </Transform>
-      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="">
+      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="materials/generic/glass/glass_frosted_red.mtl">
        <Render ShadowSpec="Low" IgnoreVisArea="false" ViewDistRatio="100" LODDistance="100" GIMode="None"/>
        <Physics WeightType="EWeightType::Mass" Density="9.9999997e-05" Mass="10"/>
       </properties>
@@ -1586,7 +1555,7 @@
         <element element="1"/>
        </scale>
       </Transform>
-      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="">
+      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="materials/generic/glass/glass_frosted_red.mtl">
        <Render ShadowSpec="Low" IgnoreVisArea="false" ViewDistRatio="100" LODDistance="100" GIMode="None"/>
        <Physics WeightType="EWeightType::Mass" Density="9.9999997e-05" Mass="10"/>
       </properties>
@@ -1640,7 +1609,7 @@
         <element element="1"/>
        </scale>
       </Transform>
-      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="">
+      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="materials/generic/glass/glass_frosted_red.mtl">
        <Render ShadowSpec="Low" IgnoreVisArea="false" ViewDistRatio="100" LODDistance="100" GIMode="None"/>
        <Physics WeightType="EWeightType::Mass" Density="9.9999997e-05" Mass="10"/>
       </properties>
@@ -1694,7 +1663,7 @@
         <element element="1"/>
        </scale>
       </Transform>
-      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="">
+      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="materials/generic/glass/glass_frosted_red.mtl">
        <Render ShadowSpec="Low" IgnoreVisArea="false" ViewDistRatio="100" LODDistance="100" GIMode="None"/>
        <Physics WeightType="EWeightType::Mass" Density="9.9999997e-05" Mass="10"/>
       </properties>
@@ -1748,7 +1717,7 @@
         <element element="1"/>
        </scale>
       </Transform>
-      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="">
+      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="materials/generic/glass/glass_frosted_red.mtl">
        <Render ShadowSpec="Low" IgnoreVisArea="false" ViewDistRatio="100" LODDistance="100" GIMode="None"/>
        <Physics WeightType="EWeightType::Mass" Density="9.9999997e-05" Mass="10"/>
       </properties>
@@ -1780,87 +1749,6 @@
      </Component>
      <Component CryXmlVersion="2" TypeGUID="12970526-7c0b-4fd8-beb5-b5d027f6a368" TypeName="collectableObject" GUID="363fe940-e737-b2dc-3e84-fda2d2944820" Name="" UserAdded="true">
       <properties />
-     </Component>
-    </Components>
-   </Object>
-   <Object Type="EmptyEntity" Layer="Main" LayerGUID="546ddf4d-cce0-a42e-0168-e2f8ac1b7c15" Id="abdf6d38-b1cf-3b1b-fe75-8024b28d0346" Name="Border-2" LinkedTo="2ed08dbe-9e56-1cbd-4f94-b4aa1f3fdf51" Pos="0.51020432,-24.500031,0" Rotate="1,0,0,0" Scale="0.020408163,49.999992,0.99999982" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
-    <Properties />
-    <Components>
-     <Component CryXmlVersion="2" TypeGUID="6ddd0033-6aaa-4b71-b8ea-108258205e29" TypeName="Cry::DefaultComponents::CStaticMeshComponent" GUID="848244db-1854-0b95-0e69-66d8c2f3170d" Name="" UserAdded="true">
-      <Transform>
-       <translation>
-        <position>
-         <element element="0"/>
-         <element element="0"/>
-         <element element="0"/>
-        </position>
-       </translation>
-       <rotation x="0" y="-0" z="0"/>
-       <scale>
-        <element element="1"/>
-        <element element="1"/>
-        <element element="1"/>
-       </scale>
-      </Transform>
-      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_box.cgf" Material="%ENGINE%/EngineAssets/Objects/editorprimitive">
-       <Render ShadowSpec="Low" IgnoreVisArea="false" ViewDistRatio="100" LODDistance="100" GIMode="None"/>
-       <Physics WeightType="EWeightType::Immovable" Density="9.9999997e-05" Mass="10"/>
-      </properties>
-     </Component>
-     <Component CryXmlVersion="2" TypeGUID="912c6ce8-56f7-4ffa-9134-f98d4e307bd6" TypeName="Cry::DefaultComponents::CRigidBodyComponent" GUID="3e29f26a-7aa4-b490-f376-aa12586e586a" Name="" UserAdded="true">
-      <properties Networked="false" EnabledByDefault="true" Resting="false" Type="Rigid" SendCollisionSignal="false">
-       <Buoyancy Damping="1" Density="1" Resistance="1"/>
-      </properties>
-     </Component>
-    </Components>
-   </Object>
-   <Object Type="EmptyEntity" Layer="Main" LayerGUID="546ddf4d-cce0-a42e-0168-e2f8ac1b7c15" Id="71542fbf-bc96-2338-a87d-a328f1eec4f4" Name="Particle" Pos="222,268,32.399994" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" GIMode="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="Entity" HasEntity="1">
-    <Properties />
-    <Components>
-     <Component CryXmlVersion="2" TypeGUID="7925bc64-521f-4a2a-9068-c9c9a1d3499e" TypeName="Cry::DefaultComponents::CParticleComponent" GUID="16693fe5-3e44-5c2f-0c11-67d45e91eacb" Name="" UserAdded="true">
-      <Transform>
-       <translation>
-        <position>
-         <element element="0"/>
-         <element element="0"/>
-         <element element="0"/>
-        </position>
-       </translation>
-       <rotation x="0" y="-0" z="0"/>
-       <scale>
-        <element element="1"/>
-        <element element="1"/>
-        <element element="1"/>
-       </scale>
-      </Transform>
-      <properties Enabled="true" FilePath="particles/pfx1/explosions/flashbang/explode.pfx">
-       <Attributes>
-        <Attributes />
-       </Attributes>
-       <Features />
-       <SpawnParams prime="false" scale="1" countScale="1" speedScale="1" timeScale="1" spec="Default" ignoreVvisAreas="false" seed="-1"/>
-      </properties>
-     </Component>
-     <Component CryXmlVersion="2" TypeGUID="6ddd0033-6aaa-4b71-b8ea-108258205e29" TypeName="Cry::DefaultComponents::CStaticMeshComponent" GUID="4ad4905a-9746-ecc3-ae3b-9d589575b704" Name="" UserAdded="true">
-      <Transform>
-       <translation>
-        <position>
-         <element element="0"/>
-         <element element="0"/>
-         <element element="0"/>
-        </position>
-       </translation>
-       <rotation x="0" y="-0" z="0"/>
-       <scale>
-        <element element="1"/>
-        <element element="1"/>
-        <element element="1"/>
-       </scale>
-      </Transform>
-      <properties Type="RenderAndCollider" FilePath="%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf" Material="">
-       <Render ShadowSpec="Low" IgnoreVisArea="false" ViewDistRatio="100" LODDistance="100" GIMode="None"/>
-       <Physics WeightType="EWeightType::Mass" Density="9.9999997e-05" Mass="10"/>
-      </properties>
      </Component>
     </Components>
    </Object>

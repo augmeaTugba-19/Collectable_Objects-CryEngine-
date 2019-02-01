@@ -8,6 +8,8 @@
 class collectableObject	: public IEntityComponent
 {
 public:
+	
+
 	static void Register(Schematyc::IEnvRegistrar& registrar);
 	static void ReflectType(Schematyc::CTypeDesc<collectableObject>& desc)
 	{

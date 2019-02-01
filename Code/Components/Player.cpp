@@ -6,6 +6,8 @@
 
 #include <CryNetwork/Rmi.h>
 
+int CPlayerComponent::score = 0;
+
 namespace {
 	static void RegisterCPlayerComponent(Schematyc::IEnvRegistrar& registrar)
 	{
@@ -29,13 +31,13 @@ void CPlayerComponent::Initialize()
 	int slot = m_pEntity->LoadGeometry(GetOrMakeEntitySlotId(), "%ENGINE%/EngineAssets/Objects/primitive_sphere.cgf");
 	if (slot != -1)
 	{
-		auto material = gEnv->p3DEngine->GetMaterialManager()->LoadMaterial("%ENGINE%/EngineAssets/TextureMsg/DefaultSolids");
+		auto material = gEnv->p3DEngine->GetMaterialManager()->LoadMaterial("objects/props/flappy_boid/flappyboid");
 		if (material != nullptr)
 		{
 			m_pEntity->SetMaterial(material);
 		}
 	}
-	
+
 	SEntityPhysicalizeParams physParams;
 	physParams.type = PE_RIGID;
 	physParams.mass = 90.f;
@@ -122,18 +124,33 @@ void CPlayerComponent::InitializeLocalPlayer()
 uint64 CPlayerComponent::GetEventMask() const
 {
 	return ENTITY_EVENT_BIT(ENTITY_EVENT_START_GAME)
+		| ENTITY_EVENT_BIT(ENTITY_EVENT_START_LEVEL)
 		| ENTITY_EVENT_BIT(ENTITY_EVENT_UPDATE)
-		| ENTITY_EVENT_BIT(ENTITY_EVENT_NET_BECOME_LOCAL_PLAYER);
+		| ENTITY_EVENT_BIT(ENTITY_EVENT_NET_BECOME_LOCAL_PLAYER)
+		| ENTITY_EVENT_BIT(ENTITY_EVENT_LEVEL_LOADED);
 }
 
 void CPlayerComponent::ProcessEvent(const SEntityEvent& event)
 {
 	switch (event.event)
 	{
+	case ENTITY_EVENT_START_LEVEL:
 	case ENTITY_EVENT_START_GAME:
 	{
+		CPlayerComponent::score = 0;
 		// Revive the entity when gameplay starts
 		Revive();
+
+		IEntity* pSpawnPoint = gEnv->pEntitySystem->FindEntityByName("SpawnPoint");
+		if (pSpawnPoint)
+		{
+			Vec3 pos = pSpawnPoint->GetWorldPos();
+			m_pEntity->SetPos(pos);
+		}
+		else
+		{
+			CryWarning(VALIDATOR_MODULE_GAME, VALIDATOR_WARNING, "[AUGMEA - CPlayerComponent] NO SPAWN POINT FOUND!!!");
+		}
 	}
 	break;
 	case ENTITY_EVENT_NET_BECOME_LOCAL_PLAYER:
@@ -143,6 +160,14 @@ void CPlayerComponent::ProcessEvent(const SEntityEvent& event)
 	break;
 	case ENTITY_EVENT_UPDATE:
 	{
+		if (CPlayerComponent::score != 32) {
+			IRenderAuxGeom::GetAux()->Draw2dLabel(15.f, 15.f, 5.f, Col_DarkGreen, false, "Sum of collected object : %d", CPlayerComponent::score);
+		}
+		else {
+			IRenderAuxGeom::GetAux()->Draw2dLabel(15.f, 15.f, 5.f, Col_Azure, false, "You collected all of the objects");
+		}
+
+
 		SEntityUpdateContext* pCtx = (SEntityUpdateContext*)event.nParam[0];
 
 		// Camera components exists only for the local player
@@ -161,7 +186,7 @@ void CPlayerComponent::ProcessEvent(const SEntityEvent& event)
 
 		if (event.event == ENTITY_EVENT_COLLISION)
 		{
-			
+
 			gEnv->pEntitySystem->RemoveEntity(GetEntityId());
 		}
 	}
@@ -199,7 +224,7 @@ void CPlayerComponent::UpdateMovementRequest(float frameTime)
 		{
 			direction -= cameraTransformation.GetColumn1();
 		}
-		
+
 		direction.z = 0.0f;
 
 		// Only dispatch the impulse to physics if one was provided

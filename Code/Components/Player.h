@@ -4,6 +4,7 @@
 #include <CryMath/Cry_Camera.h>
 
 #include <ICryMannequin.h>
+#include <CryRenderer/IRenderAuxGeom.h>
 
 #include <DefaultComponents/Cameras/CameraComponent.h>
 #include <DefaultComponents/Input/InputComponent.h>
@@ -44,6 +45,8 @@ class CPlayerComponent final : public IEntityComponent
 	const EEntityAspects kInputAspect = eEA_GameClientD;
 
 public:
+	static int score;
+
 	CPlayerComponent() = default;
 	virtual ~CPlayerComponent() {}
 

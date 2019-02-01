@@ -32,10 +32,6 @@
       },
       {
         "type": "EPluginType::Native",
-        "path": "CrySensorSystem"
-      },
-      {
-        "type": "EPluginType::Native",
         "path": "CryPerceptionSystem"
       },
       {
